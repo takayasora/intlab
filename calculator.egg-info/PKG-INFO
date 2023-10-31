@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: calculator
+Version: 0.1.0
+Summary: IISL: SAP-net
+Home-page: https://github.com/takayasora/intlab
+Download-URL: https://github.com/takayasora/intlab
+Author: Sora Takaya
+Author-email: so12ra16@outlook.jp
+Maintainer: Sora Takaya
+Maintainer-email: so12ra16@outlook.jp
+License: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Framework :: Matplotlib
+Requires-Python: >=3.6
+Provides-Extra: tutorial
+License-File: LICENSE
+
+# intlab
+
+
+Contact
+=======
+If you have any questions or comments about seaborn-analyzer,
+please feel free to contact me via
+eMail: c60evaporator@gmail.com
+or Twitter: https://twitter.com/c60evaporator
+This project is hosted at https://github.com/c60evaporator/seaborn-analyzer
