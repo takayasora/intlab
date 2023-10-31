@@ -6,7 +6,7 @@ from setuptools import setup
 import intlab
 
 DESCRIPTION = "IISL: SAP-net"
-NAME = 'calculator'
+NAME = 'intlab'
 AUTHOR = 'Sora Takaya'
 AUTHOR_EMAIL = 'so12ra16@outlook.jp'
 URL = 'https://github.com/takayasora/intlab'
@@ -33,7 +33,7 @@ EXTRAS_REQUIRE = {
 }
 
 PACKAGES = [
-    'calculator'
+    'intlab'
 ]
 
 CLASSIFIERS = [

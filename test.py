@@ -1,3 +1,4 @@
+import intlab
 
 # 例として、各関数を使用する方法
 result = add(5, 3)  # 5 + 3 を計算
