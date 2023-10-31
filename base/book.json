@@ -1,0 +1,12 @@
+{
+  "title":"知能情報システム研究室",
+  "description":"詳細説明",
+  "language":"ja",
+  "plugins":[
+    "anchors",
+    "hide-published-with",
+    "copy-code-button",
+    "intopic-toc",
+    "back-to-top-button"
+  ]
+}
