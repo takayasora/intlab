@@ -15,6 +15,18 @@ DOWNLOAD_URL = 'https://github.com/takayasora/intlab'
 VERSION = intlab.__version__
 PYTHON_REQUIRES = ">=3.6"
 
+INSTALL_REQUIRES = [
+    'pandas>=1.2.4',
+    'matplotlib>=3.3.4',
+]
+
+EXTRAS_REQUIRE = {
+    'tutorial': [
+        'mlxtend>=0.18.0',
+        'xgboost>=1.4.2',
+    ]
+}
+
 PACKAGES = [
     'intlab'
 ]

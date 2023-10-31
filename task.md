@@ -1,4 +1,4 @@
-Setup.pyの変更
+Setup.pyの変更,COPYとの照らし合わせ
 
 Honkit baseを変更
 
