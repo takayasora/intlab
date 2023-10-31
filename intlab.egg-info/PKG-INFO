@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: intlab
-Version: 0.2.3
+Version: 0.0.2
 Summary: IISL: SAP-net
 Home-page: https://github.com/takayasora/intlab
 Download-URL: https://github.com/takayasora/intlab
@@ -27,12 +27,3 @@ Provides-Extra: tutorial
 License-File: LICENSE
 
 # intlab
-
-
-Contact
-=======
-If you have any questions or comments about seaborn-analyzer,
-please feel free to contact me via
-eMail: c60evaporator@gmail.com
-or Twitter: https://twitter.com/c60evaporator
-This project is hosted at https://github.com/c60evaporator/seaborn-analyzer

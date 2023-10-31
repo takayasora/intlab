@@ -54,9 +54,8 @@ CLASSIFIERS = [
 
 with open('README.rst', 'r') as fp:
     readme = fp.read()
-with open('CONTACT.txt', 'r') as fp:
-    contacts = fp.read()
-long_description = readme + '\n\n' + contacts
+    
+long_description = readme 
 
 setup(name=NAME,
       author=AUTHOR,
