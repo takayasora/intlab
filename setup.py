@@ -15,24 +15,27 @@ DOWNLOAD_URL = 'https://github.com/takayasora/intlab'
 VERSION = intlab.__version__
 PYTHON_REQUIRES = ">=3.6"
 
+INSTALL_REQUIRES = [
+    'pandas>=1.2.4'
+]
+
+EXTRAS_REQUIRE = {
+    'tutorial': [
+        'mlxtend>=0.18.0'
+    ]
+}
+
 PACKAGES = [
     'intlab'
 ]
 
 CLASSIFIERS = [
-    'Intended Audience :: Science/Research',
-    'License :: OSI Approved :: BSD License',
-    'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.6',
-    'Programming Language :: Python :: 3.7',
-    'Programming Language :: Python :: 3.8',
-    'Programming Language :: Python :: 3.9',
-    'Programming Language :: Python :: 3 :: Only',
-    'Topic :: Scientific/Engineering',
-    'Topic :: Scientific/Engineering :: Visualization',
-    'Topic :: Scientific/Engineering :: Artificial Intelligence',
-    'Topic :: Multimedia :: Graphics',
-    'Framework :: Matplotlib',
+        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3.4',
+        'License :: OSI Approved :: MIT License',
 ]
 
 with open('README.rst', 'r') as fp:
