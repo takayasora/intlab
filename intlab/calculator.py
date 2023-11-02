@@ -10,7 +10,7 @@ class calc():
 
     def divide(num1, num2):
         if num2 == 0:
-            return "割る数は0にできませんよ"
+            return "割る数は0にできません"
         else:
             return num1 / num2
         
