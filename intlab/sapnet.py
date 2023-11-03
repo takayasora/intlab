@@ -16,6 +16,19 @@ class sapnet():
         
         return df
 
+    def example_dataframe():
+        data = [["knowledge", 0, 0.1, 0, 0.4, 0, 0.3, 0.5],
+                ["knowledge", 0.1, 0, 0.4, 0, 0.6, 0, 0],
+                ["knowledge", 0, 0.4, 0, 0.2, 0, 0, 0.7],
+                ["knowledge", 0.4, 0, 0.2, 0, 0.1, 0, 0],
+                ["knowledge", 0, 0.6, 0, 0.1, 0, 0.4, 0.2],
+                ["knowledge", 0.3, 0, 0, 0, 0.4, 0, 0.6],
+                ["knowledge", 0.5, 0, 0.7, 0, 0.2, 0.6, 0]]
+
+        df = array4DataFrame(data)
+        
+        return df
+    
 
     # 拡散する先をソートして返します。
     def next_diffusion_pair(df,stimulus):#sapnetモジュール内で使用
