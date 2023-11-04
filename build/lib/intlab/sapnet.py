@@ -16,6 +16,19 @@ class sapnet():
         
         return df
 
+    def example_dataframe():
+        data = [["knowledge", 0, 0.1, 0, 0.4, 0, 0.3, 0.5],
+                ["knowledge", 0.1, 0, 0.4, 0, 0.6, 0, 0],
+                ["knowledge", 0, 0.4, 0, 0.2, 0, 0, 0.7],
+                ["knowledge", 0.4, 0, 0.2, 0, 0.1, 0, 0],
+                ["knowledge", 0, 0.6, 0, 0.1, 0, 0.4, 0.2],
+                ["knowledge", 0.3, 0, 0, 0, 0.4, 0, 0.6],
+                ["knowledge", 0.5, 0, 0.7, 0, 0.2, 0.6, 0]]
+
+        df = sapnet.array4DataFrame(data)
+        
+        return df
+    
 
     # 拡散する先をソートして返します。
     def next_diffusion_pair(df,stimulus):#sapnetモジュール内で使用
@@ -96,9 +109,9 @@ class sapnet():
             temp_list = []
             for item in range(len(now_list)):
                 #print("item",now_list[item])
-                pair_list = next_diffusion_pair(df,now_list[item])
+                pair_list = sapnet.next_diffusion_pair(df,now_list[item])
                 #print("pair",pair_list)
-                check_pair_list,already_list = already_pair_remove(pair_list,already_list)
+                check_pair_list,already_list = sapnet.already_pair_remove(pair_list,already_list)
                 #print("al",already_list)
                 #print("check",check_pair_list)
                 path_list = [sublist[1:] for sublist in check_pair_list]
@@ -110,14 +123,14 @@ class sapnet():
                     print(active_pair)
                     return_list.append(active_pair)
                     offer_num,receive_num = active_pair[0],active_pair[1]
-                    N = path_num_calc(df,offer_num)
+                    N = sapnet.path_num_calc(df,offer_num)
                     path_num_list.append(N)
                     #print(N)
-                    w = path_weight_calc(df,offer_num,receive_num)
+                    w = sapnet.path_weight_calc(df,offer_num,receive_num)
                     path_weight_list.append(w)
                     #print(w)
                     
-        stimulus_value_list = stimulus_value_calc(path_num_list,path_weight_list)
+        stimulus_value_list = sapnet.stimulus_value_calc(path_num_list,path_weight_list)
         print(stimulus_value_list)     
                     
         #print("temp",temp_list)
