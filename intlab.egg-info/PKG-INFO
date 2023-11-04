@@ -9,7 +9,6 @@ Author-email: so12ra16@outlook.jp
 Maintainer: Sora Takaya
 Maintainer-email: so12ra16@outlook.jp
 License: MIT License
-Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 2
 Classifier: Programming Language :: Python :: 2.7
 Classifier: Programming Language :: Python :: 3
@@ -21,4 +20,3 @@ Provides-Extra: tutorial
 License-File: LICENSE
 
 intlab
-
