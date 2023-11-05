@@ -2,6 +2,7 @@ import pandas as pd
 import math
 
 class sapnet():
+    @staticmethod
     def array4DataFrame(array):
         # 配列に対して、扱いやすいデータフレーム形式（ヘッダー付き）に変換する
         # 行番号を付与して各行の一番目に追加
@@ -15,7 +16,29 @@ class sapnet():
         df = pd.DataFrame(array, columns=header_list)
         
         return df
+    
+    @staticmethod
+    def DataFrame4array(df):
+        array = []
+        for index, row in df.iterrows():
+            data_row = [row['name']] + row.iloc[1:].tolist()
+            array.append(data_row)
+        return array
 
+    
+    @staticmethod
+    def example_data():
+        data = [["knowledge", 0, 0.1, 0, 0.4, 0, 0.3, 0.5],
+                ["knowledge", 0.1, 0, 0.4, 0, 0.6, 0, 0],
+                ["knowledge", 0, 0.4, 0, 0.2, 0, 0, 0.7],
+                ["knowledge", 0.4, 0, 0.2, 0, 0.1, 0, 0],
+                ["knowledge", 0, 0.6, 0, 0.1, 0, 0.4, 0.2],
+                ["knowledge", 0.3, 0, 0, 0, 0.4, 0, 0.6],
+                ["knowledge", 0.5, 0, 0.7, 0, 0.2, 0.6, 0]]
+
+        return data
+
+    @staticmethod
     def example_dataframe():
         data = [["knowledge", 0, 0.1, 0, 0.4, 0, 0.3, 0.5],
                 ["knowledge", 0.1, 0, 0.4, 0, 0.6, 0, 0],
@@ -29,7 +52,7 @@ class sapnet():
         
         return df
     
-
+    @staticmethod
     # 拡散する先をソートして返します。
     def next_diffusion_pair(df,stimulus):#sapnetモジュール内で使用
         diffusion_list = []
@@ -49,6 +72,7 @@ class sapnet():
                 next_list = [[sublist[0] for sublist in path_list]]
         return pair_list
 
+    @staticmethod
     def already_pair_remove(pair_list,already_list):#sapnetモジュール内で使用
         return_list = []
         for pair_temp in pair_list:
@@ -61,6 +85,7 @@ class sapnet():
                 None
         return return_list,already_list
 
+    @staticmethod
     def path_num_calc(df, stimulus):
         row_number = stimulus - 1  # 行番号を調整
         selected_row = df.iloc[row_number]
@@ -71,6 +96,7 @@ class sapnet():
                 count_positive += 1  # 0以上の値があればカウントを増やす
         return count_positive
 
+    @staticmethod
     def path_weight_calc(df, stimulus,receive):
         row_number = stimulus-1# 例として2を指定
         column_number = receive
@@ -78,6 +104,7 @@ class sapnet():
             weight = df.iloc[row_number,column_number]
             return weight
 
+    @staticmethod
     def stimulus_value_calc(path_quantity,path_weight):
         first_add = 1
         tmp_list =[]
@@ -96,12 +123,14 @@ class sapnet():
             
         return tmp_list
 
-    def sapnet(df,stimulus):
+    @staticmethod
+    #データフレームを渡すとsapnetのアルゴリズムに基づいてペアとなるリストを返します。
+    def sapnet_stimulus_pairlist(df,stimulus):
         already_list=[]
         temp_list = [stimulus]
         path_num_list = []
         path_weight_list = []
-        return_list = []
+        return_pairlist = []
         #print("temp",temp_list)
         while len(temp_list)!=0:
             #print(i)
@@ -120,8 +149,8 @@ class sapnet():
                 temp_list.extend(next_list)
                 #print("check",check_pair_list)
                 for active_pair in check_pair_list:
-                    print(active_pair)
-                    return_list.append(active_pair)
+                    ## print(active_pair)
+                    return_pairlist.append(active_pair)
                     offer_num,receive_num = active_pair[0],active_pair[1]
                     N = sapnet.path_num_calc(df,offer_num)
                     path_num_list.append(N)
@@ -129,10 +158,12 @@ class sapnet():
                     w = sapnet.path_weight_calc(df,offer_num,receive_num)
                     path_weight_list.append(w)
                     #print(w)
-                    
+        
+        return return_pairlist
+    
+    def test():
         stimulus_value_list = sapnet.stimulus_value_calc(path_num_list,path_weight_list)
-        print(stimulus_value_list)     
+        ## print(stimulus_value_list)     
                     
         #print("temp",temp_list)
         #print(return_list)
-        return stimulus_value_list,return_list
