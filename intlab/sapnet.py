@@ -103,7 +103,10 @@ class sapnet():
         # print("0.0より大きい数値の個数:", count_above_0)
         return count_above_0
 
-        
+
+
+    
+
 
     # @staticmethod
     # def path_num_calc(df, stimulus):
@@ -124,14 +127,7 @@ class sapnet():
             weight = df.iloc[row_number,column_number]
             return weight
 
-    @staticmethod
-    def stimulus_value_calc(path_quantity,path_weight):
-        first_add = 1
-        N = path_quantity
-        w = path_weight
-        v = (1/N)*first_add*math.exp(-w)
-        
-        return v
+    
     
     # @staticmethod
     # def stimulus_value_calc(path_quantity,path_weight):
@@ -190,4 +186,59 @@ class sapnet():
                     # #print(w)
         
         return return_pairlist
-  
+    @staticmethod
+    def stimulus_add_value(path_quantity,path_weight,last_list,pairA):
+        last_value = last_list[pairA-1]
+        print("lv",last_value)
+        N = path_quantity
+        w = path_weight
+        v = (1/N)*last_value*math.exp(-w)
+        print("V:",v)
+        return v
+    
+    @staticmethod
+    def last_dataframe_setting(df,stimulus):
+        # 元のデータフレームの長さを取得
+        length = len(df)
+        last_list=[]
+        # 0の列を指定された数だけ追加
+        for i in range(length):
+            if i == stimulus-1:
+                last_list.append(1)  # 新しい列を追加し、指定された列に1を設定
+            else:
+                last_list.append(0)  # それ以外の列は0を設定
+        return last_list
+
+    @staticmethod
+    def df_update(df,stimulus_value,pairA,pairB):
+        print("update")
+        # 数値で行と列を指定して値に1を加算
+        row_index = pairB  # 行のインデックス (0から始まる)
+        col_index = pairB  # 列のインデックス (0から始まる)
+        print(pairA,pairB)
+
+        print(stimulus_value)
+        df.iloc[row_index-1, col_index] += stimulus_value
+
+        return df
+    
+    @staticmethod
+    def stimulus_calc(df,stimulus):
+        pair_list = sapnet.stimulus_pairlist(df,stimulus)
+        print(pair_list)
+
+        last_list = sapnet.last_dataframe_setting(df,stimulus)
+        print(last_list)
+
+        for pair in pair_list:
+            paths = sapnet.path_count(df,pair[0])
+            print(paths)
+
+            weight = sapnet.path_weight(df,pair[0],pair[1])
+            print(weight)
+
+            stimulus_value = sapnet.stimulus_add_value(paths,weight,last_list,pair[0])
+            print(stimulus_value)
+
+            df = sapnet.df_update(df,stimulus_value,pair[0],pair[1])
+            print(df)
