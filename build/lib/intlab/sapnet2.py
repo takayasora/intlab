@@ -4,7 +4,7 @@ import math
 class sapnet():
     @staticmethod
     def array4DataFrame(array):
-        print("DEBUG : (0/8)Converting array to DataFrame")  # トレース情報：配列からデータフレームへの変換開始
+        # 配列に対して、扱いやすいデータフレーム形式（ヘッダー付き）に変換する
         # 行番号を付与して各行の一番目に追加
         for i, row in enumerate(array, start=1):
             row[0] = f"{row[0]}_{i}"
@@ -19,7 +19,6 @@ class sapnet():
     
     @staticmethod
     def DataFrame4array(df):
-        print("DEBUG : (0/8)Generating dataframe for array.")
         array = []
         for index, row in df.iterrows():
             data_row = [row['name']] + row.iloc[1:].tolist()
@@ -29,7 +28,7 @@ class sapnet():
     
     @staticmethod
     def example_data():
-        print("DEBUG : (0/8)Generating dataframe for array.")
+        print("TRACE : Getting example data")
         data = [["knowledge", 0, 0.1, 0, 0.4, 0, 0.3, 0.5],
                 ["knowledge", 0.1, 0, 0.4, 0, 0.6, 0, 0],
                 ["knowledge", 0, 0.4, 0, 0.2, 0, 0, 0.7],
@@ -42,7 +41,6 @@ class sapnet():
 
     @staticmethod
     def example_dataframe():
-        print("DEBUG : (0/8)Generating dataframe for dataframe.")
         data = [["knowledge", 0, 0.1, 0, 0.4, 0, 0.3, 0.5],
                 ["knowledge", 0.1, 0, 0.4, 0, 0.6, 0, 0],
                 ["knowledge", 0, 0.4, 0, 0.2, 0, 0, 0.7],
@@ -58,7 +56,6 @@ class sapnet():
     @staticmethod
     # 拡散する先をソートして返します。
     def next_Allpair(df,stimulus):#sapnetモジュール内で使用
-        print("DEBUG : (2/8)Calculating next_Allpair")
         diffusion_list = []
         column = df.iloc[:, stimulus]
         for i in range(len(column)):
@@ -74,7 +71,6 @@ class sapnet():
                 # 次のパス一覧を返却
                 path_list = [sublist[1:] for sublist in pair_list]
                 next_list = [[sublist[0] for sublist in path_list]]
-        print("DEBUG : (2/8)Calculating next_Allpair",pair_list)
         return pair_list
 
     @staticmethod
@@ -84,9 +80,8 @@ class sapnet():
             if pair_temp not in already_list:
                 return_list.append(pair_temp)
                 already_list.append(pair_temp)
-                reversed_pair = pair_temp[::-1]
-                already_list.append(reversed_pair)
-                print("DEBUG : (3/8)Removing already pairs",pair_temp,reversed_pair)
+                reversed_par = pair_temp[::-1]
+                already_list.append(reversed_par)
             else:
                 None
         return return_list,already_list
@@ -94,7 +89,6 @@ class sapnet():
     
     @staticmethod
     def path_count(df, stimulus):
-        print("DEBUG : (5/8)Counting paths for stimulus", stimulus)
         column_name = df.columns[stimulus]  # 指定された数値から列名を取得
         selected_row = df.iloc[stimulus - 1]  # 指定された行を選択
         # print(column_name)
@@ -108,26 +102,21 @@ class sapnet():
             if value > 0.0:
                 count_above_0 += 1
         # print("0.0より大きい数値の個数:", count_above_0)
-        print("DEBUG : (5/8)Counting paths for stimulus", stimulus,"-->",count_above_0)
-
         return count_above_0
 
 
     @staticmethod
     def path_weight(df, stimulus,receive):
-        print("DEBUG : (6/8)Calculating path weight for stimulus", stimulus, "and receive", receive)
         row_number = stimulus-1# 例として2を指定
         column_number = receive
         if stimulus != receive:
             weight = df.iloc[row_number,column_number]
-            print("DEBUG : (6/8)Calculating path weight for stimulus", stimulus, "->", receive,"-->",weight)
             return weight
 
 
     @staticmethod
     #データフレームを渡すとsapnetのアルゴリズムに基づいてペアとなるリストを返します。
     def stimulus_pairlist(df,stimulus):
-        print("INFO  : (1/8)Generating stimulus pair list for stimulus", stimulus)
         already_list=[]
         temp_list = [stimulus]
         path_num_list = []
@@ -161,22 +150,21 @@ class sapnet():
                     # w = sapnet.path_weight_calc(df,offer_num,receive_num)
                     # path_weight_list.append(w)
                     # #print(w)
-        print("INFO  : (3/8)Generating stimulus pair list", return_pairlist)
+        
         return return_pairlist
     
     @staticmethod
     def stimulus_add_value(path_quantity,path_weight,last_list,pairA,pairB):
-        print("DEBUG : (7/8)calculation stimulus value for pairA(", pairA, ")and pairB(", pairB,")")
-        print("DEBUG : (7/8)Lastlist before update:", last_list)  # 更新前のラストリストを表示
+        print("last_list -> ",last_list)
         last_value = last_list[pairA-1]
-        print("DEBUG : (7/8)pickup last value pair(",pairA,"):", last_value)  # 更新前のラストリストを表示
+        print("lv",last_value)
         N = path_quantity
         w = path_weight
+        print("calc ==> ","1/",N,"*",last_value,"exp(-",w,")")
         v = (1/N)*last_value*math.exp(-w)
-        print("DEBUG : (7/8)Calculation -> 1/", N, "*", last_value, " * exp(-", w, ")")
-        print("DEBUG : (7/8)Calculation -> ",v)
         last_list[pairB-1] = v
-        print("DEBUG : (7/8)Lastlist after update:", last_list)  # 更新後のラストリストを表示
+        print("last_list -> ",last_list)
+        print("V:",v)
         return v,last_list
     
     @staticmethod
@@ -190,29 +178,39 @@ class sapnet():
                 last_list.append(1)  # 新しい列を追加し、指定された列に1を設定
             else:
                 last_list.append(0)  # それ以外の列は0を設定
-        print("DEBUG : (4/8)Creating last dataframe for stimulus", stimulus,"->",last_list)
         return last_list
 
     @staticmethod
     def df_update(df,stimulus_value,pairA,pairB):
-        print("DEBUG : (8/8)Updating DataFrame")  # デバッグ情報：データフレームの更新開始
+        print("update")
         # 数値で行と列を指定して値に1を加算
         row_index = pairB  # 行のインデックス (0から始まる)
         col_index = pairB  # 列のインデックス (0から始まる)
-        print("DEBUG : (8/8)moved from ",pairA," to ",pairB,", adding ",stimulus_value,".")
+        print(pairA,"->",pairB)
+
+        print("加算値",stimulus_value)
         df.iloc[row_index-1, col_index] += stimulus_value
-        print("DEBUG : (8/8)DataFrame update completed")  # デバッグ情報：データフレームの更新が完了
 
         return df
     
     @staticmethod
     def stimulus_calc(df,stimulus):
-        print("\033[31mINFO  : Sapnet's algorithm, Start the calculations.\033[0m")  # ANSIエスケープコードを使って赤文字に設定
+        print("input dataframe ")
         pair_list = sapnet.stimulus_pairlist(df,stimulus)
+        print(pair_list)
+
         last_list = sapnet.last_dataframe_setting(df,stimulus)
-        
+        print(last_list)
+
         for pair in pair_list:
             paths = sapnet.path_count(df,pair[0])
+            print(paths)
+
             weight = sapnet.path_weight(df,pair[0],pair[1])
+            print(weight)
+
             stimulus_value,last_list = sapnet.stimulus_add_value(paths,weight,last_list,pair[0],pair[1])
+            print(stimulus_value)
+
             df = sapnet.df_update(df,stimulus_value,pair[0],pair[1])
+            print(df)
