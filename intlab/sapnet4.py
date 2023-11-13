@@ -30,26 +30,20 @@ class sapnet():
     @staticmethod
     def example_data():
         print("DEBUG : (0/8)Generating dataframe for array.")
-        data = [["knowledge", 0, 0.1, 0, 0.4, 0, 0.3, 0.5],
-                ["knowledge", 0.1, 0, 0.4, 0, 0.6, 0, 0],
-                ["knowledge", 0, 0.4, 0, 0.2, 0, 0, 0.7],
-                ["knowledge", 0.4, 0, 0.2, 0, 0.1, 0, 0],
-                ["knowledge", 0, 0.6, 0, 0.1, 0, 0.4, 0.2],
-                ["knowledge", 0.3, 0, 0, 0, 0.4, 0, 0.6],
-                ["knowledge", 0.5, 0, 0.7, 0, 0.2, 0.6, 0]]
+        data =[["knowledge", 0, 0.1, 0.3, 0],
+                ["knowledge", 0.1, 0, 0.2, 0.4],
+                ["knowledge", 0.3, 0.2, 0, 0],
+                ["knowledge", 0, 0.4, 0, 0]]
 
         return data
 
     @staticmethod
     def example_dataframe():
         print("DEBUG : (0/8)Generating dataframe for dataframe.")
-        data = [["knowledge", 0, 0.1, 0, 0.4, 0, 0.3, 0.5],
-                ["knowledge", 0.1, 0, 0.4, 0, 0.6, 0, 0],
-                ["knowledge", 0, 0.4, 0, 0.2, 0, 0, 0.7],
-                ["knowledge", 0.4, 0, 0.2, 0, 0.1, 0, 0],
-                ["knowledge", 0, 0.6, 0, 0.1, 0, 0.4, 0.2],
-                ["knowledge", 0.3, 0, 0, 0, 0.4, 0, 0.6],
-                ["knowledge", 0.5, 0, 0.7, 0, 0.2, 0.6, 0]]
+        data =[["knowledge", 0, 0.1, 0.3, 0],
+                ["knowledge", 0.1, 0, 0.2, 0.4],
+                ["knowledge", 0.3, 0.2, 0, 0],
+                ["knowledge", 0, 0.4, 0, 0]]
 
         df = sapnet.array4DataFrame(data)
         
