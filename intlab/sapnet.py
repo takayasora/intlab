@@ -180,14 +180,15 @@ class sapnet():
         return v,last_list
     
     @staticmethod
-    def last_dataframe_setting(df,stimulus):
+    def last_dataframe_setting(df,stimulus,first_stimulus_value):
         # 元のデータフレームの長さを取得
         length = len(df)
         last_list=[]
         # 0の列を指定された数だけ追加
         for i in range(length):
             if i == stimulus-1:
-                last_list.append(1)  # 新しい列を追加し、指定された列に1を設定
+                last_list.append(first_stimulus_value)  # 新しい列を追加し、指定された列に1を設定
+                df.iloc[i, i+1] += first_stimulus_value
             else:
                 last_list.append(0)  # それ以外の列は0を設定
         print("DEBUG : (4/8)Creating last dataframe for stimulus", stimulus,"->",last_list)
@@ -206,13 +207,14 @@ class sapnet():
         return df
     
     @staticmethod
-    def stimulus_calc(df,stimulus):
+    def stimulus_calc(df,stimulus,first_stimulus_value):
         print("\033[31mINFO  : Sapnet's algorithm, Start the calculations.\033[0m")  # ANSIエスケープコードを使って赤文字に設定
         pair_list = sapnet.stimulus_pairlist(df,stimulus)
-        last_list = sapnet.last_dataframe_setting(df,stimulus)
+        last_list = sapnet.last_dataframe_setting(df,stimulus,first_stimulus_value)
         
         for pair in pair_list:
             paths = sapnet.path_count(df,pair[0])
             weight = sapnet.path_weight(df,pair[0],pair[1])
             stimulus_value,last_list = sapnet.stimulus_add_value(paths,weight,last_list,pair[0],pair[1])
             df = sapnet.df_update(df,stimulus_value,pair[0],pair[1])
+        return df
