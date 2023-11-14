@@ -1,5 +1,8 @@
 import pandas as pd
 import math
+import os
+import datetime
+
 
 class sapnet():
     @staticmethod
@@ -230,3 +233,20 @@ class sapnet():
         for i in range(length):
             df.iloc[i, i+1] *= (1-attenuation_percentage)
         return df
+    
+    def makeup_folder():
+        # 現在時刻を取得
+        current_time = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+        # 現在時刻を使用することでアウトプットファルダを重複なく作成することができる
+        folder_name = f"./Output_{current_time}"
+        if not os.path.exists(folder_name):
+            os.makedirs(folder_name)
+        return folder_name
+
+    def outputlog(folder_name):
+        # 出力
+        Heatmap_path = folder_name + '/heatmap.png'
+        Network_path = folder_name + '/network.png'
+        Plotpoint_path = folder_name + '/plotpoint.png'
+        GIF_path_100 = folder_name + '/graph_100.gif'
+        GIF_path_1000 = folder_name + '/graph_1000.gif'
