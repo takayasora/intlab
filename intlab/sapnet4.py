@@ -1,5 +1,7 @@
 import pandas as pd
 import math
+import numpy as np
+import matplotlib.pyplot as plt
 
 class sapnet():
     @staticmethod
@@ -215,3 +217,22 @@ class sapnet():
             stimulus_value,last_list = sapnet.stimulus_add_value(paths,weight,last_list,pair[0],pair[1])
             df = sapnet.df_update(df,stimulus_value,pair[0],pair[1])
         return df
+    
+    def attenuation(df,attenuation_percentage):
+        # 少数で指定された数値分削る関数
+        # 元のデータフレームの長さを取得
+        length = len(df)
+        # 0の列を指定された数だけ追加
+        for i in range(length):
+            df.iloc[i, i+1] *= (1-attenuation_percentage)
+        return df
+    
+    def graph_show(df):
+        diagonal_matrix = np.diag(df.iloc[:, 1:].values)
+        # グラフの描画（縦棒グラフ）
+        plt.bar(range(len(diagonal_matrix)), diagonal_matrix, color='b')
+        plt.title('Diagonal Matrix Visualization')
+        plt.xlabel('Index')
+        plt.ylabel('Values')
+        plt.show()
+        
