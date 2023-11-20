@@ -343,7 +343,9 @@ class sapnet():
         None
 
     @staticmethod
-    def stimulus_calc(df,stimulus,first_stimulus_value):
+    def stimulus_calc(df=None,stimulus=1,first_stimulus_value=1.0):
+        if df is None:# データフレームが指定されなかった場合、デフォルトで生成
+            df = sapnet.example_dataframe()
         print("\033[31mINFO  : Sapnet's algorithm, Start the calculations.\033[0m")  # ANSIエスケープコードを使って赤文字に設定
         pair_list = sapnet.stimulus_pairlist(df,stimulus)
         last_list = sapnet.last_dataframe_setting(df,stimulus,first_stimulus_value)
@@ -360,6 +362,8 @@ class sapnet():
         
         plotpoint_list=sapnet.create_graph(df,GIF_source_path,plotpoint_list)
         #plotpoint_listを使用して、点グラフ推移図を作成可能
+        #グラフを作成するかどうかを選択することができる
+        #デバック出力をするかどうかを選択することができる
         #sapnet.create_plotpoint(plotpoint_list,Plotpoint_path)
         sapnet.create_network(df,Network_path)
         sapnet.create_gif(GIF_source_path,GIF_100_path,GIF_1000_path)
