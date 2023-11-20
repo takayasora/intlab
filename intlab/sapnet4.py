@@ -32,20 +32,20 @@ class sapnet():
     @staticmethod
     def example_data():
         print("DEBUG : (0/8)Generating dataframe for array.")
-        data =[["knowledge", 0, 0.1, 0.3, 0.2],
-                ["knowledge", 0.1, 0, 0.3, 0.2],
-                ["knowledge", 0.3, 0.3, 0, 0],
-                ["knowledge", 0.2, 0.2, 0, 0]]
+        data =[["knowledge", 0.1, 0.1, 0.3, 0.2],
+                ["knowledge", 0.1, 0.1, 0.3, 0.2],
+                ["knowledge", 0.3, 0.3, 0.1, 0],
+                ["knowledge", 0.2, 0.2, 0, 0.1]]
 
         return data
 
     @staticmethod
     def example_dataframe():
         print("DEBUG : (0/8)Generating dataframe for dataframe.")
-        data =[["knowledge", 0, 0.1, 0.3, 0.2],
-                ["knowledge", 0.1, 0, 0.3, 0.2],
-                ["knowledge", 0.3, 0.3, 0, 0],
-                ["knowledge", 0.2, 0.2, 0, 0]]
+        data =[["knowledge", 0.1, 0.1, 0.3, 0.2],
+                ["knowledge", 0.1, 0.1, 0.3, 0.2],
+                ["knowledge", 0.3, 0.3, 0.1, 0],
+                ["knowledge", 0.2, 0.2, 0, 0.1]]
 
         df = sapnet.array4DataFrame(data)
         
@@ -228,11 +228,14 @@ class sapnet():
         return df
     
     def graph_show(df):
-        diagonal_matrix = np.diag(df.iloc[:, 1:].values)
+        diagonal_matrix = np.diag(df.iloc[:, 1:].values)#対角行列のデータのみを取得
+        print(diagonal_matrix)
+        print(type(diagonal_matrix))
+        
         # グラフの描画（縦棒グラフ）
         plt.bar(np.arange(len(diagonal_matrix))+1, diagonal_matrix, color='b')
         plt.title('Stimulus_value')
-        plt.xlabel('knowledge')
+        plt.xlabel('Knowledge')
         plt.ylabel('Values')
         plt.show()
         
