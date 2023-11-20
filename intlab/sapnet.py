@@ -230,7 +230,7 @@ class sapnet():
             df = sapnet.df_update(df,stimulus_value,pair[0],pair[1])
         
         sapnet.graph_show(df,GIF_source_path)
-        sapnet.create_gif(GIF_source_path,GIF_100_path)
+        sapnet.create_gif(GIF_source_path,GIF_100_path,GIF_1000_path)
         return df
     
     @staticmethod
@@ -240,13 +240,10 @@ class sapnet():
         plt.title('Stimulus_value')
         plt.xlabel('Knowledge')
         plt.ylabel('Values')
-        
         # 指定したフォルダ内のファイルをリスト
         files = os.listdir(GIF_source_path)
-
         # PNGファイルの数をカウント
         png_count = sum(1 for file in files if file.lower().endswith(".png"))
-
         # フォーマットされたファイル名を生成
         image_filename = os.path.join(GIF_source_path, f"gif_source_{png_count+1:03d}")
 
@@ -259,23 +256,18 @@ class sapnet():
             plt.show()
 
     @staticmethod
-    def create_gif(GIF_source_path, GIF_100_path):
+    def create_gif(GIF_source_path, GIF_100_path,GIF_1000_path):
         # GIF用の画像ファイルリストを取得
         image_list = sorted([os.path.join(GIF_source_path, file) for file in os.listdir(GIF_source_path) if file.lower().endswith(".png")])
-
         # 画像リストが存在しない場合は処理を中止
         if not image_list:
             print("No image files found in the source path.")
             return
-
-        # GIFファイルの保存先
-        gif_filename = GIF_100_path
-
         # 画像を開いてリストに格納
         images = [Image.open(img) for img in image_list]
-
         # GIFファイルを生成
-        images[0].save(gif_filename, save_all=True, append_images=images[1:], duration=100, loop=0)
+        images[0].save(GIF_100_path, save_all=True, append_images=images[1:], duration=100, loop=0)
+        images[0].save(GIF_1000_path, save_all=True, append_images=images[1:], duration=1000, loop=0)
 
 
     @staticmethod
@@ -296,12 +288,10 @@ class sapnet():
         folder_name = f"./Output_{current_time}"
         # if not os.path.exists(folder_name):
         #     os.makedirs(folder_name)
-        
         # 現在時刻を使用することでアウトプットファルダを重複なく作成することができる
         gif_folder_name = folder_name+"/GIF_source/"
         if not os.path.exists(gif_folder_name):
             os.makedirs(gif_folder_name)
-
         Heatmap_path = folder_name + '/heatmap.png'
         Network_path = folder_name + '/network.png'
         Plotpoint_path = folder_name + '/plotpoint.png'
