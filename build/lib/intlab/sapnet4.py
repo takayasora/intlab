@@ -1,5 +1,7 @@
 import pandas as pd
 import math
+import numpy as np
+import matplotlib.pyplot as plt
 
 class sapnet():
     @staticmethod
@@ -30,26 +32,20 @@ class sapnet():
     @staticmethod
     def example_data():
         print("DEBUG : (0/8)Generating dataframe for array.")
-        data = [["knowledge", 0, 0.1, 0, 0.4, 0, 0.3, 0.5],
-                ["knowledge", 0.1, 0, 0.4, 0, 0.6, 0, 0],
-                ["knowledge", 0, 0.4, 0, 0.2, 0, 0, 0.7],
-                ["knowledge", 0.4, 0, 0.2, 0, 0.1, 0, 0],
-                ["knowledge", 0, 0.6, 0, 0.1, 0, 0.4, 0.2],
-                ["knowledge", 0.3, 0, 0, 0, 0.4, 0, 0.6],
-                ["knowledge", 0.5, 0, 0.7, 0, 0.2, 0.6, 0]]
+        data =[["knowledge", 0.1, 0.1, 0.3, 0.2],
+                ["knowledge", 0.1, 0.1, 0.3, 0.2],
+                ["knowledge", 0.3, 0.3, 0.1, 0],
+                ["knowledge", 0.2, 0.2, 0, 0.1]]
 
         return data
 
     @staticmethod
     def example_dataframe():
         print("DEBUG : (0/8)Generating dataframe for dataframe.")
-        data = [["knowledge", 0, 0.1, 0, 0.4, 0, 0.3, 0.5],
-                ["knowledge", 0.1, 0, 0.4, 0, 0.6, 0, 0],
-                ["knowledge", 0, 0.4, 0, 0.2, 0, 0, 0.7],
-                ["knowledge", 0.4, 0, 0.2, 0, 0.1, 0, 0],
-                ["knowledge", 0, 0.6, 0, 0.1, 0, 0.4, 0.2],
-                ["knowledge", 0.3, 0, 0, 0, 0.4, 0, 0.6],
-                ["knowledge", 0.5, 0, 0.7, 0, 0.2, 0.6, 0]]
+        data =[["knowledge", 0.1, 0.1, 0.3, 0.2],
+                ["knowledge", 0.1, 0.1, 0.3, 0.2],
+                ["knowledge", 0.3, 0.3, 0.1, 0],
+                ["knowledge", 0.2, 0.2, 0, 0.1]]
 
         df = sapnet.array4DataFrame(data)
         
@@ -221,3 +217,29 @@ class sapnet():
             stimulus_value,last_list = sapnet.stimulus_add_value(paths,weight,last_list,pair[0],pair[1])
             df = sapnet.df_update(df,stimulus_value,pair[0],pair[1])
         return df
+    
+    @staticmethod
+    def attenuation(df,attenuation_percentage):
+        # 少数で指定された数値分削る関数
+        # 元のデータフレームの長さを取得
+        length = len(df)
+        # 0の列を指定された数だけ追加
+        for i in range(length):
+            df.iloc[i, i+1] *= (1-attenuation_percentage)
+        return df
+    
+    @staticmethod
+    def graph_show(df):
+        diagonal_matrix = np.diag(df.iloc[:, 1:].values)#対角行列のデータのみを取得
+        print(diagonal_matrix)
+        print(type(diagonal_matrix))
+        
+        # グラフの描画（縦棒グラフ）
+        plt.bar(np.arange(len(diagonal_matrix))+1, diagonal_matrix, color='b')
+        plt.title('Stimulus_value')
+        plt.xlabel('Knowledge')
+        plt.ylabel('Values')
+        plt.show()
+
+    @staticmethod        
+    def 
