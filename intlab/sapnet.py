@@ -1,4 +1,7 @@
+from PIL import Image
+import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
 import math
 import os
 import datetime
@@ -217,14 +220,65 @@ class sapnet():
         print("\033[31mINFO  : Sapnet's algorithm, Start the calculations.\033[0m")  # ANSIエスケープコードを使って赤文字に設定
         pair_list = sapnet.stimulus_pairlist(df,stimulus)
         last_list = sapnet.last_dataframe_setting(df,stimulus,first_stimulus_value)
-        
+        folder_name,Heatmap_path,Network_path,Plotpoint_path,GIF_source_path,GIF_100_path,GIF_1000_path = sapnet.makeup_folder()
+
         for pair in pair_list:
             paths = sapnet.path_count(df,pair[0])
             weight = sapnet.path_weight(df,pair[0],pair[1])
             stimulus_value,last_list = sapnet.stimulus_add_value(paths,weight,last_list,pair[0],pair[1])
+            sapnet.graph_show(df,GIF_source_path)
             df = sapnet.df_update(df,stimulus_value,pair[0],pair[1])
+        
+        sapnet.graph_show(df,GIF_source_path)
+        sapnet.create_gif(GIF_source_path,GIF_100_path)
         return df
     
+    @staticmethod
+    def graph_show(df,GIF_source_path):
+        diagonal_matrix = np.diag(df.iloc[:, 1:].values)
+        plt.bar(np.arange(len(diagonal_matrix)) + 1, diagonal_matrix, color='b')
+        plt.title('Stimulus_value')
+        plt.xlabel('Knowledge')
+        plt.ylabel('Values')
+        
+        # 指定したフォルダ内のファイルをリスト
+        files = os.listdir(GIF_source_path)
+
+        # PNGファイルの数をカウント
+        png_count = sum(1 for file in files if file.lower().endswith(".png"))
+
+        # フォーマットされたファイル名を生成
+        image_filename = os.path.join(GIF_source_path, f"gif_source_{png_count+1:03d}")
+
+        print(GIF_source_path)
+        print(image_filename)
+        if GIF_source_path:
+            plt.savefig(image_filename)
+            plt.close()
+        else:
+            plt.show()
+
+    @staticmethod
+    def create_gif(GIF_source_path, GIF_100_path):
+        # GIF用の画像ファイルリストを取得
+        image_list = sorted([os.path.join(GIF_source_path, file) for file in os.listdir(GIF_source_path) if file.lower().endswith(".png")])
+
+        # 画像リストが存在しない場合は処理を中止
+        if not image_list:
+            print("No image files found in the source path.")
+            return
+
+        # GIFファイルの保存先
+        gif_filename = GIF_100_path
+
+        # 画像を開いてリストに格納
+        images = [Image.open(img) for img in image_list]
+
+        # GIFファイルを生成
+        images[0].save(gif_filename, save_all=True, append_images=images[1:], duration=100, loop=0)
+
+
+    @staticmethod
     def attenuation(df,attenuation_percentage):
         # 少数で指定された数値分削る関数
         # 元のデータフレームの長さを取得
@@ -234,19 +288,32 @@ class sapnet():
             df.iloc[i, i+1] *= (1-attenuation_percentage)
         return df
     
+    @staticmethod
     def makeup_folder():
         # 現在時刻を取得
         current_time = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
         # 現在時刻を使用することでアウトプットファルダを重複なく作成することができる
         folder_name = f"./Output_{current_time}"
-        if not os.path.exists(folder_name):
-            os.makedirs(folder_name)
-        return folder_name
+        # if not os.path.exists(folder_name):
+        #     os.makedirs(folder_name)
+        
+        # 現在時刻を使用することでアウトプットファルダを重複なく作成することができる
+        gif_folder_name = folder_name+"/GIF_source/"
+        if not os.path.exists(gif_folder_name):
+            os.makedirs(gif_folder_name)
 
-    def outputlog(folder_name):
-        # 出力
         Heatmap_path = folder_name + '/heatmap.png'
         Network_path = folder_name + '/network.png'
         Plotpoint_path = folder_name + '/plotpoint.png'
-        GIF_path_100 = folder_name + '/graph_100.gif'
-        GIF_path_1000 = folder_name + '/graph_1000.gif'
+        GIF_source_path = gif_folder_name
+        GIF_100_path = folder_name + '/graph_100.gif'
+        GIF_1000_path = folder_name + '/graph_1000.gif'
+
+        return folder_name,Heatmap_path,Network_path,Plotpoint_path,GIF_source_path,GIF_100_path,GIF_1000_path
+
+    # @staticmethod
+    # def outputlog(folder_name):
+    #     # 出力
+        
+
+    

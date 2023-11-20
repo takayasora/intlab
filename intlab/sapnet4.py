@@ -218,6 +218,7 @@ class sapnet():
             df = sapnet.df_update(df,stimulus_value,pair[0],pair[1])
         return df
     
+    @staticmethod
     def attenuation(df,attenuation_percentage):
         # 少数で指定された数値分削る関数
         # 元のデータフレームの長さを取得
@@ -227,6 +228,7 @@ class sapnet():
             df.iloc[i, i+1] *= (1-attenuation_percentage)
         return df
     
+    @staticmethod
     def graph_show(df):
         diagonal_matrix = np.diag(df.iloc[:, 1:].values)#対角行列のデータのみを取得
         print(diagonal_matrix)
@@ -238,4 +240,6 @@ class sapnet():
         plt.xlabel('Knowledge')
         plt.ylabel('Values')
         plt.show()
-        
+
+    @staticmethod        
+    def 

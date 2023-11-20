@@ -1,19 +1,27 @@
-下記のデータフレームの一つの値を選択し、１加算したい場合はどうなるか
+下記のプログラムの名前を付ける際の規則をgif_source_001とつくようにpng_countをフォーマットしなさい
 
-          name  knowledge_1  knowledge_2  knowledge_3  knowledge_4   
-0  knowledge_1          0.0          0.1          0.0          0.4  \
-1  knowledge_2          0.1          0.0          0.4          0.0   
-2  knowledge_3          0.0          0.4          0.0          0.2   
-3  knowledge_4          0.4          0.0          0.2          0.0   
-4  knowledge_5          0.0          0.6          0.0          0.1   
-5  knowledge_6          0.3          0.0          0.0          0.0   
-6  knowledge_7          0.5          0.0          0.7          0.0   
+@staticmethod
+    def graph_show(df,GIF_source_path):
+        diagonal_matrix = np.diag(df.iloc[:, 1:].values)
+        plt.bar(np.arange(len(diagonal_matrix)) + 1, diagonal_matrix, color='b')
+        plt.title('Stimulus_value')
+        plt.xlabel('Knowledge')
+        plt.ylabel('Values')
+        
+        # 指定したフォルダ内のファイルをリスト
+        files = os.listdir(GIF_source_path)
 
-   knowledge_5  knowledge_6  knowledge_7  
-0          0.0          0.3          0.5  
-1          0.6          0.0          0.0  
-2          0.0          0.0          0.7  
-3          0.1          0.0          0.0  
-4          0.0          0.4          0.2  
-5          0.4          0.0          0.6  
-6          0.2          0.6          0.0 
+        # PNGファイルの数をカウント
+        png_count = 0
+        for file in files:
+            if file.lower().endswith(".png"):
+                png_count += 1
+        
+        print(GIF_source_path)
+        image_filename = GIF_source_path+"gif_source_"+str(png_count+1)
+        print(image_filename)
+        if GIF_source_path:
+            plt.savefig(image_filename)
+            plt.close()
+        else:
+            plt.show()
