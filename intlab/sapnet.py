@@ -5,6 +5,10 @@ import numpy as np
 import math
 import os
 import datetime
+import seaborn as sns
+import matplotlib.pyplot as plt
+import japanize_matplotlib
+import networkx as nx
 
 
 class sapnet():
@@ -216,8 +220,9 @@ class sapnet():
         return df
     
     @staticmethod
-    def create_graph(df,GIF_source_path):
+    def create_graph(df,GIF_source_path,plotpoint_list):
         diagonal_matrix = np.diag(df.iloc[:, 1:].values)
+        plotpoint_list.append(diagonal_matrix)
         plt.bar(np.arange(len(diagonal_matrix)) + 1, diagonal_matrix, color='b')
         plt.title('Stimulus_value')
         plt.xlabel('Knowledge')
@@ -235,6 +240,8 @@ class sapnet():
         else:
             plt.show()
         print("DEBUG : (8/10)Make DataFrame graph")  # デバッグ情報：データフレームの更新が完了
+        return plotpoint_list
+
 
     @staticmethod
     def create_gif(GIF_source_path, GIF_100_path,GIF_1000_path):
@@ -283,10 +290,57 @@ class sapnet():
 
         return folder_name,Heatmap_path,Network_path,Plotpoint_path,GIF_source_path,GIF_100_path,GIF_1000_path
 
-    # @staticmethod
-    # def outputlog(folder_name):
-    #     # 出力
-        
+    @staticmethod
+    def create_heatmap(df,Heatmap_path):
+        plt.figure(figsize=(10, 8))
+        sns.heatmap(df.set_index('name'), annot=True, cmap='winter', linewidths=.5)
+        plt.title("既存知識の類似度ヒートマップ")
+        plt.savefig(Heatmap_path)
+        plt.close()
+
+    @staticmethod
+    def create_network(df,Network_path):
+        df_reset = df.set_index('name')
+        # 空の有向グラフを作成
+        G = nx.DiGraph()
+
+        # ノードを追加
+        for node in df_reset.index:
+            G.add_node(node, size=df_reset.loc[node, node])
+
+        # エッジを追加
+        for source in df_reset.index:
+            for target in df_reset.columns:
+                if source != target:
+                    # 対角行列の値をノードの値とし、それ以外をエッジの値とする
+                    edge_value = df_reset.loc[source, target]
+                    if edge_value > 0.0:
+                        # 0.0でない場合のみエッジを追加
+                        G.add_edge(source, target, weight=edge_value)
+
+        # ネットワークを可視化
+        pos = nx.spring_layout(G)  # レイアウト設定
+        node_sizes = [G.nodes[node]['size'] * 5000 for node in G.nodes]  # ノードのサイズを設定
+
+        # エッジの太さを逆にする
+        edge_widths = [1 / G.edges[edge]['weight'] * 1.5 for edge in G.edges]
+
+        nx.draw_networkx_nodes(G, pos, node_size=node_sizes, node_color='skyblue', alpha=0.7)
+        nx.draw_networkx_edges(G, pos, width=edge_widths, edge_color='gray', alpha=0.7)
+        nx.draw_networkx_labels(G, pos, font_size=8, font_color='black')
+
+        edge_labels = {(source, target): f"{G.edges[(source, target)]['weight']:.1f}" for source, target in G.edges}
+        nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_color='red')
+
+        plt.title("既存知識の類似度ネットワーク")
+
+        # グラフを出力
+        plt.savefig(Network_path)
+        plt.close()
+
+    @staticmethod
+    def create_plotpoint(plotpoint_list,Plotpoint_path):
+        None
 
     @staticmethod
     def stimulus_calc(df,stimulus,first_stimulus_value):
@@ -294,14 +348,19 @@ class sapnet():
         pair_list = sapnet.stimulus_pairlist(df,stimulus)
         last_list = sapnet.last_dataframe_setting(df,stimulus,first_stimulus_value)
         folder_name,Heatmap_path,Network_path,Plotpoint_path,GIF_source_path,GIF_100_path,GIF_1000_path = sapnet.makeup_folder()
+        sapnet.create_heatmap(df,Heatmap_path)
+        plotpoint_list = []
 
         for pair in pair_list:
             paths = sapnet.path_count(df,pair[0])
             weight = sapnet.path_weight(df,pair[0],pair[1])
             stimulus_value,last_list = sapnet.stimulus_add_value(paths,weight,last_list,pair[0],pair[1])
-            sapnet.create_graph(df,GIF_source_path)
+            plotpoint_list=sapnet.create_graph(df,GIF_source_path,plotpoint_list)
             df = sapnet.df_update(df,stimulus_value,pair[0],pair[1])
         
-        sapnet.create_graph(df,GIF_source_path)
+        plotpoint_list=sapnet.create_graph(df,GIF_source_path,plotpoint_list)
+        #plotpoint_listを使用して、点グラフ推移図を作成可能
+        #sapnet.create_plotpoint(plotpoint_list,Plotpoint_path)
+        sapnet.create_network(df,Network_path)
         sapnet.create_gif(GIF_source_path,GIF_100_path,GIF_1000_path)
         return df

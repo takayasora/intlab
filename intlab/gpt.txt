@@ -1,0 +1,53 @@
+下記のプログラムを少し修正しなさい。
+エッジをつなぐ際、小さい値のほうが太くしなさい。
+大きい値は細くしましょう。
+0.0は数値も表示せず、線もつながないようにしましょう。
+
+import networkx as nx
+import matplotlib.pyplot as plt
+
+class NetworkVisualizer:
+    @staticmethod
+    def create_networkx(df):
+        df_reset = df.set_index('name')
+        # 空の有向グラフを作成
+        G = nx.DiGraph()
+
+        # ノードを追加
+        for node in df_reset.index:
+            G.add_node(node, size=df_reset.loc[node, node])
+
+        # エッジを追加
+        for source in df_reset.index:
+            for target in df_reset.columns:
+                if source != target:
+                    # 対角行列の値をノードの値とし、それ以外をエッジの値とする
+                    edge_value = df_reset.loc[source, target]
+                    G.add_edge(source, target, weight=edge_value)
+
+        # ネットワークを可視化
+        pos = nx.spring_layout(G)  # レイアウト設定
+        node_sizes = [G.nodes[node]['size'] * 1000 for node in G.nodes]  # ノードのサイズを設定
+
+        nx.draw_networkx_nodes(G, pos, node_size=node_sizes, node_color='skyblue', alpha=0.7)
+        nx.draw_networkx_edges(G, pos, width=[G.edges[edge]['weight'] * 5 for edge in G.edges], edge_color='gray', alpha=0.7)
+        nx.draw_networkx_labels(G, pos, font_size=8, font_color='black')
+
+        edge_labels = {(source, target): f"{G.edges[(source, target)]['weight']:.1f}" for source, target in G.edges}
+        nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_color='red')
+
+        plt.title("Knowledge Network Visualization")
+        plt.show()
+
+# 例として提供されたデータフレームを使用してネットワークを可視化
+df_example = pd.DataFrame({
+    'name': ['knowledge_1', 'knowledge_2', 'knowledge_3', 'knowledge_4'],
+    'knowledge_1': [0.3, 0.1, 0.0, 0.4],
+    'knowledge_2': [0.1, 0.1, 0.4, 0.0],
+    'knowledge_3': [0.0, 0.4, 0.2, 0.2],
+    'knowledge_4': [0.4, 0.0, 0.2, 0.5]
+})
+
+NetworkVisualizer.create_networkx(df_example)
+
+
