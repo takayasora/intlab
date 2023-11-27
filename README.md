@@ -9,9 +9,13 @@ Membar List
 | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![youtube_social_square_red.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/362315/65d2d650-aee5-40cb-2093-607d931ec087.png) | ![Twitter_Social_Icon_Square_Colorのコピー.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/362315/7a000ef8-21c1-1e86-2942-f1933ffe839b.png) |
 
+
 <h1 align="center">
-<img src="https://raw.githubusercontent.com/numpy/numpy/main/branding/logo/primary/numpylogo.svg" width="300">
-</h1><br>
+<a href="https://takayasora.com">
+  <img src="./base/source/welcome.gif" alt="Sora's GitHub Banner" width="1280">
+</a>
+</h1>
+</br>
 
 
 [![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](
