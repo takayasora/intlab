@@ -25,7 +25,8 @@ class sapnet():
         df = pd.DataFrame(array, columns=header_list)
         
         return df
-    
+
+
     @staticmethod
     def DataFrame4array(df):
         print("DEBUG : (0/10)Generating dataframe for array.")
@@ -49,6 +50,7 @@ class sapnet():
 
         return data
 
+
     @staticmethod
     def example_dataframe():
         print("DEBUG : (0/10)Generating dataframe for dataframe.")
@@ -63,6 +65,7 @@ class sapnet():
         df = sapnet.array4DataFrame(data)
         
         return df
+
     
     @staticmethod
     # 拡散する先をソートして返します。
@@ -89,6 +92,7 @@ class sapnet():
         print("DEBUG : (2/10)Calculating next_Allpair",pair_list)
         return pair_list
 
+
     @staticmethod
     def already_pair_remove(pair_list,already_list):#sapnetモジュール内で使用
         return_list = []
@@ -103,7 +107,7 @@ class sapnet():
                 None
         return return_list,already_list
 
-    
+
     @staticmethod
     def path_count(df, stimulus):
         print("DEBUG : (5/10)Counting paths for stimulus", stimulus)
@@ -175,7 +179,8 @@ class sapnet():
                     # #print(w)
         print("INFO  : (3/10)Generating stimulus pair list", return_pairlist)
         return return_pairlist
-    
+
+
     @staticmethod
     def stimulus_add_value(path_quantity,path_weight,last_list,pairA,pairB):
         print("DEBUG : (7/10)calculation stimulus value for pairA(", pairA, ")and pairB(", pairB,")")
@@ -190,7 +195,8 @@ class sapnet():
         last_list[pairB-1] = v
         print("DEBUG : (7/10)Lastlist after update:", last_list)  # 更新後のラストリストを表示
         return v,last_list
-    
+
+
     @staticmethod
     def last_dataframe_setting(df,stimulus,first_stimulus_value):
         # 元のデータフレームの長さを取得
@@ -206,6 +212,7 @@ class sapnet():
         print("DEBUG : (4/10)Creating last dataframe for stimulus", stimulus,"->",last_list)
         return last_list
 
+
     @staticmethod
     def df_update(df,stimulus_value,pairA,pairB):
         print("DEBUG : (9/10)Updating DataFrame")  # デバッグ情報：データフレームの更新開始
@@ -217,7 +224,8 @@ class sapnet():
         print("DEBUG : (9/10)DataFrame update completed")  # デバッグ情報：データフレームの更新が完了
 
         return df
-    
+
+
     @staticmethod
     def create_graph(df,GIF_source_path,plotpoint_list):
         diagonal_matrix = np.diag(df.iloc[:, 1:].values)
@@ -267,7 +275,8 @@ class sapnet():
         for i in range(length):
             df.iloc[i, i+1] *= (1-attenuation_percentage)
         return df
-    
+
+
     @staticmethod
     def makeup_folder():
         # 現在時刻を取得
@@ -289,6 +298,7 @@ class sapnet():
 
         return folder_name,Heatmap_path,Network_path,Plotpoint_path,GIF_source_path,GIF_100_path,GIF_1000_path
 
+
     @staticmethod
     def create_heatmap(df,Heatmap_path):
         plt.figure(figsize=(10, 8))
@@ -296,6 +306,7 @@ class sapnet():
         plt.title("既存知識の類似度ヒートマップ")
         plt.savefig(Heatmap_path)
         plt.close()
+
 
     @staticmethod
     def create_network(df,Network_path):
@@ -337,9 +348,11 @@ class sapnet():
         plt.savefig(Network_path)
         plt.close()
 
+
     @staticmethod
     def create_plotpoint(plotpoint_list,Plotpoint_path):
         None
+
 
     @staticmethod
     def stimulus_calc(df=None,stimulus=1,first_stimulus_value=1.0):
