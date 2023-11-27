@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1ft-seabass/honkit-base.git"
+    "url": "git+https://github.com/takayasora/intlab.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/1ft-seabass/honkit-base/issues"
+    "url": "https://github.com/takayasora/intlab/issues"
   },
-  "homepage": "https://github.com/1ft-seabass/honkit-base#readme",
+  "homepage": "https://github.com/takayasora/intlab#readme",
   "devDependencies": {
     "honkit": "^3.6.20"
   },
