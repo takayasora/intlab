@@ -6,7 +6,6 @@ import math
 import os
 import datetime
 import seaborn as sns
-import matplotlib.pyplot as plt
 import japanize_matplotlib
 import networkx as nx
 
