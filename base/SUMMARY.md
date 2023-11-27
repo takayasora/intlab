@@ -8,5 +8,5 @@
 * [アップデートの手順](./5-CONTRIBUTING.md)
 * [ライセンス情報](./6-LICENSE.md)
 * [デモやスクリーンショット](./7-DEMO.md)
-* [バッジ](./8-BADGES.md)
+* [バッジ](./8-CONTACT.md)
 * [動作環境](./9-ENVIRONMENT.md)

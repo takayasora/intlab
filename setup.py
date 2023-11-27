@@ -16,14 +16,14 @@ VERSION = intlab.__version__
 PYTHON_REQUIRES = ">=3.6"
 
 INSTALL_REQUIRES = [
-    'pandas>=1.2.4'
+    "pillow>=9.5.0",
+    "matplotlib>=3.7.1",
+    "pandas>=2.0.0",
+    "numpy>=1.23.5",
+    "seaborn>=0.12.2",
+    "japanize-matplotlib>=1.1.3",
+    "networkx>=3.1"
 ]
-
-EXTRAS_REQUIRE = {
-    'tutorial': [
-        'mlxtend>=0.18.0'
-    ]
-}
 
 PACKAGES = [
     'intlab'
@@ -56,7 +56,6 @@ setup(name=NAME,
       download_url=DOWNLOAD_URL,
       python_requires=PYTHON_REQUIRES,
       install_requires=INSTALL_REQUIRES,
-      extras_require=EXTRAS_REQUIRE,
       packages=PACKAGES,
       classifiers=CLASSIFIERS
     )
