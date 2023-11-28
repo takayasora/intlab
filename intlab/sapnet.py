@@ -8,12 +8,17 @@ import datetime
 import seaborn as sns
 import japanize_matplotlib
 import networkx as nx
+import logging
 
 
 class sapnet():
+    # ログの設定
+    logging.basicConfig(level=logging.INFO)
+    logger = logging.getLogger(__name__)
+    
     @staticmethod
     def array4DataFrame(array):
-        print("DEBUG : (0/10)Converting array to DataFrame")  # トレース情報：配列からデータフレームへの変換開始
+        sapnet.logger.debug("(0/10)Converting array to DataFrame")
         # 行番号を付与して各行の一番目に追加
         for i, row in enumerate(array, start=1):
             row[0] = f"{row[0]}_{i}"
@@ -29,7 +34,7 @@ class sapnet():
 
     @staticmethod
     def DataFrame4array(df):
-        print("DEBUG : (0/10)Generating dataframe for array.")
+        sapnet.logger.debug("(0/10)Converting array to DataFrame")
         array = []
         for index, row in df.iterrows():
             data_row = [row['name']] + row.iloc[1:].tolist()
@@ -39,7 +44,7 @@ class sapnet():
     
     @staticmethod
     def example_data():
-        print("DEBUG : (0/10)Generating dataframe for array.")
+        sapnet.logger.debug("(0/10)Converting array to DataFrame")
         data = [["knowledge", 0, 0.1, 0, 0.4, 0, 0.3, 0.5],
                 ["knowledge", 0.1, 0, 0.4, 0, 0.6, 0, 0],
                 ["knowledge", 0, 0.4, 0, 0.2, 0, 0, 0.7],
@@ -53,7 +58,7 @@ class sapnet():
 
     @staticmethod
     def example_dataframe():
-        print("DEBUG : (0/10)Generating dataframe for dataframe.")
+        sapnet.logger.debug("(0/10)Converting array to DataFrame")
         data = [["knowledge", 0, 0.1, 0, 0.4, 0, 0.3, 0.5],
                 ["knowledge", 0.1, 0, 0.4, 0, 0.6, 0, 0],
                 ["knowledge", 0, 0.4, 0, 0.2, 0, 0, 0.7],
@@ -70,7 +75,7 @@ class sapnet():
     @staticmethod
     # 拡散する先をソートして返します。
     def next_Allpair(df,stimulus):#sapnetモジュール内で使用
-        print("DEBUG : (2/10)Calculating next_Allpair")
+        sapnet.logger.debug("(2/10)Calculating next_Allpair")
         diffusion_list = []
         column = df.iloc[:, stimulus]
         for i in range(len(column)):
@@ -89,7 +94,7 @@ class sapnet():
                 # 次のパス一覧を返却
                 path_list = [sublist[1:] for sublist in pair_list]
                 next_list = [[sublist[0] for sublist in path_list]]
-        print("DEBUG : (2/10)Calculating next_Allpair",pair_list)
+        sapnet.logger.debug("(2/10)Calculating next_Allpair %s",pair_list)
         return pair_list
 
 
@@ -102,7 +107,7 @@ class sapnet():
                 already_list.append(pair_temp)
                 reversed_pair = pair_temp[::-1]
                 already_list.append(reversed_pair)
-                print("DEBUG : (3/10)Removing already pairs",pair_temp,reversed_pair)
+                sapnet.logger.debug("(3/10)Removing already pairs %s  %s",pair_temp,reversed_pair)
             else:
                 None
         return return_list,already_list
@@ -110,7 +115,7 @@ class sapnet():
 
     @staticmethod
     def path_count(df, stimulus):
-        print("DEBUG : (5/10)Counting paths for stimulus", stimulus)
+        sapnet.logger.debug("(5/10)Counting paths for stimulus  %s", stimulus)
         column_name = df.columns[stimulus]  # 指定された数値から列名を取得
         selected_row = df.iloc[stimulus - 1]  # 指定された行を選択
         # print(column_name)
@@ -124,26 +129,26 @@ class sapnet():
             if value > 0.0:
                 count_above_0 += 1
         # print("0.0より大きい数値の個数:", count_above_0)
-        print("DEBUG : (5/10)Counting paths for stimulus", stimulus,"-->",count_above_0)
+        sapnet.logger.debug("(5/10)Counting paths for stimulus %s --> %s",stimulus,count_above_0)
 
         return count_above_0
 
 
     @staticmethod
     def path_weight(df, stimulus,receive):
-        print("DEBUG : (6/10)Calculating path weight for stimulus", stimulus, "and receive", receive)
+        sapnet.logger.debug("(6/10)Calculating path weight for stimulus %s and receive %s", stimulus,receive)
         row_number = stimulus-1# 例として2を指定
         column_number = receive
         if stimulus != receive:
             weight = df.iloc[row_number,column_number]
-            print("DEBUG : (6/10)Calculating path weight for stimulus", stimulus, "->", receive,"-->",weight)
+            sapnet.logger.debug("(6/10)Calculating path weight for stimulus %s -> %s --> %s",stimulus,receive,weight)
             return weight
 
 
     @staticmethod
     #データフレームを渡すとsapnetのアルゴリズムに基づいてペアとなるリストを返します。
     def stimulus_pairlist(df,stimulus):
-        print("INFO  : (1/10)Generating stimulus pair list for stimulus", stimulus)
+        sapnet.logger.info("(1/10)Generating stimulus pair list for stimulus %s", stimulus)
         already_list=[]
         temp_list = [stimulus]
         path_num_list = []
@@ -177,23 +182,23 @@ class sapnet():
                     # w = sapnet.path_weight_calc(df,offer_num,receive_num)
                     # path_weight_list.append(w)
                     # #print(w)
-        print("INFO  : (3/10)Generating stimulus pair list", return_pairlist)
+        sapnet.logger.info("(3/10)Generating stimulus pair list: %s", return_pairlist)
         return return_pairlist
 
 
     @staticmethod
     def stimulus_add_value(path_quantity,path_weight,last_list,pairA,pairB):
-        print("DEBUG : (7/10)calculation stimulus value for pairA(", pairA, ")and pairB(", pairB,")")
-        print("DEBUG : (7/10)Lastlist before update:", last_list)  # 更新前のラストリストを表示
+        sapnet.logger.debug("(7/10)calculation stimulus value for pairA( %s )and pairB( %s )",pairA,pairB)
+        sapnet.logger.debug("(7/10)Lastlist before update: %s", last_list)  # 更新前のラストリストを表示
         last_value = last_list[pairA-1]
-        print("DEBUG : (7/10)pickup last value pair(",pairA,"):", last_value)  # 更新前のラストリストを表示
+        sapnet.logger.debug("(7/10)pickup last value pair( %s ):",pairA, last_value)  # 更新前のラストリストを表示
         N = path_quantity
         w = path_weight
         v = (1/N)*last_value*math.exp(-w)
-        print("DEBUG : (7/10)Calculation -> 1/", N, "*", last_value, " * exp(-", w, ")")
-        print("DEBUG : (7/10)Calculation -> ",v)
+        sapnet.logger.debug("(7/10)Calculation -> 1/ %s * %s * exp(- %s )",N,last_value,w)
+        sapnet.logger.debug("(7/10)Calculation -> %s",v)
         last_list[pairB-1] = v
-        print("DEBUG : (7/10)Lastlist after update:", last_list)  # 更新後のラストリストを表示
+        sapnet.logger.debug("(7/10)Lastlist after update: %s", last_list)  # 更新後のラストリストを表示
         return v,last_list
 
 
@@ -209,19 +214,19 @@ class sapnet():
                 df.iloc[i, i+1] += first_stimulus_value
             else:
                 last_list.append(0)  # それ以外の列は0を設定
-        print("DEBUG : (4/10)Creating last dataframe for stimulus", stimulus,"->",last_list)
+        sapnet.logger.debug("(4/10)Creating last dataframe for stimulus %s ->",stimulus,last_list)
         return last_list
 
 
     @staticmethod
     def df_update(df,stimulus_value,pairA,pairB):
-        print("DEBUG : (9/10)Updating DataFrame")  # デバッグ情報：データフレームの更新開始
+        sapnet.logger.debug("(9/10)Updating DataFrame")  # デバッグ情報：データフレームの更新開始
         # 数値で行と列を指定して値に1を加算
         row_index = pairB  # 行のインデックス (0から始まる)
         col_index = pairB  # 列のインデックス (0から始まる)
-        print("DEBUG : (9/10)moved from ",pairA," to ",pairB,", adding ",stimulus_value,".")
+        sapnet.logger.debug("(9/10)moved from %s to %s adding %s.",pairA,pairB,stimulus_value)
         df.iloc[row_index-1, col_index] += stimulus_value
-        print("DEBUG : (9/10)DataFrame update completed")  # デバッグ情報：データフレームの更新が完了
+        sapnet.logger.debug("(9/10)DataFrame update completed")  # デバッグ情報：データフレームの更新が完了
 
         return df
 
@@ -246,7 +251,7 @@ class sapnet():
             plt.close()
         else:
             plt.show()
-        print("DEBUG : (8/10)Make DataFrame graph")  # デバッグ情報：データフレームの更新が完了
+        sapnet.logger.debug("(8/10)Make DataFrame graph")  # デバッグ情報：データフレームの更新が完了
         return plotpoint_list
 
 
@@ -256,14 +261,14 @@ class sapnet():
         image_list = sorted([os.path.join(GIF_source_path, file) for file in os.listdir(GIF_source_path) if file.lower().endswith(".png")])
         # 画像リストが存在しない場合は処理を中止
         if not image_list:
-            print("DEBUG : (10/10)No image files found in the source path.")
+            sapnet.logger.debug("(10/10)No image files found in the source path.")
             return
         # 画像を開いてリストに格納
         images = [Image.open(img) for img in image_list]
         # GIFファイルを生成
         images[0].save(GIF_100_path, save_all=True, append_images=images[1:], duration=100, loop=0)
         images[0].save(GIF_1000_path, save_all=True, append_images=images[1:], duration=1000, loop=0)
-        print("DEBUG : (10/10)Make Gif image completed")  # デバッグ情報：データフレームの更新が完了
+        sapnet.logger.debug("(10/10)Make Gif image completed")  # デバッグ情報：データフレームの更新が完了
 
 
     @staticmethod
@@ -313,11 +318,9 @@ class sapnet():
         df_reset = df.set_index('name')
         # 空の有向グラフを作成
         G = nx.DiGraph()
-
         # ノードを追加
         for node in df_reset.index:
             G.add_node(node, size=df_reset.loc[node, node])
-
         # エッジを追加
         for source in df_reset.index:
             for target in df_reset.columns:
@@ -327,23 +330,17 @@ class sapnet():
                     if edge_value > 0.0:
                         # 0.0でない場合のみエッジを追加
                         G.add_edge(source, target, weight=edge_value)
-
         # ネットワークを可視化
         pos = nx.spring_layout(G)  # レイアウト設定
         node_sizes = [G.nodes[node]['size'] * 5000 for node in G.nodes]  # ノードのサイズを設定
-
         # エッジの太さを逆にする
         edge_widths = [1 / G.edges[edge]['weight'] * 1.5 for edge in G.edges]
-
         nx.draw_networkx_nodes(G, pos, node_size=node_sizes, node_color='skyblue', alpha=0.7)
         nx.draw_networkx_edges(G, pos, width=edge_widths, edge_color='gray', alpha=0.7)
         nx.draw_networkx_labels(G, pos, font_size=8, font_color='black')
-
         edge_labels = {(source, target): f"{G.edges[(source, target)]['weight']:.1f}" for source, target in G.edges}
         nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_color='red')
-
         plt.title("既存知識の類似度ネットワーク")
-
         # グラフを出力
         plt.savefig(Network_path)
         plt.close()
@@ -355,7 +352,8 @@ class sapnet():
         transposed_plotpoint_list = [list(row) for row in zip(*plotpoint_list)]
 
         plt.figure(figsize=(10, 6))  # グラフ全体のサイズを設定
-        print(transposed_plotpoint_list)
+        sapnet.logger.debug("The data list is as follows: %s",transposed_plotpoint_list)
+
         # 各データ列に対して折れ線グラフをプロット
         for data_list in transposed_plotpoint_list:
             name = data_list[0]
@@ -377,30 +375,37 @@ class sapnet():
 
 
     @staticmethod
-    def stimulus_calc(df=None,stimulus=1,first_stimulus_value=1.0):
+    def stimulus_calc(df=None, stimulus=1, first_stimulus_value=1.0, debug=0, graph=0):
+        if debug==0:
+            logging.getLogger(__name__).setLevel(logging.CRITICAL)
+        if debug==1:
+            logging.getLogger(__name__).setLevel(logging.INFO)
+        if debug==2:
+            logging.getLogger(__name__).setLevel(logging.DEBUG)
         if df is None:# データフレームが指定されなかった場合、デフォルトで生成
             df = sapnet.example_dataframe()
-        print("\033[31mINFO  : Sapnet's algorithm, Start the calculations.\033[0m")  # ANSIエスケープコードを使って赤文字に設定
+        sapnet.logger.info("Sapnet's algorithm, Start the calculations.")
         pair_list = sapnet.stimulus_pairlist(df,stimulus)
         last_list = sapnet.last_dataframe_setting(df,stimulus,first_stimulus_value)
-        folder_name,Heatmap_path,Network_path,Plotpoint_path,GIF_source_path,GIF_100_path,GIF_1000_path = sapnet.makeup_folder()
-        sapnet.create_heatmap(df,Heatmap_path)
-        plotpoint_list = [list(df['name'])]
+        if graph == 1:
+            folder_name,Heatmap_path,Network_path,Plotpoint_path,GIF_source_path,GIF_100_path,GIF_1000_path = sapnet.makeup_folder()
+            sapnet.create_heatmap(df,Heatmap_path)
+            plotpoint_list = [list(df['name'])]
 
         for pair in pair_list:
             paths = sapnet.path_count(df,pair[0])
             weight = sapnet.path_weight(df,pair[0],pair[1])
             stimulus_value,last_list = sapnet.stimulus_add_value(paths,weight,last_list,pair[0],pair[1])
-            plotpoint_list=sapnet.create_graph(df,GIF_source_path,plotpoint_list)
+            if graph == 1:
+                plotpoint_list=sapnet.create_graph(df,GIF_source_path,plotpoint_list)
             df = sapnet.df_update(df,stimulus_value,pair[0],pair[1])
         
-        plotpoint_list=sapnet.create_graph(df,GIF_source_path,plotpoint_list)
-        #plotpoint_listを使用して、点グラフ推移図を作成可能
-        #グラフを作成するかどうかを選択することができる
-        #デバック出力をするかどうかを選択することができる
-        sapnet.create_plotpoint(plotpoint_list,Plotpoint_path)
-        sapnet.create_network(df,Network_path)
-        sapnet.create_gif(GIF_source_path,GIF_100_path,GIF_1000_path)
+        if graph == 1:
+            plotpoint_list=sapnet.create_graph(df,GIF_source_path,plotpoint_list)
+            #グラフを作成するかどうかを選択することができる
+            sapnet.create_plotpoint(plotpoint_list,Plotpoint_path)
+            sapnet.create_network(df,Network_path)
+            sapnet.create_gif(GIF_source_path,GIF_100_path,GIF_1000_path)
         return df
     
     

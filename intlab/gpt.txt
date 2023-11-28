@@ -1,0 +1,44 @@
+import logging
+
+class sapnet():
+    # ログの設定
+    logging.basicConfig(level=logging.INFO)
+    logger = logging.getLogger(__name__)
+
+    @staticmethod
+    def array4DataFrame(array):
+        sapnet.logger.debug("(0/10)Converting array to DataFrame")
+        # ... 省略
+
+    # 他のメソッドも同様にログを追加
+
+    @staticmethod
+    def stimulus_calc(df=None, stimulus=1, first_stimulus_value=1.0, debug=False):
+        if debug:
+            logging.getLogger(__name__).setLevel(logging.DEBUG)
+        else:
+            logging.getLogger(__name__).setLevel(logging.INFO)
+
+        if df is None:
+            df = sapnet.example_dataframe()
+
+        sapnet.logger.info("Sapnet's algorithm, Start the calculations.")
+        
+        pair_list = sapnet.stimulus_pairlist(df, stimulus)
+        last_list = sapnet.last_dataframe_setting(df, stimulus, first_stimulus_value)
+        folder_name, Heatmap_path, Network_path, Plotpoint_path, GIF_source_path, GIF_100_path, GIF_1000_path = sapnet.makeup_folder()
+        sapnet.create_heatmap(df, Heatmap_path)
+        plotpoint_list = []
+
+        for pair in pair_list:
+            paths = sapnet.path_count(df, pair[0])
+            weight = sapnet.path_weight(df, pair[0], pair[1])
+            stimulus_value, last_list = sapnet.stimulus_add_value(paths, weight, last_list, pair[0], pair[1])
+            plotpoint_list = sapnet.create_graph(df, GIF_source_path, plotpoint_list)
+            df = sapnet.df_update(df, stimulus_value, pair[0], pair[1])
+
+        plotpoint_list = sapnet.create_graph(df, GIF_source_path, plotpoint_list)
+        sapnet.create_network(df, Network_path)
+        sapnet.create_gif(GIF_source_path, GIF_100_path, GIF_1000_path)
+        
+        return df
