@@ -382,7 +382,7 @@ class sapnet():
             logging.getLogger(__name__).setLevel(logging.INFO)
         if debug==2:
             logging.getLogger(__name__).setLevel(logging.DEBUG)
-        if df is None:# データフレームが指定されなかった場合、デフォルトで生成
+        if df is None:
             df = sapnet.example_dataframe()
         sapnet.logger.info("Sapnet's algorithm, Start the calculations.")
         pair_list = sapnet.stimulus_pairlist(df,stimulus)
@@ -402,7 +402,6 @@ class sapnet():
         
         if graph == 1:
             plotpoint_list=sapnet.create_graph(df,GIF_source_path,plotpoint_list)
-            #グラフを作成するかどうかを選択することができる
             sapnet.create_plotpoint(plotpoint_list,Plotpoint_path)
             sapnet.create_network(df,Network_path)
             sapnet.create_gif(GIF_source_path,GIF_100_path,GIF_1000_path)
