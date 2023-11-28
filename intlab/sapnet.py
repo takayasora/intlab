@@ -350,8 +350,30 @@ class sapnet():
 
 
     @staticmethod
-    def create_plotpoint(plotpoint_list,Plotpoint_path):
-        None
+    def create_plotpoint(plotpoint_list, plotpoint_path):
+        # 実際にプロットしたいデータ
+        transposed_plotpoint_list = [list(row) for row in zip(*plotpoint_list)]
+
+        plt.figure(figsize=(10, 6))  # グラフ全体のサイズを設定
+        print(transposed_plotpoint_list)
+        # 各データ列に対して折れ線グラフをプロット
+        for data_list in transposed_plotpoint_list:
+            name = data_list[0]
+            data = data_list[1:]
+            plt.plot(range(len(data)), data, marker='o', label=name)
+
+        plt.title('活性値の推移 (減衰なし)')  # グラフのタイトル
+        plt.xlabel('count')  # X軸のラベル
+        plt.ylabel('活性値')  # Y軸のラベル
+        plt.ylim(0, 1.0)  # Y軸の上限値を調整
+        plt.legend()  # 凡例を表示
+
+        # x軸のラベルを1毎に表示
+        x_values = list(range(len(data)))
+        plt.xticks(x_values, x_values)
+        plt.savefig(plotpoint_path)
+        plt.close()
+
 
 
     @staticmethod
@@ -363,7 +385,7 @@ class sapnet():
         last_list = sapnet.last_dataframe_setting(df,stimulus,first_stimulus_value)
         folder_name,Heatmap_path,Network_path,Plotpoint_path,GIF_source_path,GIF_100_path,GIF_1000_path = sapnet.makeup_folder()
         sapnet.create_heatmap(df,Heatmap_path)
-        plotpoint_list = []
+        plotpoint_list = [list(df['name'])]
 
         for pair in pair_list:
             paths = sapnet.path_count(df,pair[0])
@@ -376,7 +398,9 @@ class sapnet():
         #plotpoint_listを使用して、点グラフ推移図を作成可能
         #グラフを作成するかどうかを選択することができる
         #デバック出力をするかどうかを選択することができる
-        #sapnet.create_plotpoint(plotpoint_list,Plotpoint_path)
+        sapnet.create_plotpoint(plotpoint_list,Plotpoint_path)
         sapnet.create_network(df,Network_path)
         sapnet.create_gif(GIF_source_path,GIF_100_path,GIF_1000_path)
         return df
+    
+    
