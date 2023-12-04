@@ -87,6 +87,16 @@ Installをクリックでインストールが開始します。
 こちらも、バージョンが表示されればインストールは成功です。
 ![image](https://qiita-image-store.s3.amazonaws.com/0/81226/84d3dccc-f543-817e-2f9e-230f3100ad44.png)
 
-### cmdからアップロード
-`npm -i`
-`npm -run build`
+### Visual Studio Codeで拡張機能をインストール
+次に拡張機能をインストールしていきます。
+![image](https://gyazo.com/d762038878d7570dfe58c5c47a5c74b6.png)
+
+![image](https://gyazo.com/6d832687fe48c08695d237fbb7fec120.png)
+
+![image](https://gyazo.com/1a9e60ebe0d8e2fcd93290ca35b33f9b.png)
+
+
+```npm
+npm -i
+npm -run build
+```
