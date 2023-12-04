@@ -17,9 +17,7 @@ class sapnet():
     # ログの設定
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger(__name__)
-    load_dotenv('../test.env')
-
-
+    load_dotenv('./test.env')
 
     @staticmethod
     def array4DataFrame(array):
@@ -76,7 +74,63 @@ class sapnet():
         
         return df
 
-    
+    @staticmethod
+    def create_gitignore():
+        gitignore_path = '.gitignore'
+        # .gitignore ファイルの内容
+        gitignore_content = "# api keys\n.env\n"
+
+        # 既に .gitignore ファイルが存在する場合は処理を停止
+        if os.path.exists(gitignore_path):
+            print(f"{gitignore_path} ファイルは既に存在しています。処理を停止します。")
+            return
+
+        try:
+            # .gitignore ファイルを作成し、内容を書き込む
+            with open(gitignore_path, 'w') as gitignore_file:
+                gitignore_file.write(gitignore_content)
+            print(f"{gitignore_path} ファイルが作成され、内容が書き込まれました。")
+        except Exception as e:
+            print(f"エラー: {e}")
+            
+    @staticmethod
+    def create_env():
+        env_path = '.env'
+
+        # .env ファイルの内容
+        env_content = [
+            "LINE_NOTIFY_TOKEN=",
+            "DATABASE_URL=your_database_url",
+            "API_KEY=your_api_key"
+        ]
+
+        # 既に .env ファイルが存在する場合は処理を停止
+        if os.path.exists(env_path):
+            print(f"{env_path} ファイルは既に存在しています。処理を停止します。")
+            return
+
+        try:
+            # .env ファイルを作成し、内容を書き込む
+            with open(env_path, 'w') as env_file:
+                # 最初の行だけ入力を促す
+                first_line = env_content[0]
+                user_input = input(f"Enter value for {first_line.split('=')[0]}: ")
+                env_file.write(f"{first_line}{user_input}\n")
+
+                # 残りの行は元の内容を書き込む
+                for line in env_content[1:]:
+                    env_file.write(f"{line}\n")
+
+            print(f"{env_path} ファイルが作成され、内容が書き込まれました。")
+        except Exception as e:
+            print(f"エラー: {e}")
+
+    @staticmethod
+    def firstsetup():
+        # 関数を呼び出して .gitignore ファイルを作成
+        sapnet.create_gitignore()
+        sapnet.create_env()
+        
     @staticmethod
     # 拡散する先をソートして返します。
     def next_Allpair(df,stimulus):#sapnetモジュール内で使用
