@@ -5,8 +5,9 @@
 </h1>
 
 # Welcome to INTLAB
-Hello. I am Takaya, a researcher belonging to the Intelligent Information Systems Laboratory.<br>
-The purpose of this repository is to summarize the development program in the Intelligent Information Systems Laboratory and to share it with the world.
+
+Hello, I'm Takaya, a researcher in the Intelligent Information Systems Laboratory.<br>
+In this repository, our goal is to compile development programs conducted in the Intelligent Information Systems Laboratory and share them globally in the future.
 
 # Membar List
 | Hitoshi Kono(Teacher)                                                                                                                            | Sora Takaya(coder)                                                                                                                                           | Yuki Toriyabe                                                                                                                     | Kanato Suga                                                                                                                    | Mizuki Kobayashi                                                                                                                    |
