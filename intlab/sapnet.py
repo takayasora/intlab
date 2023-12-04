@@ -9,13 +9,18 @@ import seaborn as sns
 import japanize_matplotlib
 import networkx as nx
 import logging
+import requests
+from dotenv import load_dotenv
 
 
 class sapnet():
     # ログの設定
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger(__name__)
-    
+    load_dotenv('../test.env')
+
+
+
     @staticmethod
     def array4DataFrame(array):
         sapnet.logger.debug("(0/10)Converting array to DataFrame")
@@ -372,6 +377,18 @@ class sapnet():
         plt.savefig(plotpoint_path)
         plt.close()
 
+    @staticmethod
+    def send_line_notify(notification_message):
+        # 環境変数を読み込む
+        line_notify_token = os.environ.get('LINE_NOTIFY_TOKEN')        
+        #LINEに通知する
+        if line_notify_token is None:
+            print("LINE_NOTIFY_TOKENが設定されていません。")
+            return
+        line_notify_api = 'https://notify-api.line.me/api/notify'
+        headers = {'Authorization': f'Bearer {line_notify_token}'}
+        data = {'message': f'\n{notification_message}'}
+        requests.post(line_notify_api, headers = headers, data = data)
 
 
     @staticmethod
