@@ -5,14 +5,14 @@
 </h1>
 
 # Welcome to INTLAB
-こんにちは。私は知能情報システム研究室に所属する研究員の高矢です。
+こんにちは。私は知能情報システム研究室に所属する研究員の高矢です。<br>
 このリポジトリでは今後知能情報システム研究室における開発プログラムをまとめ世界に発信することを目的としています。
 
 
 # Membar List
-| Kono Hitoshi                                                                                                                            | Takaya Sora                                                                                                                                           | Toriyabe Yuki                                                                                                                    | Suga Kanato                                                                                                                    | Kobayashi Mizuki                                                                                                                    |
+| 河野 仁(Teacher)                                                                                                                            | 高矢 空(coder)                                                                                                                                           | 鳥谷部 悠希                                                                                                                     | 須賀 哉斗                                                                                                                    | 小林 瑞稀                                                                                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://researchmap.jp/kono/avatar.jpg" width="128">              | <img src="https://pypi-camo.global.ssl.fastly.net/d4659d3927578919f40fee55b9a2ec1b0185b825/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f30373962313764396439356362313263373230643465663538376366313036373f73697a653d323235" width="128">                                  | <img src="https://salon-cherie.com/wp/wp-content/uploads/2018/12/noimage-300x300.jpg" width="128">                                                                                                 | <img src="https://salon-cherie.com/wp/wp-content/uploads/2018/12/noimage-300x300.jpg" width="128">                                                                                                 | <img src="https://salon-cherie.com/wp/wp-content/uploads/2018/12/noimage-300x300.jpg" width="128">                                                                                                 |
+| <img src="https://researchmap.jp/kono/avatar.jpg" width="128">              | <img src="https://pypi-camo.global.ssl.fastly.net/d4659d3927578919f40fee55b9a2ec1b0185b825/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f30373962313764396439356362313263373230643465663538376366313036373f73697a653d323235" width="128">                                  | <img src="./base/source/tori.jpg" width="128">                                                                                                 | <img src="https://salon-cherie.com/wp/wp-content/uploads/2018/12/noimage-300x300.jpg" width="128">                                                                                                 | <img src="https://salon-cherie.com/wp/wp-content/uploads/2018/12/noimage-300x300.jpg" width="128">                                                                                                 |
 
 # バッジ
 [![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](
@@ -64,10 +64,5 @@ df = sapnet.stimulus_calc()
 ## ライセンス
   大学の卒業研究で作成したパッケージの明確な[ライセンス情報](https://takayasora.github.io/intlab/6-LICENSE.html)を提供する
 
-<!--
-NumPy is a community-driven open source project developed by a diverse group of
-[contributors](https://numpy.org/teams/). The NumPy leadership has made a strong
-commitment to creating an open, inclusive, and positive community. Please read the
-[NumPy Code of Conduct](https://numpy.org/code-of-conduct/) for guidance on how to interact
-with others in a way that makes our community thrive.
--->
+## 詳細な情報
+  詳細な情報についてはこちらの[Webページ](https://takayasora.github.io/intlab/)にまとめて記載されている
