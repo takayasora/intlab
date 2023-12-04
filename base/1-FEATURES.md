@@ -1,5 +1,22 @@
 # 機能
 
-- 機能1: 〇〇
-- 機能2: 〇〇
-- ...
+- array4DataFrame(array): 配列をDataFrameに変換し、行番号とヘッダーを追加して返す。
+- DataFrame4array(df): DataFrameを配列に変換して返す。
+- example_data(): サンプルデータを返す。
+- example_dataframe(): サンプルデータを含むDataFrameを返す。
+- next_Allpair(df, stimulus): 指定された刺激に対して、拡散する先をソートして返す。
+- already_pair_remove(pair_list, already_list): 既に存在するペアを除外したリストを返す。
+- path_count(df, stimulus): 指定された刺激に対する経路の数をカウントして返す。
+- path_weight(df, stimulus, receive): 指定された経路の重みを返す。
+- stimulus_pairlist(df, stimulus): 刺激に対する拡散可能なペアのリストを生成して返す。
+- stimulus_add_value(path_quantity, path_weight, last_list, pairA, pairB): 刺激値の計算と更新を行い、新しい刺激値と更新後のリストを返す。
+- last_dataframe_setting(df, stimulus, first_stimulus_value): 初期刺激値を指定して、新しいデータフレームの最終列を作成する。
+- df_update(df, stimulus_value, pairA, pairB): データフレームを更新して返す。
+- create_graph(df, GIF_source_path, plotpoint_list): データフレームからグラフを作成し、GIFソースパスに保存する。
+- create_gif(GIF_source_path, GIF_100_path, GIF_1000_path): GIF用の画像ファイルを生成する。
+- attenuation(df, attenuation_percentage): データフレームの値を指定した割合で削減する。
+- makeup_folder(): 出力用のフォルダパスと各種ファイルパスを作成して返す。
+- create_heatmap(df, Heatmap_path): ヒートマップを作成し、指定されたパスに保存する。
+- create_network(df, Network_path): ネットワーク図を作成し、指定されたパスに保存する。
+- create_plotpoint(plotpoint_list, Plotpoint_path): プロットポイントを作成する。
+- stimulus_calc(df=None, stimulus=1, first_stimulus_value=1.0): サンプルデータを用いて刺激計算を行い、データフレームを返す。
