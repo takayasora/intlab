@@ -1,8 +1,11 @@
 # intlab
 
-ここに説明を書いていく
-
 Membar List
+| Kono Hitoshi                                                                                                                            | Takaya Sora                                                                                                                                           | Toriyabe Yuki                                                                                                                    | Suga Kanato                                                                                                                    | Kobayashi Mizuki                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| ![Image 1](URL_to_image_1)              | ![Image 2](URL_to_image_2)                                  | ![Image 3](URL_to_image_3)                                                                                                 | ![Image 4](URL_to_image_4)                                                                                                 | ![Image 5](URL_to_image_5)                                                                                                 |
+
+
 
 
 | YouTube 128×128                                                                                                                            | Twitter 128×128                                                                                                                                           |
@@ -12,7 +15,7 @@ Membar List
 
 <h1 align="center">
 <a href="https://takayasora.com">
-  <img src="./base/source/welcome.gif" alt="Sora's GitHub Banner" width="1280">
+  <img src="../base/source/welcome.gif" alt="Sora's GitHub Banner" width="1280">
 </a>
 </h1>
 </br>
@@ -30,71 +33,47 @@ https://stackoverflow.com/questions/tagged/numpy)
 https://doi.org/10.1038/s41586-020-2649-2)
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/numpy/numpy/badge)](https://api.securityscorecards.dev/projects/github.com/numpy/numpy)
 
+## 概要
+intlabとは、東京電機大学 知能情報システム研究室が開発したPythonを使用した機械学習サポート用のパッケージ群です
 
-NumPy is the fundamental package for scientific computing with Python.
-
-- **Website:** https://www.numpy.org
-- **Documentation:** https://numpy.org/doc
+- **Website:** https://takayasora.github.io/intlab/
+- **Documentation:** https://takayasora.github.io/intlab/4-BUILD_INSTALL.html
 - **Mailing list:** https://mail.python.org/mailman/listinfo/numpy-discussion
-- **Source code:** https://github.com/numpy/numpy
-- **Contributing:** https://www.numpy.org/devdocs/dev/index.html
-- **Bug reports:** https://github.com/numpy/numpy/issues
-- **Report a security vulnerability:** https://tidelift.com/docs/security
+- **Source code:** https://github.com/takayasora/intlab
+- **Bug reports:** https://github.com/takayasora/intlab/issue
 
-It provides:
+## パッケージ
+- sapnet
+- and more...
+  
+## 使用バージョン
+sapnetは以下のパッケージを用いて作成しています
+- pillow 9.5.0
+- matplotlib 3.7.1
+- pandas 2.0.0
+- numpy 1.23.5
+- seaborn 0.12.2
+- japanize-matplotlib 1.1.3
+- networkx 3.1
 
-- a powerful N-dimensional array object
-- sophisticated (broadcasting) functions
-- tools for integrating C/C++ and Fortran code
-- useful linear algebra, Fourier transform, and random number capabilities
+## sapnetの導入テスト
+sapnetは以下のコードを実行することでテストすることができます
 
-Testing:
+```Python
+import intlab
 
-NumPy requires `pytest` and `hypothesis`.  Tests can then be run after installation with:
+sapnet = intlab.sapnet
 
-    python -c "import numpy, sys; sys.exit(numpy.test() is False)"
+df = sapnet.stimulus_calc()
+```
 
-Code of Conduct
-----------------------
+## ライセンス
+  大学の卒業研究で作成したパッケージの明確な[ライセンス情報](https://takayasora.github.io/intlab/6-LICENSE.html)を提供する
 
+<!--
 NumPy is a community-driven open source project developed by a diverse group of
 [contributors](https://numpy.org/teams/). The NumPy leadership has made a strong
 commitment to creating an open, inclusive, and positive community. Please read the
 [NumPy Code of Conduct](https://numpy.org/code-of-conduct/) for guidance on how to interact
 with others in a way that makes our community thrive.
-
-Call for Contributions
-----------------------
-
-The NumPy project welcomes your expertise and enthusiasm!
-
-Small improvements or fixes are always appreciated. If you are considering larger contributions
-to the source code, please contact us through the [mailing
-list](https://mail.python.org/mailman/listinfo/numpy-discussion) first.
-
-Writing code isn’t the only way to contribute to NumPy. You can also:
-- review pull requests
-- help us stay on top of new and old issues
-- develop tutorials, presentations, and other educational materials
-- maintain and improve [our website](https://github.com/numpy/numpy.org)
-- develop graphic design for our brand assets and promotional materials
-- translate website content
-- help with outreach and onboard new contributors
-- write grant proposals and help with other fundraising efforts
-
-For more information about the ways you can contribute to NumPy, visit [our website](https://numpy.org/contribute/). 
-If you’re unsure where to start or how your skills fit in, reach out! You can
-ask on the mailing list or here, on GitHub, by opening a new issue or leaving a
-comment on a relevant issue that is already open.
-
-Our preferred channels of communication are all public, but if you’d like to
-speak to us in private first, contact our community coordinators at
-numpy-team@googlegroups.com or on Slack (write numpy-team@googlegroups.com for
-an invitation).
-
-We also have a biweekly community call, details of which are announced on the
-mailing list. You are very welcome to join.
-
-If you are new to contributing to open source, [this
-guide](https://opensource.guide/how-to-contribute/) helps explain why, what,
-and how to successfully get involved.
+-->
