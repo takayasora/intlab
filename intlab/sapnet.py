@@ -272,7 +272,7 @@ class sapnet():
 
 
     @staticmethod
-    def attenuation(df,attenuation_percentage):
+    def attenuation(df,attenuation_percentage):#減衰関数
         # 少数で指定された数値分削る関数
         # 元のデータフレームの長さを取得
         length = len(df)
