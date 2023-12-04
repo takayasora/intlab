@@ -30,11 +30,11 @@ https://doi.org/10.1038/s41586-020-2649-2)
 ## 概要
 intlabとは、東京電機大学 知能情報システム研究室が開発したPythonを使用した機械学習サポート用のパッケージ群です
 
-- **Website:** https://takayasora.github.io/intlab/
-- **Documentation:** https://takayasora.github.io/intlab/4-BUILD_INSTALL.html
-- **Mailing list:** https://mail.python.org/mailman/listinfo/numpy-discussion
-- **Source code:** https://github.com/takayasora/intlab
-- **Bug reports:** https://github.com/takayasora/intlab/issue
+- **ウェブサイト　:** https://takayasora.github.io/intlab/
+- **ドキュメント　:** https://takayasora.github.io/intlab/4-BUILD_INSTALL.html
+- **メールリスト　:** https://mail.python.org/mailman/listinfo/numpy-discussion
+- **ソースコード　:** https://github.com/takayasora/intlab
+- **バグレポート　:** https://github.com/takayasora/intlab/issue
 
 ## パッケージ
 - sapnet
