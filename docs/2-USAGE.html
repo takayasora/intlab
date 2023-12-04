@@ -312,6 +312,41 @@
 <img src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/453711/9e291332-d3b2-2efc-1a82-8d08da95b898.png" alt="IMG_4290.png"></p>
 <h2 id="エディターでの作業"><a name="エディターでの作業" class="plugin-anchor" href="#エディターでの作業"><i class="fa fa-link" aria-hidden="true"></i></a>エディターでの作業</h2>
 <p>setupmacroを開く。</p>
+<h2 id="webページをアップデート方法"><a name="webページをアップデート方法" class="plugin-anchor" href="#webページをアップデート方法"><i class="fa fa-link" aria-hidden="true"></i></a>Webページをアップデート方法</h2>
+<h3 id="1インストーラーのダウンロード"><a name="1インストーラーのダウンロード" class="plugin-anchor" href="#1インストーラーのダウンロード"><i class="fa fa-link" aria-hidden="true"></i></a>1.インストーラーのダウンロード</h3>
+<p>下記サイトからインストーラーをダウンロードします。
+<a href="http://nodejs.org/" target="_blank">http://nodejs.org/</a></p>
+<p>Download &gt; Windows Installer をクリックするとカレントバージョンの自身のPCに合わせたインストーラーがダウンロードされます。
+明示的に、32bit版、64bit版、バイナリ版など指定したい場合は、それぞれの項目をクリックするとダウンロードが開始します。
+<img src="https://qiita-image-store.s3.amazonaws.com/0/81226/f4d3989f-b714-e58e-513f-0e8fbdfbcfe8.png" alt="031.png"></p>
+<h3 id="2インストール"><a name="2インストール" class="plugin-anchor" href="#2インストール"><i class="fa fa-link" aria-hidden="true"></i></a>2.インストール</h3>
+<p>実行します。
+<img src="https://qiita-image-store.s3.amazonaws.com/0/81226/d30d1e36-0b62-0aa5-70c7-f98ace44e332.png" alt="image"></p>
+<p>Nextをクリック。
+<img src="https://qiita-image-store.s3.amazonaws.com/0/81226/8e5b3a94-3614-a839-d9b8-ae18b91d2ad2.png" alt="image"></p>
+<p>ライセンス規約へ同意しNextをクリック。
+<img src="https://qiita-image-store.s3.amazonaws.com/0/81226/1687a4a7-dd8f-ea82-715b-d2eee263f7d0.png" alt="image"></p>
+<p>インストールフォルダを選択しNextをクリック。（インストール先は任意の場所でOKです）
+<img src="https://qiita-image-store.s3.amazonaws.com/0/81226/3f926063-c284-b628-062c-76f73eb3064f.png" alt="image"></p>
+<p>インストールするコンポーネントを選択しNextをクリック。基本デフォルトでOKです。
+<img src="https://qiita-image-store.s3.amazonaws.com/0/81226/3d6bccc4-19f4-8923-3db4-152005748de8.png" alt="image"></p>
+<p>Installをクリックでインストールが開始します。
+<img src="https://qiita-image-store.s3.amazonaws.com/0/81226/8dea0118-e75a-ded0-7291-a23b8c9d03be.png" alt="image"></p>
+<p><img src="https://qiita-image-store.s3.amazonaws.com/0/81226/79ae1d54-8d39-dd78-1641-340c9a634c2b.png" alt="image"></p>
+<p>特に問題がなければインストールが完了します。Finishをクリック。
+<img src="https://qiita-image-store.s3.amazonaws.com/0/81226/7dd648cf-972a-caa6-3405-9ebcedc3bf87.png" alt="image"></p>
+<p>コマンドプロンプトから下記のコマンドを実行します。
+<code>node --version</code></p>
+<p>バージョンが表示されればインストールは成功です。
+<img src="https://qiita-image-store.s3.amazonaws.com/0/81226/df7603c8-078d-197e-17a8-d84c52c935c9.png" alt="image"></p>
+<p>もうひとつ、npmも同時にインストールされているはずなのでこちらもチェックします。
+コマンドプロンプトから下記のコマンドを実行します。
+<code>npm --version</code></p>
+<p>こちらも、バージョンが表示されればインストールは成功です。
+<img src="https://qiita-image-store.s3.amazonaws.com/0/81226/84d3dccc-f543-817e-2f9e-230f3100ad44.png" alt="image"></p>
+<h3 id="cmdからアップロード"><a name="cmdからアップロード" class="plugin-anchor" href="#cmdからアップロード"><i class="fa fa-link" aria-hidden="true"></i></a>cmdからアップロード</h3>
+<p><code>npm -i</code>
+<code>npm -run build</code></p>
 
                                 
                                 </section>
@@ -355,7 +390,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"使用法","level":"1.3","depth":1,"next":{"title":"依存関係","level":"1.4","depth":1,"path":"3-DEPENDENCIES.md","ref":"./3-DEPENDENCIES.md","articles":[]},"previous":{"title":"機能","level":"1.2","depth":1,"path":"1-FEATURES.md","ref":"./1-FEATURES.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"知能情報システム研究室","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"2-USAGE.md","mtime":"2023-12-04T08:11:51.089Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2023-12-04T08:46:10.296Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"使用法","level":"1.3","depth":1,"next":{"title":"依存関係","level":"1.4","depth":1,"path":"3-DEPENDENCIES.md","ref":"./3-DEPENDENCIES.md","articles":[]},"previous":{"title":"機能","level":"1.2","depth":1,"path":"1-FEATURES.md","ref":"./1-FEATURES.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"知能情報システム研究室","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"2-USAGE.md","mtime":"2023-12-04T08:50:09.944Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2023-12-04T08:50:29.191Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
