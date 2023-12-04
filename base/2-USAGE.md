@@ -91,11 +91,12 @@ Installをクリックでインストールが開始します。
 次に拡張機能をインストールしていきます。
 ![image](https://gyazo.com/d762038878d7570dfe58c5c47a5c74b6.png)
 
+VSCodeの拡張機能にて「npm intellisense」をインストールします。
 ![image](https://gyazo.com/6d832687fe48c08695d237fbb7fec120.png)
 
 ![image](https://gyazo.com/1a9e60ebe0d8e2fcd93290ca35b33f9b.png)
 
-
+インストール後、使用するフォルダ内に移動し、ターミナルにて以下のコードを実行します。
 ```npm
 npm -i
 npm -run build
