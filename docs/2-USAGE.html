@@ -283,12 +283,25 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="使用法"><a name="使用法" class="plugin-anchor" href="#使用法"><i class="fa fa-link" aria-hidden="true"></i></a>使用法</h1>
+<p>ライブラリをインストールするには、pip（The Python Package Installer）と呼ばれるツールを使用します。これによりインターネットを経由したインストールが簡単にできます。</p>
+<h2 id="ライブラリのインストール"><a name="ライブラリのインストール" class="plugin-anchor" href="#ライブラリのインストール"><i class="fa fa-link" aria-hidden="true"></i></a>ライブラリのインストール</h2>
+<p>pipはコマンドで実行しますので、まずコマンドプロンプト（背景の黒い画面）を開きます。</p>
 <ol>
-<li>〇〇の設定を行います。</li>
-<li>以下のコマンドを実行して〇〇します。</li>
+<li><p>コマンドプロンプトを開く</p>
+<ol>
+<li><p>「Windowsキー + r 」を入力すると、以下のような画面が開きます。
+  <img src="source/open_cmd.png" alt="open_cmd.png"></p>
+</li>
+<li><p>「cmd」 と入力して OK をクリックするとコマンドプロンプトが開きます。</p>
+</li>
 </ol>
-<pre><code class="lang-bash">$ command-to-run
+</li>
+<li><p>pip install を実行する</p>
+<p>今回はintlabをインストールしていきます。インストールするために、以下のコードをコマンドプロンプトにて入力していきます。</p>
+<pre><code class="lang-bash">pip install intlab
 </code></pre>
+</li>
+</ol>
 <h1 id="lineに通知するには"><a name="lineに通知するには" class="plugin-anchor" href="#lineに通知するには"><i class="fa fa-link" aria-hidden="true"></i></a>Lineに通知するには</h1>
 <p>Line Notifyというツールを使用してメッセージを配信します。</p>
 <h2 id="line-notifyとは"><a name="line-notifyとは" class="plugin-anchor" href="#line-notifyとは"><i class="fa fa-link" aria-hidden="true"></i></a>LINE Notifyとは</h2>
@@ -397,7 +410,7 @@ npm -run build
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"使用法","level":"1.3","depth":1,"next":{"title":"依存関係","level":"1.4","depth":1,"path":"3-DEPENDENCIES.md","ref":"./3-DEPENDENCIES.md","articles":[]},"previous":{"title":"機能","level":"1.2","depth":1,"path":"1-FEATURES.md","ref":"./1-FEATURES.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"知能情報システム研究室","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"2-USAGE.md","mtime":"2023-12-04T09:15:53.771Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2023-12-04T09:19:13.139Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"使用法","level":"1.3","depth":1,"next":{"title":"依存関係","level":"1.4","depth":1,"path":"3-DEPENDENCIES.md","ref":"./3-DEPENDENCIES.md","articles":[]},"previous":{"title":"機能","level":"1.2","depth":1,"path":"1-FEATURES.md","ref":"./1-FEATURES.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","hide-published-with","copy-code-button","intopic-toc","back-to-top-button"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"intopic-toc":{"selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","mode":"nested","maxDepth":6,"isCollapsed":true,"isScrollspyActive":true,"visible":true,"label":"In this article"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"知能情報システム研究室","language":"ja","gitbook":"*","description":"詳細説明"},"file":{"path":"2-USAGE.md","mtime":"2023-12-07T02:59:17.194Z","type":"markdown"},"gitbook":{"version":"3.7.4","time":"2023-12-07T03:00:31.776Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
