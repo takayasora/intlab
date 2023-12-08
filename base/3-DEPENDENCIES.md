@@ -1,6 +1,11 @@
 # 依存関係
 
-- ライブラリ1: バージョンX.X.X
-- ライブラリ2: バージョンY.Y.Y
-- ...
+- Python: 3.11.4
+- pillow: 9.5.0
+- matplotlib: 3.7.1
+- pandas: 2.0.0
+- numpy: 1.23.5
+- seaborn: 0.12.2
+- japanize-matplotlib: 1.1.3
+- networkx: 3.1
 
