@@ -477,5 +477,3 @@ class sapnet():
             sapnet.create_network(df,Network_path)
             sapnet.create_gif(GIF_source_path,GIF_100_path,GIF_1000_path)
         return df
-    
-    
