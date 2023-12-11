@@ -457,7 +457,34 @@ class sapnet():
         # 元のリストの中でのインデックスを取得
         original_index = np.where(diagonal_matrix >= 1)[0][selected_index]
         return original_index
-        
+    
+    def count_elements(lst):
+        max_element = max(lst)  # リスト内の最大値を取得
+        element_count = [0] * (max_element + 1)  # 要素番号0から最大値までの出現回数を格納するリストを初期化
+        for element in lst:
+            element_count[element] += 1
+        return element_count
+
+    def create_selection_graph(data):
+        # データ
+        labels = list(range(len(data)))  # データの数に対応するラベルを0から順に生成
+
+        # 棒グラフの描画
+        plt.bar(labels, data)
+
+        # グラフにタイトルやラベルを追加
+        plt.title('Bar Chart')
+        plt.xlabel('Category')
+        plt.ylabel('Value')
+
+        # x軸のラベルを設定
+        plt.xticks(labels)
+
+        # グラフを表示
+        plt.show()
+
+    
+
     @staticmethod
     def stimulus_calc(df=None, stimulus=1, first_stimulus_value=1.0, debug=0, graph=0):
         if debug==0:
