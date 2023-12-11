@@ -444,7 +444,20 @@ class sapnet():
         data = {'message': f'\n{notification_message}'}
         requests.post(line_notify_api, headers = headers, data = data)
 
-
+    @staticmethod
+    def knowledge_selection(df):
+        diagonal_matrix = np.diag(df.iloc[:, 1:].values)
+        # 1未満の要素を含めずに新しい配列を作成
+        valid_elements = diagonal_matrix[diagonal_matrix >= 1]
+        # ソフトマックス関数を適用
+        exp_values = np.exp(valid_elements - np.max(valid_elements))
+        softmax_values = exp_values / np.sum(exp_values)
+        # np.random.choiceを使用してランダムに選択
+        selected_index = np.random.choice(len(valid_elements), p=softmax_values)
+        # 元のリストの中でのインデックスを取得
+        original_index = np.where(diagonal_matrix >= 1)[0][selected_index]
+        return original_index
+        
     @staticmethod
     def stimulus_calc(df=None, stimulus=1, first_stimulus_value=1.0, debug=0, graph=0):
         if debug==0:
