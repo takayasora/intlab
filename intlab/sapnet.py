@@ -444,6 +444,18 @@ class sapnet():
         data = {'message': f'\n{notification_message}'}
         requests.post(line_notify_api, headers = headers, data = data)
 
+    @staticmethod
+    def knowledge_selection(df):
+        # 環境変数を読み込む
+        line_notify_token = os.environ.get('LINE_NOTIFY_TOKEN')        
+        #LINEに通知する
+        if line_notify_token is None:
+            print("LINE_NOTIFY_TOKENが設定されていません。")
+            return
+        line_notify_api = 'https://notify-api.line.me/api/notify'
+        headers = {'Authorization': f'Bearer {line_notify_token}'}
+        data = {'message': f'\n{notification_message}'}
+        requests.post(line_notify_api, headers = headers, data = data)
 
     @staticmethod
     def stimulus_calc(df=None, stimulus=1, first_stimulus_value=1.0, debug=0, graph=0):
