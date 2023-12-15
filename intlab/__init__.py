@@ -1,6 +1,6 @@
 from .sapnet import *
 
-__version__ = '1.3.0'
+__version__ = '1.4.0'
 
 """
 Version 0.0.5
