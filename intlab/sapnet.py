@@ -449,6 +449,7 @@ class sapnet():
         diagonal_matrix = np.diag(df.iloc[:, 1:].values)
         # 1未満の要素を含めずに新しい配列を作成
         valid_elements = diagonal_matrix[diagonal_matrix >= 1]
+        print("valid_elements",valid_elements)
         # ソフトマックス関数を適用
         exp_values = np.exp(valid_elements - np.max(valid_elements))
         softmax_values = exp_values / np.sum(exp_values)
