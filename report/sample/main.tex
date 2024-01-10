@@ -1,0 +1,105 @@
+\documentclass[12pt]{jsbook}
+\usepackage{pethesis}
+\usepackage{amsmath,amssymb,bm}
+%\usepackage{subfigure}
+\usepackage{minitoc}
+\usepackage{hhline}
+\usepackage{slashbox}
+\usepackage{booktabs}
+\usepackage[dvipdfmx, usenames]{color} %橘高追加 [usenames] → [dvipdfmx, usenames]（前者は古いドライバのため，graphicxパッケージと干渉してeps以外の画像形式に対応できなくなる）
+\usepackage{colortbl}
+\usepackage{ascmac}
+\usepackage{lscape}
+\usepackage{url}
+%\renewcommand{\refname}{}
+\usepackage{mediabb}%伊藤追加pdfの図挿入
+
+\renewcommand{\figurename}{Fig. }   % ★★★ 田中追加（図→Fig. に変更） ★★★
+\renewcommand{\tablename}{Table }   % ★★★ 田中追加（表→Table に変更） ★★★
+\newcommand{\argmax}{\mathop{\rm arg~max}\limits}   % ★★★ 田中追加 ★★★
+\newcommand{\argmin}{\mathop{\rm arg~min}\limits}  % ★★★ 田中追加 ★★★
+\usepackage{threeparttable}   % ★★★ 田中追加 ★★★
+
+\usepackage[subrefformat=parens]{subcaption} %橘高追加
+\captionsetup{compatibility=false} %橘高追加
+%\usepackage{otf} %橘高追加
+\usepackage{algorithm}%伊藤追加
+\usepackage{algorithmic}%伊藤追加
+% ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ %
+%                                          論文の表紙の項目
+% ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ %
+\thesistype{2023年度 卒業論文}
+\title{電機大河野研卒業論文テンプレート
+}
+\etitle{Bachelor Thesis Template of Kono Laboratory in Tokyo Denki University}
+\affiliation{東京電機大学 工学部 情報通信学科}
+\supervisor{准教授　河野 仁}
+\studentid{1234567}
+\author{電大 太郎}
+\begin{document}
+\dominitoc
+%表紙
+\maketitle
+%概要
+%\thispagestyle{empty}
+%\input{./Frontmatter/abst}
+
+\frontmatter
+%目次
+\tableofcontents
+%図目次
+\listoffigures
+%表目次
+\listoftables
+
+
+
+
+% ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ %
+%                                                 以下本文
+% ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ %
+\mainmatter
+\input{./chap1/chap1}
+\input{./chap2/chap2}
+\input{./chap3/chap3}
+\input{./chap4/chap4}
+\input{./chap5/chap5}
+
+
+
+% ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ %
+%                                                    謝辞
+% ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ %
+\input{./Backmatter/Thank}
+\addcontentsline{toc}{chapter}{謝辞} %   /* 目次に謝辞項を追加する */
+
+
+
+% ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ %
+%                                                 参考文献
+% ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ %
+%\bibliographystyle{plain}
+%\bibliography{Ref}
+\input{./Reference/ref}
+%\addcontentsline{toc}{chapter}{参考文献} %   /* 目次に参考文献項を追加する */
+
+
+
+% ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ %
+%                                                 研究業績
+% ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ %
+\addcontentsline{toc}{chapter}{研究業績} %   /* 目次に研究業績項を追加する */
+\input{./Backmatter/Achieve}
+
+
+
+% ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ %
+%                                                    付録
+% ☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆ %
+\appendix
+%\input{./Appendix/appendix}
+\cleardoublepage
+
+
+% 論文の最後
+\end{document}
