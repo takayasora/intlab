@@ -3,7 +3,6 @@ README.rst
 setup.py
 intlab/__init__.py
 intlab/sapnet.py
-intlab/sapnet2.py
 intlab.egg-info/PKG-INFO
 intlab.egg-info/SOURCES.txt
 intlab.egg-info/dependency_links.txt
