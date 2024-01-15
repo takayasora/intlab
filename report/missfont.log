@@ -1,7 +1,0 @@
-mktexpk --mfmode / --bdpi 600 --mag 0+555/600 --dpi 555 gbm
-mktexpk --mfmode / --bdpi 600 --mag 0+555/600 --dpi 555 gbm
-mktexpk --mfmode / --bdpi 600 --mag 0+555/600 --dpi 555 gbm
-mktexpk --mfmode / --bdpi 600 --mag 0+555/600 --dpi 555 gbm
-mktexpk --mfmode / --bdpi 600 --mag 0+555/600 --dpi 555 gbm
-mktexpk --mfmode / --bdpi 600 --mag 0+555/600 --dpi 555 gbm
-mktextfm ptmr8t

@@ -1,0 +1,231 @@
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.10.2)  14 DEC 2016 20:02
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./ref.tex
+(./ref.tex
+pLaTeX2e <2016/09/08> (based on LaTeX2e <2016/03/31> patch level 3)
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+! Undefined control sequence.
+l.1 \chapter
+            {参考文献}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \chapter{参
+               考文献}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.3 \lhead
+          [参考文献]{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--6
+[]
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 1--6
+\JY1/mc/m/n/10 参
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 1--6
+\JY1/mc/m/n/10 考
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 1--6
+\JY1/mc/m/n/10 文
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 1--6
+\JY1/mc/m/n/10 献
+ []
+
+
+Overfull \hbox (12.39995pt too wide) in paragraph at lines 1--6
+\OT1/cmr/m/n/10 [\JY1/mc/m/n/10 参
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 1--6
+\JY1/mc/m/n/10 考
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 1--6
+\JY1/mc/m/n/10 文
+ []
+
+
+Overfull \hbox (12.39995pt too wide) in paragraph at lines 1--6
+\JY1/mc/m/n/10 献\OT1/cmr/m/n/10 ]
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \newpage
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1]
+
+! LaTeX Error: Environment mythebibliography undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \begin{mythebibliography}
+                              {99}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \begin{mythebibliography}{9
+                                9}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.15 \subsection
+                *{\hspace{-2zw}＜和文文献＞}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (30.00003pt too wide) in paragraph at lines 10--16
+[]\OT1/cmr/m/n/10 99
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 10--16
+\OT1/cmr/m/n/10 *
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 10--16
+\JY1/mc/m/n/10 ＜
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 10--16
+\JY1/mc/m/n/10 和
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 10--16
+\JY1/mc/m/n/10 文
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 10--16
+\JY1/mc/m/n/10 文
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 10--16
+\JY1/mc/m/n/10 献
+ []
+
+
+Overfull \hbox (9.62216pt too wide) in paragraph at lines 10--16
+\JY1/mc/m/n/10 ＞ 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \bibitem[淺間 2014]{淺間2014}
+                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\bibcite{淺間2014}{淺間 2014}
+! Undefined control sequence.
+l.19 ^^I\newblock
+                  ``災害時に活用可能なロボット技術の研究開発と運用システムの...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.20 ^^I\newblock
+                  日本ロボット学会誌, \mbox{vol.~32}, \mbox{no.~1, \mbox{pp....
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+Runaway argument?
+{no.~1, \mbox {pp.~37--41}, 2014.\\ \par \bibitem [田所 2014]{田所201\ETC.
+! File ended while scanning use of \mbox.
+<inserted text> 
+                \par 
+<*> ./ref.tex
+             
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+! Emergency stop.
+<*> ./ref.tex
+             
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 7 strings out of 493682
+ 67 string characters out of 6152630
+ 55539 words of memory out of 5000000
+ 3675 multiletter control sequences out of 15000+600000
+ 7511 words of font info for 31 fonts, out of 8000000 for 9000
+ 929 hyphenation exceptions out of 8191
+ 17i,4n,10p,131b,106s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on ref.dvi (1 page, 292 bytes).
