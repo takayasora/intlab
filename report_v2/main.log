@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  15 JAN 2024 18:45
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  15 JAN 2024 19:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -415,6 +415,15 @@ LaTeX Warning: Label `3 RL system' multiply defined.
 LaTeX Warning: Label `3 RL system' multiply defined.
 
 
+LaTeX Warning: Label `3 simulator' multiply defined.
+
+
+LaTeX Warning: Label `3 RL system' multiply defined.
+
+
+LaTeX Warning: Label `3 RL system' multiply defined.
+
+
 LaTeX Warning: Label `3 RL system' multiply defined.
 
 
@@ -430,7 +439,10 @@ LaTeX Warning: Label `3 simulator' multiply defined.
 LaTeX Warning: Label `3 simulator' multiply defined.
 
 
-LaTeX Warning: Label `3 simulator' multiply defined.
+LaTeX Warning: Label `4 simulation environment' multiply defined.
+
+
+LaTeX Warning: Label `4 simulation environment' multiply defined.
 
 
 LaTeX Warning: Label `4 simulation environment' multiply defined.
@@ -573,24 +585,24 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
  [1
 
 
-])
+] [2])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2] (./main.lof)
+ [3] [4
+
+]
+(./main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
-
-[3
-
-] [4
+ [5] [6
 
 ] (./main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [5] [6
+ [7] [8
 
 ]
 第1章
@@ -708,24 +720,26 @@ ut line 296.
 
 ] [14
 
+] [15
+
 ]
 
-LaTeX Warning: Reference `3 reward function' on page 15 undefined on input line
- 338.
+LaTeX Warning: Reference `3 reward function' on page 16 undefined on input line
+ 351.
 
-[15
-
-] [16
+[16
 
 ]
 第4章
-(./main.mtc4) [17]
+(./main.mtc4) [17
 
-LaTeX Warning: Reference `4 single arm' on page 18 undefined on input line 358.
+]
+
+LaTeX Warning: Reference `4 single arm' on page 18 undefined on input line 371.
 
 
 
-LaTeX Warning: Reference `4 double arm' on page 18 undefined on input line 360.
+LaTeX Warning: Reference `4 double arm' on page 18 undefined on input line 373.
 
 
 [18]
@@ -743,11 +757,11 @@ File: ./chap4/chap4_fig/flat_surface.pdf Graphic file (type pdf)
 
 ]
 
-LaTeX Warning: Reference `4 single arm' on page 23 undefined on input line 439.
+LaTeX Warning: Reference `4 single arm' on page 23 undefined on input line 470.
 
 
 
-LaTeX Warning: Reference `4 double arm' on page 23 undefined on input line 443.
+LaTeX Warning: Reference `4 double arm' on page 23 undefined on input line 474.
 
 
 [23
@@ -801,10 +815,10 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  6612 strings out of 474823
  99656 string characters out of 5763802
- 1929373 words of memory out of 5000000
+ 1931373 words of memory out of 5000000
  28749 multiletter control sequences out of 15000+600000
  608312 words of font info for 159 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  72i,13n,79p,1506b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (48 pages, 119364 bytes).
+Output written on main.dvi (50 pages, 128960 bytes).
