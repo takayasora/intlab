@@ -113,3 +113,52 @@ VSCodeの拡張機能にて「npm intellisense」をインストールします�
 npm -i
 npm -run build
 ```
+# SAP-net Version Update
+## 変更点
+- sapnet2,3,4やほかの無駄なファイルを削除
+
+## アップデート手順
+- レポジトリ内の__init__.pyを任意のバージョンに変更する
+- 変更の際は、同じバージョンは使用できない
+- 次にpypiのサイトにアクセスし、intlabプロジェクトのAPIを取得する
+- pypircファイルを作成してそこに[intlab]とユーザーネーム、パスワードを入力し読み取らせる方法もあるが、今回はコマンドで手動にて更新する
+- まずは作成したデータをパッケージ化する
+  ```python
+  !python setup.py sdist
+  !python setup.py bdist_wheel
+  ```
+  上記をレポジトリ内でipynbファイルもしくはcmdなどで入力し、パッケージ化する
+- 次に下記コードでdist内のデータをdist_oldに移し、distに作成されたパッケージのみ残るようにする
+  ```python
+  import shutil
+  import intlab
+  import glob
+  import os
+
+  #1.バージョン情報の取得<br>
+  VERSION = intlab.__version__
+
+  #2.Distファイル内全部のファイル取得し、リスト化<br>
+  files = glob.glob("./dist/*")
+  files_name=[]
+  for file in files:
+      print(file)
+      if VERSION in file:
+          print("true")
+      else:
+          shutil.move(file, "./dist_old/")  # "/path/to/destination/" は移動先のディレクトリパスに置き換えてください
+  ```
+- 最後に下記コードでアップデートをしていく
+  ```Python
+  twine upload --repository-url https://upload.pypi.org/legacy/ dist/* --verbose
+  ```
+
+- この際にusernameとpasswordを聞かれる
+- usernameは__token__でpasswordは先ほど取得したAPIを入力すればOK（パスワードは入力しても見えないので注意）
+- 以上を入力するとアップデートが完了する
+  
+## 注意点
+- ここではアップデートで躓いたことをまとめておく
+- マークダウンファイル内でhtmlタグを用いたことで、エラーが起こった。
+- 解決補法としては、htmlタグを修正し、setup.py内のlong_description_content_type="text/markdown"をマークダウン方式にする
+- このエラーはreadme内で起こることが多い

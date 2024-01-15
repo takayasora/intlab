@@ -38,10 +38,10 @@ CLASSIFIERS = [
         'License :: OSI Approved :: MIT License',
 ]
 
-with open('README.rst', 'r') as fp:
-    readme = fp.read()
+with open('README.md', 'r', encoding='utf-8') as fh:
+    long_description = fh.read()
     
-long_description = readme 
+#long_description = readme 
 
 setup(name=NAME,
       author=AUTHOR,
@@ -50,6 +50,7 @@ setup(name=NAME,
       maintainer_email=AUTHOR_EMAIL,
       description=DESCRIPTION,
       long_description=long_description,
+      long_description_content_type="text/markdown",  # もしくは適切なコンテンツタイプを指定
       license=LICENSE,
       url=URL,
       version=VERSION,

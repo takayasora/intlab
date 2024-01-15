@@ -1,18 +1,15 @@
-<h1 align="center">
-<a href="https://takayasora.com">
-  <img src="./base/source/welcome.gif" alt="Sora's GitHub Banner" width="1280">
-</a>
-</h1>
+# [![Sora's GitHub Banner](./base/source/welcome.gif)](https://takayasora.com)
 
 # Welcome to INTLAB
 
-Hello, I'm Takaya, a researcher in the Intelligent Information Systems Laboratory.<br>
+Hello, I'm Takaya, a researcher in the Intelligent Information Systems Laboratory.
 In this repository, our goal is to compile development programs conducted in the Intelligent Information Systems Laboratory and share them globally in the future.
 
 # Membar List
 | Hitoshi Kono(Teacher)                                                                                                                            | Sora Takaya(coder)                                                                                                                                           | Yuki Toriyabe                                                                                                                     | Kanato Suga                                                                                                                    | Mizuki Kobayashi                                                                                                                    |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://researchmap.jp/kono/avatar.jpg" width="128">              | <img src="https://pypi-camo.global.ssl.fastly.net/d4659d3927578919f40fee55b9a2ec1b0185b825/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f30373962313764396439356362313263373230643465663538376366313036373f73697a653d323235" width="128">                                  | <img src="./base/source/tori.jpg" width="128">                                                                                                 | <img src="https://salon-cherie.com/wp/wp-content/uploads/2018/12/noimage-300x300.jpg" width="128">                                                                                                 | <img src="https://salon-cherie.com/wp/wp-content/uploads/2018/12/noimage-300x300.jpg" width="128">                                                                                                 |
+| | ![Image 1](https://researchmap.jp/kono/avatar.jpg) | ![Image 2](https://pypi-camo.global.ssl.fastly.net/d4659d3927578919f40fee55b9a2ec1b0185b825/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f30373962313764396439356362313263373230643465663538376366313036373f73697a653d323235) | ![Image 3](./base/source/tori.jpg) | ![Image 4](https://salon-cherie.com/wp/wp-content/uploads/2018/12/noimage-300x300.jpg) | ![Image 5](https://salon-cherie.com/wp/wp-content/uploads/2018/12/noimage-300x300.jpg) |
+                                                                                                 |
 
 # badge
 [![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](

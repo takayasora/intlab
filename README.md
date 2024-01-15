@@ -1,18 +1,15 @@
-<h1 align="center">
-<a href="https://takayasora.com">
-  <img src="./base/source/welcome.gif" alt="Sora's GitHub Banner" width="1280">
-</a>
-</h1>
+# [![Sora's GitHub Banner](./base/source/welcome.gif)](https://takayasora.com)
 
 # Welcome to INTLAB
-こんにちは、私は知能情報システム研究室の研究員、高矢です。<br>
+こんにちは、私は知能情報システム研究室の研究員、高矢です。
 このリポジトリでは、今後は知能情報システム研究室で行われる開発プログラムを集約し、それを世界に広く共有することを目指しています。
 
 
 # Membar List
-| 河野 仁(Teacher)                                                                                                                            | 高矢 空(coder)                                                                                                                                           | 鳥谷部 悠希                                                                                                                     | 須賀 哉斗                                                                                                                    | 小林 瑞稀                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://researchmap.jp/kono/avatar.jpg" width="128">              | <img src="https://pypi-camo.global.ssl.fastly.net/d4659d3927578919f40fee55b9a2ec1b0185b825/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f30373962313764396439356362313263373230643465663538376366313036373f73697a653d323235" width="128">                                  | <img src="./base/source/tori.jpg" width="128">                                                                                                 | <img src="https://salon-cherie.com/wp/wp-content/uploads/2018/12/noimage-300x300.jpg" width="128">                                                                                                 | <img src="https://salon-cherie.com/wp/wp-content/uploads/2018/12/noimage-300x300.jpg" width="128">                                                                                                 |
+| 河野 仁(Teacher) | 高矢 空(coder) | 鳥谷部 悠希 | 須賀 哉斗 | 小林 瑞稀 |
+| --------------- | ------------- | ---------- | --------- | --------- |
+| ![河野 仁](https://researchmap.jp/kono/avatar.jpg) | ![高矢 空](https://pypi-camo.global.ssl.fastly.net/d4659d3927578919f40fee55b9a2ec1b0185b825/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f30373962313764396439356362313263373230643465663538376366313036373f73697a653d323235) | ![鳥谷部 悠希](./base/source/tori.jpg) | ![須賀 哉斗](https://salon-cherie.com/wp/wp-content/uploads/2018/12/noimage-300x300.jpg) | ![小林 瑞稀](https://salon-cherie.com/wp/wp-content/uploads/2018/12/noimage-300x300.jpg) |
+
 
 # バッジ
 [![Powered by IntLab](https://img.shields.io/badge/powered%20by-IntLab-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](
