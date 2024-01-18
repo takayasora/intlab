@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  15 JAN 2024 19:20
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.14)  19 JAN 2024 02:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -404,56 +404,7 @@ File: l3backend-dvips.def 2024-01-04 L3 backend support: dvips
 \g__pdf_backend_link_int=\count298
 \g__pdf_backend_link_sf_int=\count299
 )
-(./main.aux
-
-LaTeX Warning: Label `3 simulator' multiply defined.
-
-
-LaTeX Warning: Label `3 RL system' multiply defined.
-
-
-LaTeX Warning: Label `3 RL system' multiply defined.
-
-
-LaTeX Warning: Label `3 simulator' multiply defined.
-
-
-LaTeX Warning: Label `3 RL system' multiply defined.
-
-
-LaTeX Warning: Label `3 RL system' multiply defined.
-
-
-LaTeX Warning: Label `3 RL system' multiply defined.
-
-
-LaTeX Warning: Label `3 RL system' multiply defined.
-
-
-LaTeX Warning: Label `3 simulator' multiply defined.
-
-
-LaTeX Warning: Label `3 simulator' multiply defined.
-
-
-LaTeX Warning: Label `3 simulator' multiply defined.
-
-
-LaTeX Warning: Label `4 simulation environment' multiply defined.
-
-
-LaTeX Warning: Label `4 simulation environment' multiply defined.
-
-
-LaTeX Warning: Label `4 simulation environment' multiply defined.
-
-
-LaTeX Warning: Label `4 simulation environment' multiply defined.
-
-
-LaTeX Warning: Label `4 simulation environment' multiply defined.
-
-)
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -662,130 +613,136 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 70.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 70.
- [2] [3] [4
+ [2] [3] [4] [5
 
-] [5
+] [6
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 15
-7.
+6.
 
 (c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 File: ./chap1/chap1_fig/paper_flow.pdf Graphic file (type pdf)
 <./chap1/chap1_fig/paper_flow.pdf>
- [6
+ [7
+
+] [8
 
 ]
 第2章
-(./main.mtc2) [7
+(./main.mtc2) [9]
+
+LaTeX Warning: Reference `2 system' on page 10 undefined on input line 182.
+
+
+LaTeX Warning: Reference `2 approach' on page 10 undefined on input line 183.
+
+[10] [11
 
 ]
 
-LaTeX Warning: Reference `2 system' on page 8 undefined on input line 183.
+LaTeX Warning: Reference `2 system' on page 12 undefined on input line 226.
 
 
-LaTeX Warning: Reference `2 approach' on page 8 undefined on input line 184.
-
-[8] [9
-
-]
-
-LaTeX Warning: Reference `2 system' on page 10 undefined on input line 227.
+LaTeX Warning: Reference `2 approach' on page 12 undefined on input line 228.
 
 
-LaTeX Warning: Reference `2 approach' on page 10 undefined on input line 229.
+LaTeX Warning: Reference `2 ref_approach' on page 12 undefined on input line 23
+2.
 
 
-LaTeX Warning: Reference `2 ref_approach' on page 10 undefined on input line 23
-3.
+LaTeX Warning: Reference `2 reinforcement learning' on page 12 undefined on inp
+ut line 234.
 
-
-LaTeX Warning: Reference `2 reinforcement learning' on page 10 undefined on inp
-ut line 235.
-
-[10
+[12
 
 ]
 第3章
-(./main.mtc3) [11
+(./main.mtc3) [13
 
-] [12]
+] [14]
 
-LaTeX Warning: Reference `2 reinforcement learning' on page 13 undefined on inp
-ut line 296.
+LaTeX Warning: Reference `2 reinforcement learning' on page 15 undefined on inp
+ut line 295.
 
-[13
+[15
 
-] [14
+] [16
 
-] [15
+] [17
 
 ]
 
-LaTeX Warning: Reference `3 reward function' on page 16 undefined on input line
- 351.
+LaTeX Warning: Reference `3 simulator' on page 18 undefined on input line 345.
 
-[16
+
+LaTeX Warning: Reference `3 RL system' on page 18 undefined on input line 347.
+
+
+LaTeX Warning: Reference `3 reward function' on page 18 undefined on input line
+ 350.
+
+[18
 
 ]
 第4章
-(./main.mtc4) [17
+(./main.mtc4) [19
 
 ]
 
-LaTeX Warning: Reference `4 single arm' on page 18 undefined on input line 371.
+LaTeX Warning: Reference `4 single arm' on page 20 undefined on input line 370.
 
 
 
-LaTeX Warning: Reference `4 double arm' on page 18 undefined on input line 373.
+LaTeX Warning: Reference `4 double arm' on page 20 undefined on input line 372.
 
 
-[18]
+[20]
 File: ./chap4/chap4_fig/single_double_robot.pdf Graphic file (type pdf)
 <./chap4/chap4_fig/single_double_robot.pdf>
 File: ./chap4/chap4_fig/flat_surface.pdf Graphic file (type pdf)
 <./chap4/chap4_fig/flat_surface.pdf>
- [19
-
-] [20
-
-] [21
+ [21
 
 ] [22
 
-]
-
-LaTeX Warning: Reference `4 single arm' on page 23 undefined on input line 470.
-
-
-
-LaTeX Warning: Reference `4 double arm' on page 23 undefined on input line 474.
-
-
-[23
+] [23
 
 ] [24
+
+]
+
+LaTeX Warning: Reference `4 single arm' on page 25 undefined on input line 469.
+
+
+
+LaTeX Warning: Reference `4 double arm' on page 25 undefined on input line 473.
+
+
+[25
+
+] [26
 
 
 ]
 第5章
-(./main.mtc5) [25] [26] (./Backmatter/Thank.tex [27
+(./main.mtc5) [27] [28] (./Backmatter/Thank.tex [29
 
-] [28
+] [30
 
-] [29] [30])
-(./Reference/ref.tex [31] [32
+] [31] [32])
+(./Reference/ref.tex [33] [34
 
-] [33] [34] [35]
+] [35] [36] [37]
 Underfull \hbox (badness 1478) in paragraph at lines 111--114
 []\JY1/mc/m/n/10 東京電力ホ ールデ ィングス\T1/ptm/m/n/10 :  ``\JY1/mc/m/n/10 
 ロボ ット技術の活用\T1/ptm/m/n/10 ,''  $\T1/pcr/m/n/10 http : / / www . tepco .
 
  []
 
-[36]
+[38]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 125.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
@@ -794,11 +751,11 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 125.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 125.
- [37
+ [39
 
-]) (./Backmatter/Achieve.tex [38] [39
+]) (./Backmatter/Achieve.tex [40] [41
 
-]) [40] (./main.aux)
+]) [42] (./main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-11-01>
@@ -808,17 +765,14 @@ L3 programming layer <2024-01-04>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 6612 strings out of 474823
- 99656 string characters out of 5763802
+ 6654 strings out of 474823
+ 101084 string characters out of 5763802
  1931373 words of memory out of 5000000
- 28749 multiletter control sequences out of 15000+600000
+ 28791 multiletter control sequences out of 15000+600000
  608312 words of font info for 159 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  72i,13n,79p,1506b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (50 pages, 128960 bytes).
+Output written on main.dvi (52 pages, 134632 bytes).
