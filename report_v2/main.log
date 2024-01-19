@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.14)  19 JAN 2024 02:30
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.14)  19 JAN 2024 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -619,7 +619,7 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 15
-6.
+0.
 
 (c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -634,27 +634,27 @@ File: ./chap1/chap1_fig/paper_flow.pdf Graphic file (type pdf)
 第2章
 (./main.mtc2) [9]
 
-LaTeX Warning: Reference `2 system' on page 10 undefined on input line 182.
+LaTeX Warning: Reference `2 system' on page 10 undefined on input line 176.
 
 
-LaTeX Warning: Reference `2 approach' on page 10 undefined on input line 183.
+LaTeX Warning: Reference `2 approach' on page 10 undefined on input line 177.
 
 [10] [11
 
 ]
 
-LaTeX Warning: Reference `2 system' on page 12 undefined on input line 226.
+LaTeX Warning: Reference `2 system' on page 12 undefined on input line 220.
 
 
-LaTeX Warning: Reference `2 approach' on page 12 undefined on input line 228.
+LaTeX Warning: Reference `2 approach' on page 12 undefined on input line 222.
 
 
-LaTeX Warning: Reference `2 ref_approach' on page 12 undefined on input line 23
-2.
+LaTeX Warning: Reference `2 ref_approach' on page 12 undefined on input line 22
+6.
 
 
 LaTeX Warning: Reference `2 reinforcement learning' on page 12 undefined on inp
-ut line 234.
+ut line 228.
 
 [12
 
@@ -665,7 +665,7 @@ ut line 234.
 ] [14]
 
 LaTeX Warning: Reference `2 reinforcement learning' on page 15 undefined on inp
-ut line 295.
+ut line 289.
 
 [15
 
@@ -675,14 +675,14 @@ ut line 295.
 
 ]
 
-LaTeX Warning: Reference `3 simulator' on page 18 undefined on input line 345.
+LaTeX Warning: Reference `3 simulator' on page 18 undefined on input line 339.
 
 
-LaTeX Warning: Reference `3 RL system' on page 18 undefined on input line 347.
+LaTeX Warning: Reference `3 RL system' on page 18 undefined on input line 341.
 
 
 LaTeX Warning: Reference `3 reward function' on page 18 undefined on input line
- 350.
+ 344.
 
 [18
 
@@ -692,11 +692,11 @@ LaTeX Warning: Reference `3 reward function' on page 18 undefined on input line
 
 ]
 
-LaTeX Warning: Reference `4 single arm' on page 20 undefined on input line 370.
+LaTeX Warning: Reference `4 single arm' on page 20 undefined on input line 364.
 
 
 
-LaTeX Warning: Reference `4 double arm' on page 20 undefined on input line 372.
+LaTeX Warning: Reference `4 double arm' on page 20 undefined on input line 366.
 
 
 [20]
@@ -714,11 +714,11 @@ File: ./chap4/chap4_fig/flat_surface.pdf Graphic file (type pdf)
 
 ]
 
-LaTeX Warning: Reference `4 single arm' on page 25 undefined on input line 469.
+LaTeX Warning: Reference `4 single arm' on page 25 undefined on input line 463.
 
 
 
-LaTeX Warning: Reference `4 double arm' on page 25 undefined on input line 473.
+LaTeX Warning: Reference `4 double arm' on page 25 undefined on input line 467.
 
 
 [25
@@ -767,12 +767,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6654 strings out of 474823
- 101084 string characters out of 5763802
+ 6654 strings out of 474824
+ 101084 string characters out of 5763823
  1931373 words of memory out of 5000000
- 28791 multiletter control sequences out of 15000+600000
+ 28790 multiletter control sequences out of 15000+600000
  608312 words of font info for 159 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  72i,13n,79p,1506b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (52 pages, 134632 bytes).
+Output written on main.dvi (52 pages, 135688 bytes).
