@@ -75,6 +75,21 @@ class sapnet():
         return df
 
     @staticmethod
+    def example_dataframe_uniform():
+        sapnet.logger.debug("(0/10)Converting array to DataFrame")
+        data = [["knowledge", 0, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5],
+                ["knowledge", 0.5, 0, 0.5, 0.5, 0.5, 0.5, 0.5],
+                ["knowledge", 0.5, 0.5, 0, 0.5, 0.5, 0.5, 0.5],
+                ["knowledge", 0.5, 0.5, 0.5, 0, 0.5, 0.5, 0.5],
+                ["knowledge", 0.5, 0.5, 0.5, 0.5, 0, 0.5, 0.5],
+                ["knowledge", 0.5, 0.5, 0.5, 0.5, 0.5, 0, 0.5],
+                ["knowledge", 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0]]
+
+        df = sapnet.array4DataFrame(data)
+        
+        return df
+    
+    @staticmethod
     def create_gitignore():
         gitignore_path = '.gitignore'
         # .gitignore ファイルの内容
