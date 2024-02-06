@@ -24,42 +24,42 @@
 \contentsline {section}{\numberline {3.2}本研究のアプローチ}{15}{}%
 \contentsline {section}{\numberline {3.3}提案手法に用いる技術}{15}{}%
 \contentsline {subsection}{\numberline {3.3.1}強化学習の概要とその応用}{15}{}%
-\contentsline {subsection}{\numberline {3.3.2}転移学習の概要とその応用}{15}{}%
-\contentsline {subsection}{\numberline {3.3.3}転移強化学習の概要}{15}{}%
-\contentsline {section}{\numberline {3.4}提案システムの構成}{16}{}%
-\contentsline {subsection}{\numberline {3.4.1}動的障害物回避への適用}{16}{}%
-\contentsline {subsection}{\numberline {3.4.2}知識選択手法の概念}{16}{}%
-\contentsline {subsection}{\numberline {3.4.3}知識選択型転移強化学習の原理}{16}{}%
-\contentsline {subsection}{\numberline {3.4.4}SAP-netの構造}{16}{}%
-\contentsline {section}{\numberline {3.5}数値的な評価指標}{17}{}%
-\contentsline {section}{\numberline {3.6}最適化シミュレーション}{17}{}%
-\contentsline {section}{\numberline {3.7}提案システムの詳細}{17}{}%
-\contentsline {section}{\numberline {3.8}おわりに}{18}{}%
-\contentsline {chapter}{\numberline {第4章}シミュレータ実験}{19}{}%
-\contentsline {section}{\numberline {4.1}はじめに}{20}{}%
-\contentsline {section}{\numberline {4.2}実験環境について}{21}{}%
-\contentsline {section}{\numberline {4.3}予備実験}{22}{}%
-\contentsline {subsection}{\numberline {4.3.1}予備実験目的}{22}{}%
-\contentsline {subsection}{\numberline {4.3.2}予備実験条件}{22}{}%
-\contentsline {subsection}{\numberline {4.3.3}予備実験結果}{22}{}%
-\contentsline {section}{\numberline {4.4}シミュレーション実験}{23}{}%
-\contentsline {subsection}{\numberline {4.4.1}シミュレーション実験目的}{23}{}%
-\contentsline {subsection}{\numberline {4.4.2}シミュレーション実験条件}{23}{}%
-\contentsline {subsection}{\numberline {4.4.3}シミュレーション実験評価}{23}{}%
-\contentsline {subsection}{\numberline {4.4.4}シミュレーション実験結果}{23}{}%
-\contentsline {section}{\numberline {4.5}最適化実験}{24}{}%
-\contentsline {subsection}{\numberline {4.5.1}最適化実験目的}{24}{}%
-\contentsline {subsection}{\numberline {4.5.2}最適化実験条件}{24}{}%
-\contentsline {subsection}{\numberline {4.5.3}最適化実験結果}{24}{}%
-\contentsline {section}{\numberline {4.6}実験結果}{24}{}%
-\contentsline {section}{\numberline {4.7}手法比較}{24}{}%
-\contentsline {section}{\numberline {4.8}おわりに}{25}{}%
-\contentsline {chapter}{\numberline {第5章}結論}{27}{}%
-\contentsline {section}{\numberline {5.1}結論}{28}{}%
-\contentsline {section}{\numberline {5.2}今後の展望}{29}{}%
+\contentsline {subsection}{\numberline {3.3.2}転移学習の概要とその応用}{16}{}%
+\contentsline {subsection}{\numberline {3.3.3}転移強化学習の概要}{16}{}%
+\contentsline {section}{\numberline {3.4}提案システムの構成}{17}{}%
+\contentsline {subsection}{\numberline {3.4.1}動的障害物回避への適用}{17}{}%
+\contentsline {subsection}{\numberline {3.4.2}知識選択手法の概念}{17}{}%
+\contentsline {subsection}{\numberline {3.4.3}知識選択型転移強化学習の原理}{17}{}%
+\contentsline {subsection}{\numberline {3.4.4}SAP-netの構造}{17}{}%
+\contentsline {section}{\numberline {3.5}数値的な評価指標}{18}{}%
+\contentsline {section}{\numberline {3.6}最適化シミュレーション}{18}{}%
+\contentsline {section}{\numberline {3.7}提案システムの詳細}{18}{}%
+\contentsline {section}{\numberline {3.8}おわりに}{19}{}%
+\contentsline {chapter}{\numberline {第4章}シミュレータ実験}{21}{}%
+\contentsline {section}{\numberline {4.1}はじめに}{22}{}%
+\contentsline {section}{\numberline {4.2}実験環境について}{23}{}%
+\contentsline {section}{\numberline {4.3}予備実験}{24}{}%
+\contentsline {subsection}{\numberline {4.3.1}予備実験目的}{24}{}%
+\contentsline {subsection}{\numberline {4.3.2}予備実験条件}{24}{}%
+\contentsline {subsection}{\numberline {4.3.3}予備実験結果}{24}{}%
+\contentsline {section}{\numberline {4.4}シミュレーション実験}{25}{}%
+\contentsline {subsection}{\numberline {4.4.1}シミュレーション実験目的}{25}{}%
+\contentsline {subsection}{\numberline {4.4.2}シミュレーション実験条件}{25}{}%
+\contentsline {subsection}{\numberline {4.4.3}シミュレーション実験評価}{25}{}%
+\contentsline {subsection}{\numberline {4.4.4}シミュレーション実験結果}{25}{}%
+\contentsline {section}{\numberline {4.5}最適化実験}{26}{}%
+\contentsline {subsection}{\numberline {4.5.1}最適化実験目的}{26}{}%
+\contentsline {subsection}{\numberline {4.5.2}最適化実験条件}{26}{}%
+\contentsline {subsection}{\numberline {4.5.3}最適化実験結果}{26}{}%
+\contentsline {section}{\numberline {4.6}実験結果}{26}{}%
+\contentsline {section}{\numberline {4.7}手法比較}{26}{}%
+\contentsline {section}{\numberline {4.8}おわりに}{27}{}%
+\contentsline {chapter}{\numberline {第5章}結論}{29}{}%
+\contentsline {section}{\numberline {5.1}結論}{30}{}%
+\contentsline {section}{\numberline {5.2}今後の展望}{31}{}%
 \chapterbegin 
-\contentsline {chapter}{謝辞}{33}{}%
+\contentsline {chapter}{謝辞}{35}{}%
 \chapterbegin 
-\contentsline {chapter}{参考文献}{35}{}%
-\contentsline {chapter}{研究業績}{40}{}%
+\contentsline {chapter}{参考文献}{37}{}%
+\contentsline {chapter}{研究業績}{42}{}%
 \chapterbegin 
