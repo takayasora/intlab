@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  6 FEB 2024 09:28
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  6 FEB 2024 10:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -618,12 +618,6 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 ] [6
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 15
-0.
-
-(c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 File: ./chap1/chap1_fig/paper_flow.pdf Graphic file (type pdf)
 <./chap1/chap1_fig/paper_flow.pdf>
  [7
@@ -634,27 +628,27 @@ File: ./chap1/chap1_fig/paper_flow.pdf Graphic file (type pdf)
 第2章
 (./main.mtc2) [9]
 
-LaTeX Warning: Reference `2 system' on page 10 undefined on input line 176.
+LaTeX Warning: Reference `2 system' on page 10 undefined on input line 169.
 
 
-LaTeX Warning: Reference `2 approach' on page 10 undefined on input line 177.
+LaTeX Warning: Reference `2 approach' on page 10 undefined on input line 170.
 
 [10] [11
 
 ]
 
-LaTeX Warning: Reference `2 system' on page 12 undefined on input line 220.
+LaTeX Warning: Reference `2 system' on page 12 undefined on input line 213.
 
 
-LaTeX Warning: Reference `2 approach' on page 12 undefined on input line 222.
+LaTeX Warning: Reference `2 approach' on page 12 undefined on input line 215.
 
 
-LaTeX Warning: Reference `2 ref_approach' on page 12 undefined on input line 22
-6.
+LaTeX Warning: Reference `2 ref_approach' on page 12 undefined on input line 21
+9.
 
 
 LaTeX Warning: Reference `2 reinforcement learning' on page 12 undefined on inp
-ut line 228.
+ut line 221.
 
 [12
 
@@ -665,7 +659,7 @@ ut line 228.
 ] [14]
 
 LaTeX Warning: Reference `2 reinforcement learning' on page 15 undefined on inp
-ut line 289.
+ut line 282.
 
 [15
 
@@ -675,14 +669,14 @@ ut line 289.
 
 ]
 
-LaTeX Warning: Reference `3 simulator' on page 19 undefined on input line 358.
+LaTeX Warning: Reference `3 simulator' on page 19 undefined on input line 351.
 
 
-LaTeX Warning: Reference `3 RL system' on page 19 undefined on input line 360.
+LaTeX Warning: Reference `3 RL system' on page 19 undefined on input line 353.
 
 
 LaTeX Warning: Reference `3 reward function' on page 19 undefined on input line
- 363.
+ 356.
 
 [19
 
@@ -692,11 +686,11 @@ LaTeX Warning: Reference `3 reward function' on page 19 undefined on input line
 第4章
 (./main.mtc4) [21]
 
-LaTeX Warning: Reference `4 single arm' on page 22 undefined on input line 383.
+LaTeX Warning: Reference `4 single arm' on page 22 undefined on input line 376.
 
 
 
-LaTeX Warning: Reference `4 double arm' on page 22 undefined on input line 385.
+LaTeX Warning: Reference `4 double arm' on page 22 undefined on input line 378.
 
 
 [22]
@@ -714,11 +708,11 @@ File: ./chap4/chap4_fig/flat_surface.pdf Graphic file (type pdf)
 
 ]
 
-LaTeX Warning: Reference `4 single arm' on page 27 undefined on input line 482.
+LaTeX Warning: Reference `4 single arm' on page 27 undefined on input line 475.
 
 
 
-LaTeX Warning: Reference `4 double arm' on page 27 undefined on input line 486.
+LaTeX Warning: Reference `4 double arm' on page 27 undefined on input line 479.
 
 
 [27
@@ -735,7 +729,13 @@ LaTeX Warning: Reference `4 double arm' on page 27 undefined on input line 486.
 ] [33] [34])
 (./Reference/ref.tex [35] [36
 
-] [37] [38] [39]
+] [37] [38]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 88
+.
+
+(c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [39]
 Underfull \hbox (badness 1478) in paragraph at lines 111--114
 []\JY1/mc/m/n/10 東京電力ホ ールデ ィングス\T1/ptm/m/n/10 :  ``\JY1/mc/m/n/10 
 ロボ ット技術の活用\T1/ptm/m/n/10 ,''  $\T1/pcr/m/n/10 http : / / www . tepco .
@@ -775,4 +775,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  72i,13n,79p,1506b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (54 pages, 142276 bytes).
+Output written on main.dvi (54 pages, 141536 bytes).
