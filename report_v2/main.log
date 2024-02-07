@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  6 FEB 2024 10:13
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  7 FEB 2024 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -407,24 +407,24 @@ File: l3backend-dvips.def 2024-01-04 L3 backend support: dvips
 (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -467,53 +467,53 @@ Writing main.mtc8
 \openout4 = `main.bmt'.
 
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 43.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 43.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 43.
+(Font)              scaled to size 9.60999pt on input line 42.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 43.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 43.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 43.
+(Font)              scaled to size 9.60999pt on input line 42.
 File: tdulogo.eps Graphic file (type eps)
 <tdulogo.eps>
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <17.28> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 43.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 43.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 43.
+(Font)              scaled to size 16.60605pt on input line 42.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <17.28> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 43.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 43.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 43.
+(Font)              scaled to size 16.60605pt on input line 42.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 43.
+(Font)              scaled to size 13.83836pt on input line 42.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 43.
+(Font)              scaled to size 13.83836pt on input line 42.
 [1
 
 ] [2
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 50
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 49
 .
  (c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 50.
+(Font)              scaled to size 23.90964pt on input line 49.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 50.
+(Font)              scaled to size 23.90964pt on input line 49.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 50.
+(Font)              scaled to size 23.90964pt on input line 49.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 50.
+(Font)              scaled to size 23.90964pt on input line 49.
  (./main.toc
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 5.
@@ -558,41 +558,41 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 ]
 第1章
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 63.
+(Font)              scaled to size 19.9311pt on input line 85.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 63.
+(Font)              scaled to size 19.9311pt on input line 85.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 63.
+(Font)              scaled to size 19.9311pt on input line 85.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 63.
+(Font)              scaled to size 19.9311pt on input line 85.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 67.
+(Font)              scaled to size 8.64899pt on input line 89.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 67.
+(Font)              scaled to size 8.64899pt on input line 89.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 67.
+(Font)              scaled to size 5.76599pt on input line 89.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 67.
+(Font)              scaled to size 8.64899pt on input line 89.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 67.
+(Font)              scaled to size 5.76599pt on input line 89.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 67.
+(Font)              scaled to size 11.53198pt on input line 89.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 67.
+(Font)              scaled to size 11.53198pt on input line 89.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 67.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 89.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 67.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 89.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 67.
+(Font)              scaled to size 11.53198pt on input line 89.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 67.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 89.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 67.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 89.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 67.
+(Font)              scaled to size 11.53198pt on input line 89.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 67.
+(Font)              scaled to size 7.68799pt on input line 89.
 (./main.mtc1
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <9> not available
 (Font)              Font shape `JT1/mc/bx/n' tried instead on input line 1.
@@ -610,152 +610,161 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 70.
+(Font)              scaled to size 13.83836pt on input line 91.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 70.
- [2] [3] [4] [5
+(Font)              scaled to size 13.83836pt on input line 91.
+File: ./chap1/chap1_fig/robot_classification.pdf Graphic file (type pdf)
+<./chap1/chap1_fig/robot_classification.pdf>
 
-] [6
 
-]
-File: ./chap1/chap1_fig/paper_flow.pdf Graphic file (type pdf)
-<./chap1/chap1_fig/paper_flow.pdf>
- [7
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]
+File: ./chap1/chap1_fig/CAV_Level.pdf Graphic file (type pdf)
+<./chap1/chap1_fig/CAV_Level.pdf>
+ [3] [4] [5] [6] [7
 
 ] [8
 
 ]
+File: ./chap1/chap1_fig/paper_flow.pdf Graphic file (type pdf)
+<./chap1/chap1_fig/paper_flow.pdf>
+ [9
+
+] [10
+
+]
 第2章
-(./main.mtc2) [9]
+(./main.mtc2) [11]
 
-LaTeX Warning: Reference `2 system' on page 10 undefined on input line 169.
+LaTeX Warning: Reference `2 system' on page 12 undefined on input line 209.
 
 
-LaTeX Warning: Reference `2 approach' on page 10 undefined on input line 170.
+LaTeX Warning: Reference `2 approach' on page 12 undefined on input line 210.
 
-[10] [11
+[12] [13
 
 ]
 
-LaTeX Warning: Reference `2 system' on page 12 undefined on input line 213.
+LaTeX Warning: Reference `2 system' on page 14 undefined on input line 253.
 
 
-LaTeX Warning: Reference `2 approach' on page 12 undefined on input line 215.
+LaTeX Warning: Reference `2 approach' on page 14 undefined on input line 255.
 
 
-LaTeX Warning: Reference `2 ref_approach' on page 12 undefined on input line 21
+LaTeX Warning: Reference `2 ref_approach' on page 14 undefined on input line 25
 9.
 
 
-LaTeX Warning: Reference `2 reinforcement learning' on page 12 undefined on inp
-ut line 221.
+LaTeX Warning: Reference `2 reinforcement learning' on page 14 undefined on inp
+ut line 261.
 
-[12
+[14
 
 ]
 第3章
-(./main.mtc3) [13
+(./main.mtc3) [15
 
-] [14]
+] [16]
 
-LaTeX Warning: Reference `2 reinforcement learning' on page 15 undefined on inp
-ut line 282.
+LaTeX Warning: Reference `2 reinforcement learning' on page 17 undefined on inp
+ut line 322.
 
-[15
+[17
 
-] [16] [17
-
-] [18
-
-]
-
-LaTeX Warning: Reference `3 simulator' on page 19 undefined on input line 351.
-
-
-LaTeX Warning: Reference `3 RL system' on page 19 undefined on input line 353.
-
-
-LaTeX Warning: Reference `3 reward function' on page 19 undefined on input line
- 356.
-
-[19
+] [18] [19
 
 ] [20
 
 ]
+
+LaTeX Warning: Reference `3 simulator' on page 21 undefined on input line 391.
+
+
+LaTeX Warning: Reference `3 RL system' on page 21 undefined on input line 393.
+
+
+LaTeX Warning: Reference `3 reward function' on page 21 undefined on input line
+ 396.
+
+[21
+
+] [22
+
+]
 第4章
-(./main.mtc4) [21]
+(./main.mtc4) [23]
 
-LaTeX Warning: Reference `4 single arm' on page 22 undefined on input line 376.
-
-
-
-LaTeX Warning: Reference `4 double arm' on page 22 undefined on input line 378.
+LaTeX Warning: Reference `4 single arm' on page 24 undefined on input line 416.
 
 
-[22]
+
+LaTeX Warning: Reference `4 double arm' on page 24 undefined on input line 418.
+
+
+[24]
 File: ./chap4/chap4_fig/single_double_robot.pdf Graphic file (type pdf)
 <./chap4/chap4_fig/single_double_robot.pdf>
 File: ./chap4/chap4_fig/flat_surface.pdf Graphic file (type pdf)
 <./chap4/chap4_fig/flat_surface.pdf>
- [23
-
-] [24
-
-] [25
+ [25
 
 ] [26
 
-]
-
-LaTeX Warning: Reference `4 single arm' on page 27 undefined on input line 475.
-
-
-
-LaTeX Warning: Reference `4 double arm' on page 27 undefined on input line 479.
-
-
-[27
+] [27
 
 ] [28
+
+]
+
+LaTeX Warning: Reference `4 single arm' on page 29 undefined on input line 515.
+
+
+
+LaTeX Warning: Reference `4 double arm' on page 29 undefined on input line 519.
+
+
+[29
+
+] [30
 
 
 ]
 第5章
-(./main.mtc5) [29] [30] (./Backmatter/Thank.tex [31
+(./main.mtc5) [31] [32] (./Backmatter/Thank.tex [33
 
-] [32
+] [34
 
-] [33] [34])
-(./Reference/ref.tex [35] [36
+] [35] [36])
+(./Reference/ref.tex [37] [38
 
-] [37] [38]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 88
+] [39] [40]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 93
 .
 
 (c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [39]
-Underfull \hbox (badness 1478) in paragraph at lines 111--114
+) [41]
+Underfull \hbox (badness 1478) in paragraph at lines 116--119
 []\JY1/mc/m/n/10 東京電力ホ ールデ ィングス\T1/ptm/m/n/10 :  ``\JY1/mc/m/n/10 
 ロボ ット技術の活用\T1/ptm/m/n/10 ,''  $\T1/pcr/m/n/10 http : / / www . tepco .
 
  []
 
-[40]
+[42]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 125.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 125.
+(Font)              scaled to size 9.60999pt on input line 130.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 125.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 125.
- [41
+(Font)              scaled to size 9.60999pt on input line 130.
+ [43
 
-]) (./Backmatter/Achieve.tex [42] [43
+]) (./Backmatter/Achieve.tex [44] [45
 
-]) [44] (./main.aux)
+]) [46] (./main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-11-01>
@@ -765,14 +774,17 @@ L3 programming layer <2024-01-04>
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 6654 strings out of 474823
- 101084 string characters out of 5763802
- 1931373 words of memory out of 5000000
- 28791 multiletter control sequences out of 15000+600000
+ 6671 strings out of 474823
+ 101683 string characters out of 5763802
+ 1932373 words of memory out of 5000000
+ 28806 multiletter control sequences out of 15000+600000
  608312 words of font info for 159 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  72i,13n,79p,1506b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (54 pages, 141536 bytes).
+Output written on main.dvi (56 pages, 149652 bytes).
