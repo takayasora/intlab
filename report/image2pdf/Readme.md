@@ -1,8 +1,7 @@
 # image2pdfの使用方法
-imageファイルの中身を全部pdf化するプログラムです！
-対応ファイルは下記の通り！(png,jpg,gif)
-↓動作例
-<video src="./test.mp4" autoplay></video>
+imageファイルの中身を全部pdf化するプログラムです！<br>
+対応ファイルは下記の通り！(png,jpg,gif)<br>
+↓動作例(クリックしてね)
 [![image2pdf](https://gyazo.com/6c1583836a3325dfb926844f2c6654be.pdf)](https://gyazo.com/728af25baab0759840ca96171752b928.mp4)
 
 ## 初回利用
