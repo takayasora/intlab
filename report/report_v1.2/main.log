@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.14)  7 FEB 2024 21:37
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  8 FEB 2024 18:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -406,6 +406,10 @@ File: l3backend-dvips.def 2024-01-04 L3 backend support: dvips
 )
 (./main.aux
 
+LaTeX Warning: Label `1 introduction and challenges of autonomous robots' multi
+ply defined.
+
+
 LaTeX Warning: Label `3 structure SAP-net' multiply defined.
 
 
@@ -674,7 +678,17 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [2]
 File: ./chap1/chap1_fig/CAV_Level.pdf Graphic file (type pdf)
 <./chap1/chap1_fig/CAV_Level.pdf>
- [3] [4] [5] [6] [7] [8
+ [3] [4]
+
+LaTeX Warning: Reference `' on page 5 undefined on input line 128.
+
+
+LaTeX Warning: Reference `' on page 5 undefined on input line 128.
+
+
+LaTeX Warning: Reference `' on page 5 undefined on input line 128.
+
+[5] [6] [7] [8
 
 ] [9
 
@@ -689,27 +703,27 @@ File: ./chap1/chap1_fig/paper_flow.pdf Graphic file (type pdf)
 
 ]
 
-LaTeX Warning: Reference `2 system' on page 12 undefined on input line 210.
+LaTeX Warning: Reference `2 system' on page 12 undefined on input line 212.
 
 
-LaTeX Warning: Reference `2 approach' on page 12 undefined on input line 211.
+LaTeX Warning: Reference `2 approach' on page 12 undefined on input line 213.
 
 [12] [13
 
 ]
 
-LaTeX Warning: Reference `2 system' on page 14 undefined on input line 254.
+LaTeX Warning: Reference `2 system' on page 14 undefined on input line 256.
 
 
-LaTeX Warning: Reference `2 approach' on page 14 undefined on input line 256.
+LaTeX Warning: Reference `2 approach' on page 14 undefined on input line 258.
 
 
 LaTeX Warning: Reference `2 ref_approach' on page 14 undefined on input line 26
-0.
+2.
 
 
 LaTeX Warning: Reference `2 reinforcement learning' on page 14 undefined on inp
-ut line 262.
+ut line 264.
 
 [14
 
@@ -720,7 +734,7 @@ ut line 262.
 ] [16]
 
 LaTeX Warning: Reference `2 reinforcement learning' on page 17 undefined on inp
-ut line 323.
+ut line 325.
 
 [17
 
@@ -730,14 +744,14 @@ ut line 323.
 
 ]
 
-LaTeX Warning: Reference `3 simulator' on page 21 undefined on input line 399.
+LaTeX Warning: Reference `3 simulator' on page 21 undefined on input line 401.
 
 
-LaTeX Warning: Reference `3 RL system' on page 21 undefined on input line 401.
+LaTeX Warning: Reference `3 RL system' on page 21 undefined on input line 403.
 
 
 LaTeX Warning: Reference `3 reward function' on page 21 undefined on input line
- 404.
+ 406.
 
 [21
 
@@ -747,11 +761,11 @@ LaTeX Warning: Reference `3 reward function' on page 21 undefined on input line
 第4章
 (./main.mtc4) [23] [24]
 
-LaTeX Warning: Reference `4 single arm' on page 25 undefined on input line 424.
+LaTeX Warning: Reference `4 single arm' on page 25 undefined on input line 426.
 
 
 
-LaTeX Warning: Reference `4 double arm' on page 25 undefined on input line 426.
+LaTeX Warning: Reference `4 double arm' on page 25 undefined on input line 428.
 
 
 [25]
@@ -773,11 +787,11 @@ File: ./chap4/chap4_fig/flat_surface.pdf Graphic file (type pdf)
 
 ]
 
-LaTeX Warning: Reference `4 single arm' on page 32 undefined on input line 554.
+LaTeX Warning: Reference `4 single arm' on page 32 undefined on input line 556.
 
 
 
-LaTeX Warning: Reference `4 double arm' on page 32 undefined on input line 558.
+LaTeX Warning: Reference `4 double arm' on page 32 undefined on input line 560.
 
 
 [32
@@ -795,13 +809,13 @@ LaTeX Warning: Reference `4 double arm' on page 32 undefined on input line 558.
 (./Reference/ref.tex [39] [40
 
 ] [41] [42]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 93
-.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
+3.
 
 (c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [43]
-Underfull \hbox (badness 1478) in paragraph at lines 116--119
+Underfull \hbox (badness 1478) in paragraph at lines 126--129
 []\JY1/mc/m/n/10 東京電力ホ ールデ ィングス\T1/ptm/m/n/10 :  ``\JY1/mc/m/n/10 
 ロボ ット技術の活用\T1/ptm/m/n/10 ,''  $\T1/pcr/m/n/10 http : / / www . tepco .
 
@@ -809,13 +823,13 @@ Underfull \hbox (badness 1478) in paragraph at lines 116--119
 
 [44]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 130.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 140.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 130.
+(Font)              scaled to size 9.60999pt on input line 140.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 130.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 140.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 130.
+(Font)              scaled to size 9.60999pt on input line 140.
  [45
 
 ]) (./Backmatter/Achieve.tex [46] [47
@@ -835,12 +849,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6671 strings out of 474824
- 101683 string characters out of 5763823
+ 6674 strings out of 474823
+ 101711 string characters out of 5763802
  1933373 words of memory out of 5000000
- 28805 multiletter control sequences out of 15000+600000
+ 28809 multiletter control sequences out of 15000+600000
  608312 words of font info for 159 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  72i,13n,79p,1749b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (58 pages, 179352 bytes).
+Output written on main.dvi (58 pages, 181180 bytes).
