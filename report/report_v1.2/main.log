@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  7 FEB 2024 17:29
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.14)  7 FEB 2024 21:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -404,7 +404,59 @@ File: l3backend-dvips.def 2024-01-04 L3 backend support: dvips
 \g__pdf_backend_link_int=\count298
 \g__pdf_backend_link_sf_int=\count299
 )
-(./main.aux)
+(./main.aux
+
+LaTeX Warning: Label `3 structure SAP-net' multiply defined.
+
+
+LaTeX Warning: Label `3 structure SAP-net' multiply defined.
+
+
+LaTeX Warning: Label `3 structure SAP-net' multiply defined.
+
+
+LaTeX Warning: Label `3 structure SAP-net' multiply defined.
+
+
+LaTeX Warning: Label `3 structure SAP-net' multiply defined.
+
+
+LaTeX Warning: Label `3 structure SAP-net' multiply defined.
+
+
+LaTeX Warning: Label `3 structure SAP-net' multiply defined.
+
+
+LaTeX Warning: Label `4 simulation experiments' multiply defined.
+
+
+LaTeX Warning: Label `4 objectives simulation experiments' multiply defined.
+
+
+LaTeX Warning: Label `4 conditions simulation experiments' multiply defined.
+
+
+LaTeX Warning: Label `4 evaluation simulation experiments' multiply defined.
+
+
+LaTeX Warning: Label `4 results simulation experiments' multiply defined.
+
+
+LaTeX Warning: Label `4 simulation experiments' multiply defined.
+
+
+LaTeX Warning: Label `4 objectives simulation experiments' multiply defined.
+
+
+LaTeX Warning: Label `4 conditions simulation experiments' multiply defined.
+
+
+LaTeX Warning: Label `4 evaluation simulation experiments' multiply defined.
+
+
+LaTeX Warning: Label `4 results simulation experiments' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -558,41 +610,41 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 ]
 第1章
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 85.
+(Font)              scaled to size 19.9311pt on input line 86.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 85.
+(Font)              scaled to size 19.9311pt on input line 86.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 85.
+(Font)              scaled to size 19.9311pt on input line 86.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 85.
+(Font)              scaled to size 19.9311pt on input line 86.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 89.
+(Font)              scaled to size 8.64899pt on input line 90.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 89.
+(Font)              scaled to size 8.64899pt on input line 90.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 89.
+(Font)              scaled to size 5.76599pt on input line 90.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 89.
+(Font)              scaled to size 8.64899pt on input line 90.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 89.
+(Font)              scaled to size 5.76599pt on input line 90.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 89.
+(Font)              scaled to size 11.53198pt on input line 90.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 89.
+(Font)              scaled to size 11.53198pt on input line 90.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 89.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 89.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 89.
+(Font)              scaled to size 11.53198pt on input line 90.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 89.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 89.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 90.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 89.
+(Font)              scaled to size 11.53198pt on input line 90.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 89.
+(Font)              scaled to size 7.68799pt on input line 90.
 (./main.mtc1
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <9> not available
 (Font)              Font shape `JT1/mc/bx/n' tried instead on input line 1.
@@ -610,9 +662,9 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 91.
+(Font)              scaled to size 13.83836pt on input line 92.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 91.
+(Font)              scaled to size 13.83836pt on input line 92.
 File: ./chap1/chap1_fig/robot_classification.pdf Graphic file (type pdf)
 <./chap1/chap1_fig/robot_classification.pdf>
 
@@ -622,42 +674,42 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [2]
 File: ./chap1/chap1_fig/CAV_Level.pdf Graphic file (type pdf)
 <./chap1/chap1_fig/CAV_Level.pdf>
- [3] [4] [5] [6] [7
+ [3] [4] [5] [6] [7] [8
 
-] [8
+] [9
 
 ]
 File: ./chap1/chap1_fig/paper_flow.pdf Graphic file (type pdf)
 <./chap1/chap1_fig/paper_flow.pdf>
- [9
-
-] [10
+ [10
 
 ]
 第2章
-(./main.mtc2) [11]
+(./main.mtc2) [11
 
-LaTeX Warning: Reference `2 system' on page 12 undefined on input line 209.
+]
+
+LaTeX Warning: Reference `2 system' on page 12 undefined on input line 210.
 
 
-LaTeX Warning: Reference `2 approach' on page 12 undefined on input line 210.
+LaTeX Warning: Reference `2 approach' on page 12 undefined on input line 211.
 
 [12] [13
 
 ]
 
-LaTeX Warning: Reference `2 system' on page 14 undefined on input line 253.
+LaTeX Warning: Reference `2 system' on page 14 undefined on input line 254.
 
 
-LaTeX Warning: Reference `2 approach' on page 14 undefined on input line 255.
+LaTeX Warning: Reference `2 approach' on page 14 undefined on input line 256.
 
 
-LaTeX Warning: Reference `2 ref_approach' on page 14 undefined on input line 25
-9.
+LaTeX Warning: Reference `2 ref_approach' on page 14 undefined on input line 26
+0.
 
 
 LaTeX Warning: Reference `2 reinforcement learning' on page 14 undefined on inp
-ut line 261.
+ut line 262.
 
 [14
 
@@ -668,7 +720,7 @@ ut line 261.
 ] [16]
 
 LaTeX Warning: Reference `2 reinforcement learning' on page 17 undefined on inp
-ut line 322.
+ut line 323.
 
 [17
 
@@ -678,14 +730,14 @@ ut line 322.
 
 ]
 
-LaTeX Warning: Reference `3 simulator' on page 21 undefined on input line 391.
+LaTeX Warning: Reference `3 simulator' on page 21 undefined on input line 399.
 
 
-LaTeX Warning: Reference `3 RL system' on page 21 undefined on input line 393.
+LaTeX Warning: Reference `3 RL system' on page 21 undefined on input line 401.
 
 
 LaTeX Warning: Reference `3 reward function' on page 21 undefined on input line
- 396.
+ 404.
 
 [21
 
@@ -693,65 +745,69 @@ LaTeX Warning: Reference `3 reward function' on page 21 undefined on input line
 
 ]
 第4章
-(./main.mtc4) [23]
+(./main.mtc4) [23] [24]
 
-LaTeX Warning: Reference `4 single arm' on page 24 undefined on input line 416.
-
-
-
-LaTeX Warning: Reference `4 double arm' on page 24 undefined on input line 418.
+LaTeX Warning: Reference `4 single arm' on page 25 undefined on input line 424.
 
 
-[24]
+
+LaTeX Warning: Reference `4 double arm' on page 25 undefined on input line 426.
+
+
+[25]
 File: ./chap4/chap4_fig/single_double_robot.pdf Graphic file (type pdf)
 <./chap4/chap4_fig/single_double_robot.pdf>
 File: ./chap4/chap4_fig/flat_surface.pdf Graphic file (type pdf)
 <./chap4/chap4_fig/flat_surface.pdf>
- [25
-
-] [26
+ [26
 
 ] [27
 
 ] [28
 
-]
-
-LaTeX Warning: Reference `4 single arm' on page 29 undefined on input line 515.
-
-
-
-LaTeX Warning: Reference `4 double arm' on page 29 undefined on input line 519.
-
-
-[29
+] [29
 
 ] [30
 
+] [31
+
+]
+
+LaTeX Warning: Reference `4 single arm' on page 32 undefined on input line 554.
+
+
+
+LaTeX Warning: Reference `4 double arm' on page 32 undefined on input line 558.
+
+
+[32
 
 ]
 第5章
-(./main.mtc5) [31] [32] (./Backmatter/Thank.tex [33
+(./main.mtc5) [33
 
-] [34
 
-] [35] [36])
-(./Reference/ref.tex [37] [38
+] [34] (./Backmatter/Thank.tex [35
 
-] [39] [40]
+] [36
+
+] [37] [38])
+(./Reference/ref.tex [39] [40
+
+] [41] [42]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 93
 .
 
 (c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [41]
+) [43]
 Underfull \hbox (badness 1478) in paragraph at lines 116--119
 []\JY1/mc/m/n/10 東京電力ホ ールデ ィングス\T1/ptm/m/n/10 :  ``\JY1/mc/m/n/10 
 ロボ ット技術の活用\T1/ptm/m/n/10 ,''  $\T1/pcr/m/n/10 http : / / www . tepco .
 
  []
 
-[42]
+[44]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
@@ -760,11 +816,11 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 130.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 130.
- [43
+ [45
 
-]) (./Backmatter/Achieve.tex [44] [45
+]) (./Backmatter/Achieve.tex [46] [47
 
-]) [46] (./main.aux)
+]) [48] (./main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-11-01>
@@ -775,16 +831,16 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6671 strings out of 474823
- 101683 string characters out of 5763802
- 1932373 words of memory out of 5000000
- 28806 multiletter control sequences out of 15000+600000
+ 6671 strings out of 474824
+ 101683 string characters out of 5763823
+ 1933373 words of memory out of 5000000
+ 28805 multiletter control sequences out of 15000+600000
  608312 words of font info for 159 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 72i,13n,79p,1506b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,13n,79p,1749b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (56 pages, 149652 bytes).
+Output written on main.dvi (58 pages, 179352 bytes).
