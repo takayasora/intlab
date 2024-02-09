@@ -7,14 +7,20 @@
 \contentsline {figure}{\numberline {1.5}{\ignorespaces 遠隔監視室を配置した自動運転レベル4の区間の図}}{7}{}%
 \contentsline {figure}{\numberline {1.6}{\ignorespaces 2018年3月に発生したテスラ車の事故の様子}}{7}{}%
 \contentsline {figure}{\numberline {1.7}{\ignorespaces ウーバーのAI自動運転車が起こしてしまった死亡事故}}{8}{}%
-\contentsline {figure}{\numberline {1.8}{\ignorespaces The structure of this thesis}}{14}{}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces 東北大学開発　レスキューロボット「Quince」}}{12}{}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces 日本総研開発 自律多機能型農業ロボット「DONKEY」}}{12}{}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces シャープ開発　家庭用コミュニケーションロボット「RoBoHoN」}}{12}{}%
+\contentsline {figure}{\numberline {1.11}{\ignorespaces リバプール大学開発　自律実験移動型ロボット「Nature」}}{13}{}%
+\contentsline {figure}{\numberline {1.12}{\ignorespaces 東芝開発　福島第一原子力発電所廃炉調査ロボット「4足歩行ロボット」}}{13}{}%
+\contentsline {figure}{\numberline {1.13}{\ignorespaces NASA開発　深海探査ロボット「Robonaut 2」}}{13}{}%
+\contentsline {figure}{\numberline {1.14}{\ignorespaces The structure of this thesis}}{16}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {xchapter}{関連研究}{15}{}%
+\contentsline {xchapter}{関連研究}{17}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {xchapter}{提案手法名をここに書く}{19}{}%
+\contentsline {xchapter}{提案手法名をここに書く}{21}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {xchapter}{シミュレータ実験}{27}{}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Single-armed and double-armed crawler robot}}{30}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Flat surface in Choreonoid 1.5}}{30}{}%
+\contentsline {xchapter}{シミュレータ実験}{29}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Single-armed and double-armed crawler robot}}{32}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Flat surface in Choreonoid 1.5}}{32}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {xchapter}{結論}{37}{}%
+\contentsline {xchapter}{結論}{39}{}%

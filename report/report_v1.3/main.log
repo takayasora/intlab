@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  8 FEB 2024 21:04
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  8 FEB 2024 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -721,115 +721,138 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ] [10
 
-] [11] [12
+] [11
 
-] [13
+]
+File: ./chap1/chap1_fig/Autorobo_saigai.pdf Graphic file (type pdf)
+<./chap1/chap1_fig/Autorobo_saigai.pdf>
+File: ./chap1/chap1_fig/Autorobo_nougyou.pdf Graphic file (type pdf)
+<./chap1/chap1_fig/Autorobo_nougyou.pdf>
+File: ./chap1/chap1_fig/Autorobo_robohon.pdf Graphic file (type pdf)
+<./chap1/chap1_fig/Autorobo_robohon.pdf>
+File: ./chap1/chap1_fig/Autorobo_kagaku.pdf Graphic file (type pdf)
+<./chap1/chap1_fig/Autorobo_kagaku.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./chap1/chap1_fig/Autorobo_gensiryoku.pdf Graphic file (type pdf)
+<./chap1/chap1_fig/Autorobo_gensiryoku.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ./chap1/chap1_fig/Autorobo_umi.pdf Graphic file (type pdf)
+<./chap1/chap1_fig/Autorobo_umi.pdf>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[12
+
+] [13] [14
+
+] [15
 
 ]
 File: ./chap1/chap1_fig/paper_flow.pdf Graphic file (type pdf)
 <./chap1/chap1_fig/paper_flow.pdf>
- [14
+ [16
 
 ]
 第2章
-(./main.mtc2) [15
+(./main.mtc2) [17
 
 ]
 
-LaTeX Warning: Reference `2 system' on page 16 undefined on input line 273.
+LaTeX Warning: Reference `2 system' on page 18 undefined on input line 333.
 
 
-LaTeX Warning: Reference `2 approach' on page 16 undefined on input line 274.
+LaTeX Warning: Reference `2 approach' on page 18 undefined on input line 334.
 
-[16]
+[18]
 
-LaTeX Warning: Citation `新堀2009' on page 17 undefined on input line 290.
+LaTeX Warning: Citation `新堀2009' on page 19 undefined on input line 350.
 
 
-LaTeX Warning: Citation `石倉2016' on page 17 undefined on input line 292.
+LaTeX Warning: Citation `石倉2016' on page 19 undefined on input line 352.
 
-[17
+[19
 
 ]
 
-LaTeX Warning: Reference `2 system' on page 18 undefined on input line 317.
+LaTeX Warning: Reference `2 system' on page 20 undefined on input line 377.
 
 
-LaTeX Warning: Reference `2 approach' on page 18 undefined on input line 319.
+LaTeX Warning: Reference `2 approach' on page 20 undefined on input line 379.
 
 
-LaTeX Warning: Reference `2 ref_approach' on page 18 undefined on input line 32
+LaTeX Warning: Reference `2 ref_approach' on page 20 undefined on input line 38
 3.
 
 
-LaTeX Warning: Reference `2 reinforcement learning' on page 18 undefined on inp
-ut line 325.
+LaTeX Warning: Reference `2 reinforcement learning' on page 20 undefined on inp
+ut line 385.
 
 
-LaTeX Warning: Citation `田所2012' on page 18 undefined on input line 335.
+LaTeX Warning: Citation `田所2012' on page 20 undefined on input line 395.
 
 
-LaTeX Warning: Citation `田所2012' on page 18 undefined on input line 335.
+LaTeX Warning: Citation `田所2012' on page 20 undefined on input line 395.
 
-[18
+[20
 
 ]
 第3章
-(./main.mtc3) [19
+(./main.mtc3) [21
 
-] [20]
+] [22]
 
-LaTeX Warning: Reference `2 reinforcement learning' on page 21 undefined on inp
-ut line 386.
-
-
-LaTeX Warning: Citation `Sutton1998' on page 21 undefined on input line 386.
+LaTeX Warning: Reference `2 reinforcement learning' on page 23 undefined on inp
+ut line 446.
 
 
-LaTeX Warning: Citation `木村1999' on page 21 undefined on input line 386.
-
-[21
-
-] [22] [23
-
-] [24
-
-]
-
-LaTeX Warning: Reference `3 simulator' on page 25 undefined on input line 462.
+LaTeX Warning: Citation `Sutton1998' on page 23 undefined on input line 446.
 
 
-LaTeX Warning: Reference `3 RL system' on page 25 undefined on input line 464.
+LaTeX Warning: Citation `木村1999' on page 23 undefined on input line 446.
 
+[23
 
-LaTeX Warning: Reference `3 reward function' on page 25 undefined on input line
- 467.
-
-[25
+] [24] [25
 
 ] [26
 
 ]
+
+LaTeX Warning: Reference `3 simulator' on page 27 undefined on input line 522.
+
+
+LaTeX Warning: Reference `3 RL system' on page 27 undefined on input line 524.
+
+
+LaTeX Warning: Reference `3 reward function' on page 27 undefined on input line
+ 527.
+
+[27
+
+] [28
+
+]
 第4章
-(./main.mtc4) [27] [28]
+(./main.mtc4) [29] [30]
 
-LaTeX Warning: Reference `4 single arm' on page 29 undefined on input line 487.
-
-
-
-LaTeX Warning: Reference `4 double arm' on page 29 undefined on input line 489.
+LaTeX Warning: Reference `4 single arm' on page 31 undefined on input line 547.
 
 
-[29]
+
+LaTeX Warning: Reference `4 double arm' on page 31 undefined on input line 549.
+
+
+[31]
 File: ./chap4/chap4_fig/single_double_robot.pdf Graphic file (type pdf)
 <./chap4/chap4_fig/single_double_robot.pdf>
 File: ./chap4/chap4_fig/flat_surface.pdf Graphic file (type pdf)
 <./chap4/chap4_fig/flat_surface.pdf>
- [30
-
-] [31
-
-] [32
+ [32
 
 ] [33
 
@@ -837,36 +860,40 @@ File: ./chap4/chap4_fig/flat_surface.pdf Graphic file (type pdf)
 
 ] [35
 
+] [36
+
+] [37
+
 ]
 
-LaTeX Warning: Reference `4 single arm' on page 36 undefined on input line 617.
+LaTeX Warning: Reference `4 single arm' on page 38 undefined on input line 677.
 
 
 
-LaTeX Warning: Reference `4 double arm' on page 36 undefined on input line 621.
+LaTeX Warning: Reference `4 double arm' on page 38 undefined on input line 681.
 
 
-[36
+[38
 
 ]
 第5章
-(./main.mtc5) [37
+(./main.mtc5) [39
 
 
-] [38] (./Backmatter/Thank.tex [39
+] [40] (./Backmatter/Thank.tex [41
 
-] [40
+] [42
 
-] [41] [42])
-(./Reference/ref.tex [43] [44
+] [43] [44])
+(./Reference/ref.tex [45] [46
 
-] [45]
+] [47]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 40
 .
 
 (c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [46]
+) [48]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
@@ -875,12 +902,12 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 51.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 51.
- [47
+ [49
 
 ])
-(./Backmatter/Achieve.tex [48] [49
+(./Backmatter/Achieve.tex [50] [51
 
-]) [50] (./main.aux)
+]) [52] (./main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-11-01>
@@ -895,12 +922,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6696 strings out of 474823
- 102852 string characters out of 5763802
+ 6744 strings out of 474823
+ 104622 string characters out of 5763802
  1932373 words of memory out of 5000000
- 28826 multiletter control sequences out of 15000+600000
+ 28868 multiletter control sequences out of 15000+600000
  608312 words of font info for 159 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  72i,13n,79p,1928b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (60 pages, 180684 bytes).
+Output written on main.dvi (62 pages, 185056 bytes).
