@@ -342,7 +342,9 @@
 \section{関連研究}\label{2 refference}
 
 \subsection{確率分布を転移先タスクでの方策学習に利用する転移学習に関する既存研究}\label{2 Existing research on transfer learning, which uses probability distributions to learn measures in a transfer task}
+確率分布を転移先タスクでの方策学習に利用する転移学習に関する既存研究では、複数のタスクから得られた方策を効果的に活用する方法に焦点を当てている。この研究は、過去に学習した方策が新しいタスクの学習にどのように役立つかを確率的に評価し、適切な方策を選択して再利用することで学習プロセスを加速することを目的としている。具体的には、過去の経験を確率分布として捉え、その分布を新しいタスクの学習に適用することで、効率的な探索と学習のバランスを実現する。このアプローチは、特に似たようなタスク間での知識の移転において、学習の速度と性能の向上を目指し、動的な環境下での適応能力の向上に寄与する可能性がある。このような確率分布を用いた方策学習のアプローチは、転移学習の範囲を拡大し、より複雑なタスクへの適用を可能にするための基盤を提供する。
 
+また、この研究は最終的に障害物回避はグリッドワールドでの評価のみを行っている。
 %\bibitem[Fernandez 2006]{Fernandez2006}
 %	\leavevmode \\Fernando Fern?ndez:
 %	\newblock ``移確率分布を転移先タスクでの方策学習に利用する転移学習,''
@@ -352,6 +354,9 @@
 
 
 \subsection{事前に設定した禁止ルールに基づく転移学習に関する既存研究}\label{2 existing research on transition learning based on predefined prohibition rules}
+この研究は、アクター・クリティック法を用いた転移学習に基づいた学習プロセスの加速を目指している。効率的な転移学習方法を提案し、情報をソースタスクから取得して訓練サイクルを削減する方法、ポリシー選択方法、および各アクター・クリティックパラメーターの特性を考慮した転移方法について述べている。選択方法は、選択フェーズと訓練フェーズの冗長な試行錯誤を削減することを目的としている。また、転移方法は、選択したソースポリシーをターゲットポリシーにマージすることで、負の転移を避けることを目指している。この研究は、シンプルな実験を通じて提案方法の有効性を示している。
+
+また、この研究は最終的にパスプランニングを使用して、静的障害物回避を行っている。
 
 %\bibitem[高野 2011]{高野20011}
 %	\leavevmode \\高野 敏明:
@@ -364,7 +369,9 @@
 
 
 \subsection{活性化拡散モデルを参考にした知識選択システムによる転移学習に関する既存研究}\label{2 existing research on transfer learning by knowledge selection systems with reference to activation diffusion models}
+この研究は、強化学習における複数の方策から最適な知識を選択する新しい方法を提案している。活性化拡散モデルに基づき、学習済みの方策をカテゴリ化し、状況に応じて適切な方策を選択する。この手法は、特に未知または動的な環境下での学習において、エージェントが以前の経験から適切な方策を選択し、学習効率を高めることを目指している。複数の方策を組み合わせることで、エージェントはより柔軟に環境に適応し、既存の単一方策に依存する手法と比較して、学習の効率化と効果の向上が期待される。このアプローチは、様々な強化学習タスクにおけるエージェントの性能改善に寄与する可能性がある。
 
+また、この研究は最終的にSAP-netを使用して、静的障害物回避を行っている。
 %\bibitem[河野 2022]{河野2022}
 %	\leavevmode \\河野 仁:
 %	\newblock ``活性化拡散モデルを参考にした知識選択システムによる転移学習,''
@@ -372,96 +379,21 @@
 %chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://kaken.nii.ac.jp/ja/file/KAKENHI-PROJECT-16K12493/16K12493seika.pdf
 %静的障害物の回避までしか検証が進んでいない
 
-
-
-\subsection{強化学習を用いたロボットの行動獲得に関する既存研究}\label{2 existing research on robot behavior acquisition using reinforcement learning}
-強化学習はロボットなどの学習の主体が自律的に行動を獲得するために用いる手法であり，多くの研究がなされている\cite{Kober2013}．
-最近では，強化学習と深層学習を組み合わせた手法により，Atari2600というビデオゲームに対して非常に良い結果を得ており，強化学習は幅広く活用されている\cite{Mnih2013}．
-
-ロボットの移動モーションの獲得にもよく強化学習が用いられる．
-%強化学習はロボットに試行錯誤の行動をさせ，学習により，自律的に適応した行動を獲得させる手法である．
-%本節では，強化学習を用いた，ロボットの移動モーション獲得に関する従来研究について3件述べる．
-関連研究として六脚ロボットにおける強化学習を用いた故障時の移動法獲得\cite{新堀2009}や
-%が挙げられるが，あらかじめ決められた脚の動きから移動動作を獲得しており，未知である駆動系以外の残存機能を用いたアクチュエータを用いた複合的な動きは期待できない．
-強化学習とCPG（Central Pattern Generator）を用いた多脚ロボットの歩行動作獲得の研究\cite{石倉2016}が挙げられる．
-%もあるが，機構の対称性を利用した動作獲得を行っている．そのため
-%また強化学習を用いた多脚ロボットの行動獲得\cite{伊藤2002}では，遺伝的アルゴリズムを組み合わせた手法になっており，故障時においても行動獲得を行っている．
-以上の文献からもロボットの行動獲得に強化学習が有用であることがわかる．
-本節では，以上のロボットの行動獲得について詳しく述べる．
-
-%\subsection{QDSEGAによる多脚ロボットの行動獲得}
-%伊藤らはQDSEGA（Ql-learning with Dynamic Structuring of Exploration space based on Genetic Algorithm）を用いて，多脚ロボットの行動獲得を行っている．
-%\textcolor{red}{加筆予定}
-%
-%\begin{figure}[bh]
-%	\centering
-%	\includegraphics[width=70mm]{./chap1/chap1_fig/Ito1}
-%	\caption{Acquisition of adaptive movement by using QDSEGA \cite{伊藤2002}}
-%	\label{fig:Ito}
-%\end{figure}
-
-
 \clearpage
 \newpage
 
 
+
 \section{おわりに}\label{2 last}
-\ref{2 system}節では，第\ref{chap1}章を踏まえて，リカバリモーションを獲得する手法の要求仕様を整理する．
-\ref{2 approach}節では，リカバリモーション獲得の方針について述べる．
-\ref{2 refference}節では，強化学習を用いたロボットの行動獲得についての関連研究について述べる．
-最後に\ref{2 last}節で本章のまとめを述べる．
+本章では，強化学習や転移学習を用いた障害物回避の関連研究について述べた．
 
+\ref{2 Existing research on transfer learning, which uses probability distributions to learn measures in a transfer task}節では，Fernandezらの、確率分布を転移先タスクでの方策学習に利用する転移学習に関する既存研究について述べた。
 
+\ref{2 existing research on transition learning based on predefined prohibition rules}節では，高野らの、事前に設定した禁止ルールに基づく転移学習に関する既存研究について述べた。
 
-本章では，提案するリカバリモーション獲得のための手法の全体像を述べた．
+\ref{2 existing research on transfer learning by knowledge selection systems with reference to activation diffusion models}節では，河野らの、活性化拡散モデルを参考にした知識選択システムによる転移学習に関する既存研究について述べた。
 
-\ref{2 system}節では，第\ref{chap1}章を踏まえて，必要なシステムについて整理した．
-
-\ref{2 approach}節では，それぞれについて強化学習を用いたリカバリモーション獲得をシミュレータ上で行うことを述べた．
-
-\ref{2 refference}節では，強化学習を用いたロボットの行動獲得に関する関連研究について述べた．
-
-\ref{2 ref_approach}節では，本研究のアプローチを述べ，強化学習を用いた既存研究との関連性について述べた．
-
-\ref{2 reinforcement learning}節では，強化学習の基礎的な内容について述べた．
-強化学習は報酬の設計と価値関数の更新アルゴリズムが重要になることを述べた．
-
-次章では，強化学習を用いたリカバリモーション獲得について詳細に述べる．
-
-
-
-
-\begin{table}[b]
-	\centering
-	\caption{Expectation of fire departments to robotic systems \cite{田所2012}}
-	\label{fig:expectation}
-	\begin{tabular}{l|c}
-		\hline 
-		\centering
-		~~~~~~~~~~~~~~~災害と必要な機能&期待割合(\%)\\
-		\hline
-		CBRN災害&\\
-		~~~~~センサによるCBRN物質の特定&80 \\
-		~~~~~安全な場所への被災者の搬送&61\\
-		~~~~~CBRN物質の除去&49\\
-		\hline
-		火災&\\
-		~~~~~ビル内の消火&61\\
-		~~~~~ビル内での探索&51\\
-		~~~~~輻射熱にかかわらず消火&49\\
-		\hline
-		地震災害&\\
-		~~~~~瓦礫の上からの捜索&53\\
-		~~~~~瓦礫の中での捜索&45\\
-		~~~~~重量瓦礫の除去&43\\
-		\hline
-		水害&\\
-		~~~~~要救助者の捜索&55\\
-		~~~~~水の中からの救助&49\\
-		\hline
-	\end{tabular}
-\end{table}
-
+次章では，転移強化学習を用いた、動的障害物回避の提案手法ついて詳細に述べる．
 
 
 \chapter{提案手法名をここに書く}
