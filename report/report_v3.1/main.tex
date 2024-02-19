@@ -434,15 +434,26 @@
 \clearpage
 \newpage
 
-\subsection{SAP-netの概念}\label{3 Concept of SAP-net}
+\subsection{SAP-netの構成概念}\label{3 Concept of SAP-net}
+SAP-netとは、\ref{3 Policy network for selecting strategies}で述べた人間の想起に関わる心理モデルをシステム上で構成するために、\ref{3 Policy network for selecting strategies}の、方策を選択するネットワークを用いて、人間の想起を模したシステムを表現する。これにより、表現されるネットワークをSAP-netと呼ぶ。
+
+\subsection{SAP-netの学術的背景}\label{3 Concept of SAP-net}
+ロボットシステムに実装される学習アルゴリズムとして，Q学習やニューラルネットワークなどの様々な手法が提案されている．通常，学習した知識は1つだけ生成される．近年ではタスクや環境ごとに知識を個別に保存してネットワーク構造として知識を保存・再利用し，環境適応性を高める研究が行われている．しかし，保存された知識間のネットワークを記述する効果的な手法は確立されていない．一方，人間では概念や意味がネットワーク構造として記憶されているという仮説が様々な心理学実験により確認され，プライミング効果の発現がそれを支持している．プライミング効果とは，先行的に得られる刺激が，後続の処理に無意識的に影響を及ぼす認知心理学の知見である．このプライミング効果が発現するように，ロボットシステム内に保存される獲得知識間のネットワーク構造を記述すれば，知識の検索と選択の正確性と効率を促進できると考える．そこで本研究では，強化学習における複数の知識をネットワーク構造で記述・記憶し，効率な知識選択のために知識ごとに活性レベルを採用する．また，活性拡散モデルに基づいた知識間ネットワークの記述手法と，プライミング効果の発現による知識選択の正確性の向上を目的とする．
+
+また、学習メカニズム自体が研究対象ではなく，知識の保存方法や活性化・想起方法 など，「学習した後」の知識選択手法の確立が目的である． 具体的には，ロボットシステムが様々な環境やタスクを学習し，環境やタスクごとに知識を保 存する．それらの知識に活性値を付加し，センサから先行して得られる情報から知識を活性化さ せることで有効な知識を想起（選択）させるメカニズムの開発を行う．
 
 
+
+
+
+\clearpage
+\newpage
 
 \section{提案手法に用いる技術}\label{3 technologies used in proposed method}
 \subsection{強化学習の概要とその応用}\label{3 overview and application reinforcement learning}
 強化学習の基礎概念と，自動運転車を含む様々な分野での応用例について記載する．
 
-\ref{2 reinforcement learning}節で述べたように，強化学習は，ロボットが試行錯誤を繰り返し，最適な行動を学習していく枠組みである\cite{Sutton1998}\cite{木村1999}．
+強化学習は，ロボットが試行錯誤を繰り返し，最適な行動を学習していく枠組みである\cite{Sutton1998}\cite{木村1999}
 
 強化学習は，エージェントが環境内で試行錯誤を繰り返し，最適な行動を学習していく枠組みである．この学習プロセスにおいて，エージェントはある状態において特定の行動を取ることで，環境から報酬というスカラ量を受け取る．エージェントの目的は，受け取る報酬の合計を最大化することにより，目標に適した行動パターンを獲得することである．強化学習のアプローチによって，エージェントは環境に適応し，目標に応じた報酬を最大化する行動を自律的に学習することが可能となる．
 
@@ -459,6 +470,9 @@
 つまり強化学習を用いることにより，ロボットの目標に応じた報酬を与えることで環境に適応した動作を学習することができる．
 本研究では強化学習の中でも多くの研究で用いられている$Q$学習を用いる．
 
+\clearpage
+\newpage
+
 \subsection{転移学習の概要とその応用}\label{3 overview and application transfer learning}
 転移学習（Transfer Learning）とは，あるタスク（ソースタスク）で学習した知識を，別のタスク（ターゲットタスク）へ適用し，学習の効率化を図る機械学習手法である．この手法は，異なるが関連性を有するタスク間で知識を移転することにより，ターゲットタスクの学習に要するデータ量や時間を削減し，モデルの性能を向上させることが可能である．
 
@@ -470,40 +484,143 @@
 
 転移学習は特にデータが限られている場合や，学習に多大な時間とリソースが必要な場合に有効であり，異なるドメインやタスク間での知識の再利用を可能にするため，様々な分野での応用が期待されている．例えば，医療画像分析，自然言語処理，音声認識など，多岐にわたる分野で転移学習は重要な役割を果たしている．
 
+\clearpage
+\newpage
+
 \subsection{転移強化学習の概要}\label{3 transfer reinforcement learning}
-転移強化学習という技術について説明する．
+転移強化学習（Transfer Reinforcement Learning）は，強化学習と転移学習を組み合わせた手法である．この手法は，あるタスク（ソースタスク）で獲得した知識を別のタスク（ターゲットタスク）に転移させ，学習の効率化と性能向上を図る．
 
+転移強化学習の主な目的は，エージェントが新たなタスクを効率的に学習するために，既存のタスクで取得した知識を活用することである．これにより，エージェントは新たな環境での学習時間を削減し，早期に高性能なポリシーを獲得することが可能となる．
 
+具体的には，転移強化学習は以下のステップで行われる．まず，エージェントはソースタスクで行動を選択し，その結果に基づいて報酬を得て学習する．この過程で，エージェントは状態と行動の間の関係，すなわち$Q$値を学習する．次に，学習した$Q$値とポリシーをターゲットタスクに転移させる．この際，ソースタスクとターゲットタスクの間で状態空間や行動空間が異なる場合，適切なマッピング関数を用いて$Q$値やポリシーを変換する必要がある．その後，エージェントは転移された$Q$値やポリシーを基にターゲットタスクでの学習を開始する．この過程で，エージェントは新たな環境に適応し，その環境特有の行動を学習する．
+
+転移強化学習は，新たなタスクへの迅速な適応を可能にし，学習の効率化を図ることができる．しかし，転移の成功はソースタスクとターゲットタスクの間の類似性や関連性に大きく依存する．タスク間の類似性が低い場合，転移による効果は限定的になる可能性がある．そのため，転移強化学習を適用する際には，ソースタスクとターゲットタスクの選択や，適切なマッピング関数の設計などが重要となる．
+
+なお，転移強化学習は強化学習の分野で広く研究されており，ロボティクス，自動運転，ゲームプレイなど，様々な応用例が存在する．これらの分野では，転移強化学習が新たな環境への迅速な適応と，学習の高速化を実現し，効率的な問題解決を支えている．
 
 \clearpage
 \newpage
 
 \section{提案システムの構成}\label{3 structure proposed system}
-実際の移動ロボットにおける動的障害物回避アルゴリズムの設計と実装についての説明
-
 \subsection{動的障害物回避への適用}\label{3 application dynamic obstacle avoidance}
+実際の移動ロボットにおける動的障害物回避アルゴリズムの設計と実装についての説明
 転移強化学習の動的障害物回避問題への応用方法について説明する．
+
 
 \subsection{知識選択手法を用いた動的障害物回避へのアプローチ}\label{3 concept knowledge selection method}
 知識選択の重要性と，SAP-netの役割と機能について詳細に述べる．
 
-\subsection{知識選択型転移強化学習の原理}\label{3 principles knowledge-based transfer reinforcement learning}
 
+\subsection{知識選択型転移強化学習の原理}\label{3 principles knowledge-based transfer reinforcement learning}
 知識選択型転移強化学習の原理
 提案するアプローチの理論的背景と原理を説明
 
 \clearpage
 \newpage
+
+
 \section{SAP-netの構成}\label{3 structure SAP-net}
+\subsection{SAP-netの概要}\label{3 structure SAP-net}
+SAP-netは環境入力情報とそれぞれの方策に与えられている活性値をもとに、環境に対して効果的な方策の選択を行います。活性値は環境入力情報により活性化が促され、さらにその活性値が拡散され、閾値により想起が判断されます。
+
 \subsection{SAP-netの基本構成}\label{3 structure SAP-net}
+また、SAP-netにより，方策がパスで接続され，ネットワーク構造で保存し、人間の脳と同じように活性化拡散を行う。また、下記の手順では，SAP-netに保存された方策から，活性化拡散モデルを用いた転移学習の提案手法の流れを述べる．
+\begin{enumerate}
+  \item　エージェントは，センサを介して環境情報を観測
+  \item　観測された環境情報から特徴を抽出し，特徴をラベル化
+  \item　環境情報の特徴と過去に学習した方策のラベルとが一致する方策を活性化
+  \item　性化した方策は接続されたパスに対して拡散値を出力
+  \item　拡散値を受け取った方策はその拡散値から活性値を計算
+  \item　活性値を持った方策は使用されたパスを除いたパスに対して拡散値を計算
+  \item　すべてのパスを使用するまでステップ7を繰り返す
+  \item　候補方策を活性値をしきい値をもとに収集
+  \item　確率関数に基づく想起方策選択
+  \item　方策の転移（この部分は転移学習である．）
+  \item　学習による行動選択（この部分は強化学習である．）
+  \item　方策再利用の有効性評価
+  \item　方策ネットワーク構造の重みの調整
+  \item　ステップ１に戻る
+\end{enumerate}
+以上の流れにおいて，SAP?netにおいては，概念を方策に置き換え，環境入力情報とそれぞれの方策に与えられている活性値をもとに，環境に対して効果的な方策の選択が行われている．活性値は環境入力情報により活性化が促され，さらにその活性値が拡散され，閾値にて想起が判断される\cite{坂本2019}
+
 \subsection{SAP-netの内部関数}\label{3 structure SAP-net}
+下記に、実際のSAP-netの内部関数をまとめて記す。
+\begin{itemize}
+  \item array4DataFrame(array): 配列をDataFrameに変換し、行番号とヘッダーを追加して返す。
+  \item DataFrame4array(df): DataFrameを配列に変換して返す。
+  \item example\textunderscore{}data(): サンプルデータを返す。
+  \item example\textunderscore{}dataframe(): サンプルデータを含むDataFrameを返す。
+  \item next\textunderscore{}Allpair(df, stimulus): 指定された刺激に対して、拡散する先をソートして返す。
+  \item already\textunderscore{}pair\textunderscore{}remove(pair\textunderscore{}list, already\textunderscore{}list): 既に存在するペアを除外したリストを返す。
+  \item path\textunderscore{}count(df, stimulus): 指定された刺激に対する経路の数をカウントして返す。
+  \item path\textunderscore{}weight(df, stimulus, receive): 指定された経路の重みを返す。
+  \item stimulus\textunderscore{}pairlist(df, stimulus): 刺激に対する拡散可能なペアのリストを生成して返す。
+  \item stimulus\textunderscore{}add\textunderscore{}value(path\textunderscore{}quantity, path\textunderscore{}weight, last\textunderscore{}list, pairA, pairB): 刺激値の計算と更新を行い、新しい刺激値と更新後のリストを返す。
+  \item last\textunderscore{}dataframe\textunderscore{}setting(df, stimulus, first\textunderscore{}stimulus\textunderscore{}value): 初期刺激値を指定して、新しいデータフレームの最終列を作成する。
+  \item df\textunderscore{}update(df, stimulus\textunderscore{}value, pairA, pairB): データフレームを更新して返す。
+  \item create\textunderscore{}graph(df, GIF\textunderscore{}source\textunderscore{}path, plotpoint\textunderscore{}list): データフレームからグラフを作成し、GIFソースパスに保存する。
+  \item create\textunderscore{}gif(GIF\textunderscore{}source\textunderscore{}path, GIF\textunderscore{}100\textunderscore{}path, GIF\textunderscore{}1000\textunderscore{}path): GIF用の画像ファイルを生成する。
+  \item attenuation(df, attenuation\textunderscore{}percentage): データフレームの値を指定した割合で削減する。
+  \item makeup\textunderscore{}folder(): 出力用のフォルダパスと各種ファイルパスを作成して返す。
+  \item create\textunderscore{}heatmap(df, Heatmap\textunderscore{}path): ヒートマップを作成し、指定されたパスに保存する。
+  \item create\textunderscore{}network(df, Network\textunderscore{}path): ネットワーク図を作成し、指定されたパスに保存する。
+  \item create\textunderscore{}plotpoint(plotpoint\textunderscore{}list, Plotpoint\textunderscore{}path): プロットポイントを作成する。
+  \item stimulus\textunderscore{}calc(df=None, stimulus=1, first\textunderscore{}stimulus\textunderscore{}value=1.0): サンプルデータを用いて刺激計算を行い、データフレームを返す。
+\end{itemize}
+
 \subsection{SAP-netのプログラム要件}\label{3 structure SAP-net}
+SAP-netで、実装すべきプログラム要件を下記に示す。
+SAP-netは今後、別のプログラム内部に組み込む可能性があるため簡易に用いることができるようにするべきである。
+次に、SAP-netのプログラム要件を以下に示します。SAP-netは将来的に別のプログラム内部に組み込む可能性があるため、簡易に導入できるように設計されています。
+
+\subsubsection{プロジェクトの背景と目的の理解}
+このプロジェクトはSAP-netを用いたプログラムを活用し、適応的なシステムにSAP-netが有用であることを示すことを目的としています。具体的には、少ない学習量でも人間が応用できる知識をシステムに統合し、静的障害物回避の知識を強化学習で取得することで、動的障害物の回避が可能となります。
+
+\subsubsection{ステークホルダーの識別}
+プロジェクトには、今後の動的障害物の回避に関心を寄せるステークホルダーが含まれています。プログラムは簡単に導入可能である必要があり、そのためにはパッケージ化が行われています。
+
+\subsubsection{ユーザー要件の収集}
+ユーザー要件は、Liderにプログラムを導入して動的障害物の回避に活用することが求められます。
+
+\subsubsection{機能要件の定義}
+システムはSAP-netの知識を活用して、重み、距離、角度などを計算し、適切な知識を選択する機能を提供します。以下は主な機能です。
+
+\begin{itemize}
+  \item \texttt{array4DataFrame(array)}: 配列をDataFrameに変換し、行番号とヘッダーを追加して返す。
+  \item 他の機能も含め、DataFrameや配列の変換、データ処理、グラフ作成などが含まれます。
+\end{itemize}
+
+\subsubsection{非機能要件の定義}
+プログラムはリアルタイムで動的障害物の回避判断を行い、高速かつ安定したレスポンスを提供する必要があります。将来的にはこれらの要件が絶対的に必要となりますが、今年度は課題としての取り組みが可能です。
+
+\subsubsection{データ要件の確定}
+システムが取り扱うデータはSQLとCSVでローカルに保存され、適宜出力されます。データの種類はPythonのデータフレームで扱われ、別プログラムに渡す場合はSQLで処理されます。また、人間的な処理が入る場合はCSVとして出力し、疑似的な待機が可能となっています。
+
+\subsubsection{システムの制約と制約条件}
+予算は０円であり、約１年間の制約があります。技術要件としては、どのＯＳにも依存せず利用可能なプログラムを開発する必要があります。
+
+\subsubsection{ユーザビリティとユーザインターフェースの要件}
+プログラムはpypiにアップロードされており、pipでダウンロードできるようになっています。一行で呼び出せるように関数化され、簡単に導入可能です。
+
+\subsubsection{テスト要件の定義}
+テスト要件は手計算での結果確認、さまざまな知識の確認、およびP-SAP-netとの一致を含みます。
+
+\subsubsection{プロジェクトスケジュールと進捗管理}
+プロジェクトは8月に北海道で論文発表があり、そのためには動的障害物の回避が必要です。卒業までには動的障害物の回避とハイパーパラメータの調整が必要です。進捗管理として、マイルストーンを設定し、スケジュールに従って進捗を確認します。
+
+
 \subsection{SAP-netの速度上限}\label{3 structure SAP-net}
+
+
 \subsection{SAP-netの使用方法}\label{3 structure SAP-net}
 
 
+\section{減衰関数について}\label{3 structure SAP-net}
+
+
 \section{数値的な評価指標}\label{3 numerical evaluation metrics}
-\subsection{減衰関数について}\label{3 structure SAP-net}
+
+
 \section{最適化シミュレーション}\label{3 optimization simulation}
 最適化技術，および性能向上のための戦略について書く．
 
