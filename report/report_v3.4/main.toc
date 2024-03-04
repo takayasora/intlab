@@ -7,94 +7,94 @@
 \contentsline {subsection}{\numberline {1.1.2}自動運転技術の進展}{4}{}%
 \contentsline {subsection}{\numberline {1.1.3}自動運転技術の事故事例と課題}{6}{}%
 \contentsline {subsection}{\numberline {1.1.4}動的障害物回避の重要性}{9}{}%
-\contentsline {subsection}{\numberline {1.1.5}自律型ロボットの導入とその課題}{10}{}%
-\contentsline {subsection}{\numberline {1.1.6}課題解決後の自立型ロボットの有用性}{13}{}%
-\contentsline {section}{\numberline {1.2}本研究の目的}{14}{}%
-\contentsline {section}{\numberline {1.3}本論文における研究3要素}{15}{}%
-\contentsline {subsection}{\numberline {1.3.1}研究の学術性}{15}{}%
-\contentsline {subsection}{\numberline {1.3.2}研究の新規性}{15}{}%
-\contentsline {subsection}{\numberline {1.3.3}研究の有用性}{15}{}%
-\contentsline {section}{\numberline {1.4}本論文の構成}{16}{}%
-\contentsline {chapter}{\numberline {第2章}関連研究}{17}{}%
-\contentsline {section}{\numberline {2.1}はじめに}{18}{}%
-\contentsline {section}{\numberline {2.2}関連研究}{19}{}%
-\contentsline {subsection}{\numberline {2.2.1}確率分布を転移先タスクでの方策学習に利用する転移学習に関する既存研究}{19}{}%
-\contentsline {subsection}{\numberline {2.2.2}事前に設定した禁止ルールに基づく転移学習に関する既存研究}{19}{}%
-\contentsline {subsection}{\numberline {2.2.3}活性化拡散モデルを参考にした知識選択システムによる転移学習に関する既存研究}{19}{}%
-\contentsline {section}{\numberline {2.3}おわりに}{21}{}%
-\contentsline {chapter}{\numberline {第3章}知識選択型転移強化学習を用いた移動ロボットによる動的障害物回避とハイパーパラメータ探査}{23}{}%
-\contentsline {section}{\numberline {3.1}はじめに}{25}{}%
-\contentsline {section}{\numberline {3.2}本研究のアプローチ}{25}{}%
-\contentsline {section}{\numberline {3.3}提案手法に用いる概念}{26}{}%
-\contentsline {subsection}{\numberline {3.3.1}人間の想起に関わる心理モデル}{26}{}%
-\contentsline {subsection}{\numberline {3.3.2}方策を選択する方策ネットワーク}{26}{}%
-\contentsline {subsection}{\numberline {3.3.3}SAP-netの構成概念}{28}{}%
-\contentsline {subsection}{\numberline {3.3.4}SAP-netの学術的背景}{28}{}%
-\contentsline {section}{\numberline {3.4}提案手法に用いる技術}{29}{}%
-\contentsline {subsection}{\numberline {3.4.1}強化学習の概要とその応用}{29}{}%
-\contentsline {subsection}{\numberline {3.4.2}転移学習の概要とその応用}{30}{}%
-\contentsline {subsection}{\numberline {3.4.3}転移強化学習の概要}{31}{}%
-\contentsline {section}{\numberline {3.5}提案システムの構成}{32}{}%
-\contentsline {subsection}{\numberline {3.5.1}静的障害物回避の学習}{32}{}%
-\contentsline {subsection}{\numberline {3.5.2}動的障害物回避への適用}{32}{}%
-\contentsline {subsection}{\numberline {3.5.3}知識選択型転移強化学習の原理}{33}{}%
-\contentsline {section}{\numberline {3.6}SAP-netの構成}{34}{}%
-\contentsline {subsection}{\numberline {3.6.1}SAP-netの概要}{34}{}%
-\contentsline {subsection}{\numberline {3.6.2}SAP-netの基本構成}{34}{}%
-\contentsline {subsection}{\numberline {3.6.3}SAP-netの内部関数}{35}{}%
-\contentsline {subsection}{\numberline {3.6.4}SAP-netのプログラム要件}{36}{}%
-\contentsline {subsubsection}{プロジェクトの背景と目的の理解}{36}{}%
-\contentsline {subsubsection}{ステークホルダーの識別}{36}{}%
-\contentsline {subsubsection}{ユーザー要件の収集}{36}{}%
-\contentsline {subsubsection}{機能要件の定義}{36}{}%
-\contentsline {subsubsection}{非機能要件の定義}{37}{}%
-\contentsline {subsubsection}{データ要件の確定}{37}{}%
-\contentsline {subsubsection}{システムの制約と制約条件}{37}{}%
-\contentsline {subsubsection}{ユーザビリティとユーザインターフェースの要件}{37}{}%
-\contentsline {subsubsection}{テスト要件の定義}{37}{}%
-\contentsline {subsubsection}{プロジェクトスケジュールと進捗管理}{37}{}%
-\contentsline {subsection}{\numberline {3.6.5}SAP-netの速度上限}{38}{}%
-\contentsline {subsection}{\numberline {3.6.6}SAP-netの使用方法}{38}{}%
-\contentsline {section}{\numberline {3.7}減衰関数について}{38}{}%
-\contentsline {section}{\numberline {3.8}数値的な評価指標}{38}{}%
-\contentsline {section}{\numberline {3.9}最適化シミュレーション}{38}{}%
-\contentsline {section}{\numberline {3.10}提案システムの全体像}{38}{}%
-\contentsline {section}{\numberline {3.11}おわりに}{39}{}%
-\contentsline {chapter}{\numberline {第4章}シミュレータ実験}{41}{}%
-\contentsline {section}{\numberline {4.1}はじめに}{43}{}%
-\contentsline {section}{\numberline {4.2}実験環境について}{44}{}%
-\contentsline {section}{\numberline {4.3}予備実験}{45}{}%
-\contentsline {subsection}{\numberline {4.3.1}予備実験目的}{45}{}%
-\contentsline {subsection}{\numberline {4.3.2}予備実験条件}{45}{}%
-\contentsline {subsection}{\numberline {4.3.3}予備実験結果}{45}{}%
-\contentsline {section}{\numberline {4.4}静的障害物回避実験}{46}{}%
-\contentsline {subsection}{\numberline {4.4.1}静的障害物回避実験目的}{46}{}%
-\contentsline {subsection}{\numberline {4.4.2}静的障害物回避実験条件}{46}{}%
-\contentsline {subsection}{\numberline {4.4.3}静的障害物回避実験評価}{46}{}%
-\contentsline {subsection}{\numberline {4.4.4}静的障害物回避実験結果}{46}{}%
-\contentsline {section}{\numberline {4.5}動的障害物回避実験}{47}{}%
-\contentsline {subsection}{\numberline {4.5.1}動的障害物回避実験目的}{47}{}%
-\contentsline {subsection}{\numberline {4.5.2}動的障害物回避実験条件}{47}{}%
-\contentsline {subsection}{\numberline {4.5.3}動的障害物回避実験評価}{47}{}%
-\contentsline {subsection}{\numberline {4.5.4}動的障害物回避実験結果}{47}{}%
-\contentsline {section}{\numberline {4.6}知識選択実験}{48}{}%
-\contentsline {subsection}{\numberline {4.6.1}動的障害物回避実験目的}{48}{}%
-\contentsline {subsection}{\numberline {4.6.2}動的障害物回避実験条件}{48}{}%
-\contentsline {subsection}{\numberline {4.6.3}動的障害物回避実験評価}{48}{}%
-\contentsline {subsection}{\numberline {4.6.4}動的障害物回避実験結果}{48}{}%
-\contentsline {section}{\numberline {4.7}最適化実験}{49}{}%
-\contentsline {subsection}{\numberline {4.7.1}最適化実験目的}{49}{}%
-\contentsline {subsection}{\numberline {4.7.2}最適化実験条件}{49}{}%
-\contentsline {subsection}{\numberline {4.7.3}最適化実験結果}{49}{}%
-\contentsline {section}{\numberline {4.8}実験結果}{49}{}%
-\contentsline {section}{\numberline {4.9}手法比較}{49}{}%
-\contentsline {section}{\numberline {4.10}おわりに}{50}{}%
-\contentsline {chapter}{\numberline {第5章}結論}{51}{}%
-\contentsline {section}{\numberline {5.1}結論}{52}{}%
-\contentsline {section}{\numberline {5.2}今後の展望}{53}{}%
+\contentsline {subsection}{\numberline {1.1.5}自律型ロボットの導入とその課題}{11}{}%
+\contentsline {subsection}{\numberline {1.1.6}課題解決後の自立型ロボットの有用性}{14}{}%
+\contentsline {section}{\numberline {1.2}本研究の目的}{15}{}%
+\contentsline {section}{\numberline {1.3}本論文における研究3要素}{16}{}%
+\contentsline {subsection}{\numberline {1.3.1}研究の学術性}{16}{}%
+\contentsline {subsection}{\numberline {1.3.2}研究の新規性}{16}{}%
+\contentsline {subsection}{\numberline {1.3.3}研究の有用性}{16}{}%
+\contentsline {section}{\numberline {1.4}本論文の構成}{17}{}%
+\contentsline {chapter}{\numberline {第2章}関連研究}{19}{}%
+\contentsline {section}{\numberline {2.1}はじめに}{20}{}%
+\contentsline {section}{\numberline {2.2}関連研究}{21}{}%
+\contentsline {subsection}{\numberline {2.2.1}確率分布を転移先タスクでの方策学習に利用する転移学習に関する既存研究}{21}{}%
+\contentsline {subsection}{\numberline {2.2.2}事前に設定した禁止ルールに基づく転移学習に関する既存研究}{21}{}%
+\contentsline {subsection}{\numberline {2.2.3}活性化拡散モデルを参考にした知識選択システムによる転移学習に関する既存研究}{21}{}%
+\contentsline {section}{\numberline {2.3}おわりに}{23}{}%
+\contentsline {chapter}{\numberline {第3章}知識選択型転移強化学習を用いた移動ロボットによる動的障害物回避とハイパーパラメータ探査}{25}{}%
+\contentsline {section}{\numberline {3.1}はじめに}{27}{}%
+\contentsline {section}{\numberline {3.2}本研究のアプローチ}{27}{}%
+\contentsline {section}{\numberline {3.3}提案手法に用いる概念}{28}{}%
+\contentsline {subsection}{\numberline {3.3.1}人間の想起に関わる心理モデル}{28}{}%
+\contentsline {subsection}{\numberline {3.3.2}方策を選択する方策ネットワーク}{28}{}%
+\contentsline {subsection}{\numberline {3.3.3}SAP-netの構成概念}{30}{}%
+\contentsline {subsection}{\numberline {3.3.4}SAP-netの学術的背景}{30}{}%
+\contentsline {section}{\numberline {3.4}提案手法に用いる技術}{31}{}%
+\contentsline {subsection}{\numberline {3.4.1}強化学習の概要とその応用}{31}{}%
+\contentsline {subsection}{\numberline {3.4.2}転移学習の概要とその応用}{32}{}%
+\contentsline {subsection}{\numberline {3.4.3}転移強化学習の概要}{33}{}%
+\contentsline {section}{\numberline {3.5}提案システムの構成}{34}{}%
+\contentsline {subsection}{\numberline {3.5.1}静的障害物回避の学習}{34}{}%
+\contentsline {subsection}{\numberline {3.5.2}動的障害物回避への適用}{34}{}%
+\contentsline {subsection}{\numberline {3.5.3}知識選択型転移強化学習の原理}{35}{}%
+\contentsline {section}{\numberline {3.6}SAP-netの構成}{36}{}%
+\contentsline {subsection}{\numberline {3.6.1}SAP-netの概要}{36}{}%
+\contentsline {subsection}{\numberline {3.6.2}SAP-netの基本構成}{36}{}%
+\contentsline {subsection}{\numberline {3.6.3}SAP-netの内部関数}{37}{}%
+\contentsline {subsection}{\numberline {3.6.4}SAP-netのプログラム要件}{38}{}%
+\contentsline {subsubsection}{プロジェクトの背景と目的の理解}{38}{}%
+\contentsline {subsubsection}{ステークホルダーの識別}{38}{}%
+\contentsline {subsubsection}{ユーザー要件の収集}{38}{}%
+\contentsline {subsubsection}{機能要件の定義}{38}{}%
+\contentsline {subsubsection}{非機能要件の定義}{39}{}%
+\contentsline {subsubsection}{データ要件の確定}{39}{}%
+\contentsline {subsubsection}{システムの制約と制約条件}{39}{}%
+\contentsline {subsubsection}{ユーザビリティとユーザインターフェースの要件}{39}{}%
+\contentsline {subsubsection}{テスト要件の定義}{39}{}%
+\contentsline {subsubsection}{プロジェクトスケジュールと進捗管理}{39}{}%
+\contentsline {subsection}{\numberline {3.6.5}SAP-netの速度上限}{40}{}%
+\contentsline {subsection}{\numberline {3.6.6}SAP-netの使用方法}{40}{}%
+\contentsline {section}{\numberline {3.7}減衰関数について}{40}{}%
+\contentsline {section}{\numberline {3.8}数値的な評価指標}{40}{}%
+\contentsline {section}{\numberline {3.9}最適化シミュレーション}{40}{}%
+\contentsline {section}{\numberline {3.10}提案システムの全体像}{40}{}%
+\contentsline {section}{\numberline {3.11}おわりに}{41}{}%
+\contentsline {chapter}{\numberline {第4章}シミュレータ実験}{43}{}%
+\contentsline {section}{\numberline {4.1}はじめに}{45}{}%
+\contentsline {section}{\numberline {4.2}実験環境について}{46}{}%
+\contentsline {section}{\numberline {4.3}予備実験}{47}{}%
+\contentsline {subsection}{\numberline {4.3.1}予備実験目的}{47}{}%
+\contentsline {subsection}{\numberline {4.3.2}予備実験条件}{47}{}%
+\contentsline {subsection}{\numberline {4.3.3}予備実験結果}{47}{}%
+\contentsline {section}{\numberline {4.4}静的障害物回避実験}{48}{}%
+\contentsline {subsection}{\numberline {4.4.1}静的障害物回避実験目的}{48}{}%
+\contentsline {subsection}{\numberline {4.4.2}静的障害物回避実験条件}{48}{}%
+\contentsline {subsection}{\numberline {4.4.3}静的障害物回避実験評価}{48}{}%
+\contentsline {subsection}{\numberline {4.4.4}静的障害物回避実験結果}{48}{}%
+\contentsline {section}{\numberline {4.5}動的障害物回避実験}{49}{}%
+\contentsline {subsection}{\numberline {4.5.1}動的障害物回避実験目的}{49}{}%
+\contentsline {subsection}{\numberline {4.5.2}動的障害物回避実験条件}{49}{}%
+\contentsline {subsection}{\numberline {4.5.3}動的障害物回避実験評価}{49}{}%
+\contentsline {subsection}{\numberline {4.5.4}動的障害物回避実験結果}{49}{}%
+\contentsline {section}{\numberline {4.6}知識選択実験}{50}{}%
+\contentsline {subsection}{\numberline {4.6.1}動的障害物回避実験目的}{50}{}%
+\contentsline {subsection}{\numberline {4.6.2}動的障害物回避実験条件}{50}{}%
+\contentsline {subsection}{\numberline {4.6.3}動的障害物回避実験評価}{50}{}%
+\contentsline {subsection}{\numberline {4.6.4}動的障害物回避実験結果}{50}{}%
+\contentsline {section}{\numberline {4.7}最適化実験}{51}{}%
+\contentsline {subsection}{\numberline {4.7.1}最適化実験目的}{51}{}%
+\contentsline {subsection}{\numberline {4.7.2}最適化実験条件}{51}{}%
+\contentsline {subsection}{\numberline {4.7.3}最適化実験結果}{51}{}%
+\contentsline {section}{\numberline {4.8}実験結果}{51}{}%
+\contentsline {section}{\numberline {4.9}手法比較}{51}{}%
+\contentsline {section}{\numberline {4.10}おわりに}{52}{}%
+\contentsline {chapter}{\numberline {第5章}結論}{53}{}%
+\contentsline {section}{\numberline {5.1}結論}{54}{}%
+\contentsline {section}{\numberline {5.2}今後の展望}{55}{}%
 \chapterbegin 
-\contentsline {chapter}{謝辞}{57}{}%
+\contentsline {chapter}{謝辞}{59}{}%
 \chapterbegin 
-\contentsline {chapter}{参考文献}{59}{}%
-\contentsline {chapter}{研究業績}{63}{}%
+\contentsline {chapter}{参考文献}{61}{}%
+\contentsline {chapter}{研究業績}{65}{}%
 \chapterbegin 
