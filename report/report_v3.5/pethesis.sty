@@ -1,0 +1,165 @@
+%pethesis.sty
+\typeout{pethesis.sty - Sat, Jan 23 2010 by Takashi Michikawa}
+\usepackage{fancyhdr}
+\usepackage{fancybox}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage[dvipdfmx]{graphicx} %橘高変更 dvipdfm → dvipdfmx（前者は古いのでeps以外の画像形式に非対応）
+% \usepackage{subfigure}
+\usepackage{enumerate}
+
+% 1inch = 25.4 mm 
+% A4 210mm×297mm 
+%
+% ページの体裁
+%
+\oddsidemargin=-0.4truemm  %% 25mm
+\evensidemargin=-0.4truemm %% 25mm
+\topmargin=-10.4truemm
+\headsep=10truemm
+\footskip=10truemm
+\textwidth=160truemm %10pt : 172mm
+\textheight=231truemm % 10pt :243mm
+
+% 表紙用の新変数
+\def\thesistype#1{\gdef\@thesistype{#1}}
+\def\title#1{\gdef\@title{#1}}
+\def\etitle#1{\gdef\@etitle{#1}}
+\def\studentid#1{\gdef\@studentid{#1}}
+\def\author#1{\gdef\@author{#1}}
+\def\supervisor#1{\gdef\@supervisor{#1}}
+\def\affiliation#1{\gdef\@affiliation{#1}}
+
+
+\renewcommand\maketitle{
+	\thispagestyle{empty}
+  	%\fancypage{\setlength{\fboxrule}{1.8truemm}\fbox}
+  	{}
+	\begin{center}
+	\vspace*{15truemm}
+	{\bf \@thesistype}\\
+	\vspace*{3truemm}
+	\includegraphics[width=40truemm]{tdulogo.eps}\\
+	\vspace*{20truemm}
+	{\bfseries{\LARGE \@title}} \\
+
+	\vspace*{10truemm}
+	{\Large \@etitle}\\
+	\vspace*{40truemm}
+ 	{\Large 指導教員 \quad \@supervisor}\\
+ 	\vspace*{10truemm}
+ 	
+ 	{\Large \@affiliation}\\
+ 	\vspace*{8truemm}
+ 	{\Large 学籍番号\@studentid} \\
+ 	 	\vspace*{10truemm}
+
+ 	 {\Large \@author}
+ 	\vfill	
+	\end{center} 
+	\newpage
+	\fancypage{}{}
+	\cleardoublepage
+}
+
+%
+% jsbook ではabstract環境がないので、それに対応するもの
+%
+\newenvironment{coverabstract}{
+\thispagestyle{empty} \vspace*{40truemm} \begin{center} {\bf 概要}\end{center} \begin{minipage}[t]{\textwidth}}{
+ \end{minipage}}
+
+%枠線作成
+%http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/fancyhdrbook.html
+\pagestyle{fancyplain}
+
+
+%
+% ページヘッダの制御
+%
+\fancyhead{}
+\fancyhead[RO,RE]{\rightmark}
+\fancyhead[LE,LO]{\leftmark}
+\fancyhead[RE]{\gdef\headrulewidth{.4pt}}
+\fancyhead[LO]{\gdef\headrulewidth{.4pt}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\chaptermark}[1]{\markboth{第\ \thechapter\ 章~#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection #1}{}}
+
+    
+%%jsbook では関連図書となるので変更
+\renewcommand{\bibname}{参考文献}
+
+%% (j)report・(j)book クラスの場合
+%% 参考文献が目次に乗るようにする。
+%%http://www.nsknet.or.jp/~tony/TeX/faq/macro.htm
+%% 
+
+\makeatletter
+\renewenvironment{thebibliography}[1]% 再定義
+{\chapter*{\bibname\@mkboth{\bibname}{\bibname}}%
+ \addcontentsline{toc}{chapter}{\bibname}% この行追加
+   \list{\@biblabel{\@arabic\c@enumiv}}%
+        {\settowidth\labelwidth{\@biblabel{#1}}%
+         \leftmargin\labelwidth
+         \advance\leftmargin\labelsep
+         \@openbib@code
+         \usecounter{enumiv}%
+         \let\p@enumiv\@empty
+         \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+   \sloppy
+   \clubpenalty4000
+   \@clubpenalty\clubpenalty
+   \widowpenalty4000%
+   \sfcode`\.\@m}
+  {\def\@noitemerr
+    {\@latex@warning{Empty `thebibliography' environment}}%
+   \endlist}
+\makeatother
+
+%
+% \chapterの再定義
+%
+\makeatletter
+\renewcommand{\chapter}{%
+  \if@openright\cleardoublepage\else\clearpage\fi
+%   \thispagestyle{plain}% chapter最初のページ番号をフッタ中央に配置
+    \global\@topnum\z@
+  \if@english \@afterindentfalse \else \@afterindenttrue \fi
+  \secdef\@chapter\@schapter
+}
+
+
+\makeatother
+
+%http://www.asianwing.com/chapter.htm
+
+%
+% \tableofcontentsでtocファイル作成時に\subsection まで索引を作成する。
+%
+\setcounter{tocdepth}{2}
+%
+% 索引の見出し、ページ番号のドットの間隔を変更
+%
+\makeatletter
+\renewcommand{\@dotsep}{1} % 9/18 em
+\makeatother
+
+\setlength{\labelwidth}{-4pt}
+\def\mythebibliography#1{
+%\subsection*{\markboth
+% {参 考 文 献}{参 考 文 献}}
+\list
+ {[\arabic{enumi}]}{\leftmargin\labelwidth
+ \advance\leftmargin\labelsep
+ \usecounter{enumi}}
+ \setlength{\itemsep}{4pt}
+ \setlength{\topsep}{6pt}
+ \setlength{\parsep}{2pt} %original: 2pt
+% \def\newblock{\hskip .11em plus .33em minus .07em}
+ \def\newblock{\hskip .05em plus .15em minus .07em}
+ \sloppy
+ \sfcode`\.=1000\relax
+}
+\let\endmythebibliography=\endlist
+
