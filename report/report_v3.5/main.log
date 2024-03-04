@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  4 MAR 2024 15:11
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  4 MAR 2024 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -877,6 +877,9 @@ File: ./chap3/chap3_fig/dynamic_obstaclesB.pdf Graphic file (type pdf)
  [37
 
 ]
+File: ./chap3/chap3_fig/SAPmodel_example.pdf Graphic file (type pdf)
+<./chap3/chap3_fig/SAPmodel_example.pdf>
+
 
 Package fancyhdr Warning: \headheight is too small (20.0pt): 
 (fancyhdr)                Make it at least 28.27264pt, for example:
@@ -886,16 +889,11 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
 
 [38]
-File: ./chap3/chap3_fig/SAPmodel_example.pdf Graphic file (type pdf)
-<./chap3/chap3_fig/SAPmodel_example.pdf>
- [39
-
-]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
-32.
+30.
  (c:/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
+) [39]
 
 Package fancyhdr Warning: \headheight is too small (20.0pt): 
 (fancyhdr)                Make it at least 28.27264pt, for example:
@@ -904,12 +902,12 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
 
-[40] [41]
+[40]
 LaTeX Font Info:    Trying to load font information for T1+pcr on input line 67
-2.
+0.
  (c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
+) [41]
 
 Package fancyhdr Warning: \headheight is too small (20.0pt): 
 (fancyhdr)                Make it at least 28.27264pt, for example:
@@ -920,14 +918,14 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 
 [42] [43]
 
-LaTeX Warning: Reference `3 simulator' on page 44 undefined on input line 719.
+LaTeX Warning: Reference `3 simulator' on page 44 undefined on input line 734.
 
 
-LaTeX Warning: Reference `3 RL system' on page 44 undefined on input line 721.
+LaTeX Warning: Reference `3 RL system' on page 44 undefined on input line 736.
 
 
 LaTeX Warning: Reference `3 reward function' on page 44 undefined on input line
- 724.
+ 739.
 
 
 Package fancyhdr Warning: \headheight is too small (20.0pt): 
@@ -945,11 +943,11 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 
 ] [46]
 
-LaTeX Warning: Reference `4 single arm' on page 47 undefined on input line 744.
+LaTeX Warning: Reference `4 single arm' on page 47 undefined on input line 759.
 
 
 
-LaTeX Warning: Reference `4 double arm' on page 47 undefined on input line 746.
+LaTeX Warning: Reference `4 double arm' on page 47 undefined on input line 761.
 
 
 [47]
@@ -961,38 +959,38 @@ File: ./chap4/chap4_fig/flat_surface.pdf Graphic file (type pdf)
 
 ] [49
 
-] [50
-
-] [51
+] [50] [51
 
 ] [52
 
 ] [53
 
+] [54
+
 ]
 
-LaTeX Warning: Reference `4 single arm' on page 54 undefined on input line 874.
+LaTeX Warning: Reference `4 single arm' on page 55 undefined on input line 932.
 
 
 
-LaTeX Warning: Reference `4 double arm' on page 54 undefined on input line 878.
+LaTeX Warning: Reference `4 double arm' on page 55 undefined on input line 936.
 
 
-[54
+[55
+
+] [56
+
 
 ]
 第5章
-(./main.mtc5) [55
+(./main.mtc5) [57] [58] (./Backmatter/Thank.tex [59
 
+] [60
 
-] [56] (./Backmatter/Thank.tex [57
+] [61] [62])
+(./Reference/ref.tex [63] [64
 
-] [58
-
-] [59] [60])
-(./Reference/ref.tex [61] [62
-
-] [63] [64] [65]
+] [65] [66] [67]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 117.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
@@ -1001,12 +999,12 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 117.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 117.
- [66
+ [68
 
 ]) (./Backmatter/Achieve.tex
-[67] [68
+[69] [70
 
-] [69]) [70] (./main.aux)
+] [71]) [72] (./main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-11-01>
@@ -1021,12 +1019,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6854 strings out of 474823
- 108304 string characters out of 5763802
+ 6855 strings out of 474823
+ 108328 string characters out of 5763802
  1932373 words of memory out of 5000000
- 28964 multiletter control sequences out of 15000+600000
+ 28965 multiletter control sequences out of 15000+600000
  608626 words of font info for 160 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  72i,13n,79p,2811b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (80 pages, 242700 bytes).
+Output written on main.dvi (82 pages, 249328 bytes).

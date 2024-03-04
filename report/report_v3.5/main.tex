@@ -696,6 +696,23 @@ SAP-net‚Í¡ŒãC•Ê‚ÌƒvƒƒOƒ‰ƒ€“à•”‚É‘g‚İ‚Ş‰Â”\«‚ª‚ ‚é‚½‚ßŠÈˆÕ‚É—p‚¢‚é‚±‚Æ‚ª‚Å‚
 \subsection{SAP-net‚Ìg—p•û–@}\label{3 structure SAP-net}
 
 
+\subsection{SAP-net‚ÌˆË‘¶ŠÖŒW}\label{3 dependencies SAP-net}
+
+SAP-net‚ğ“®ì‚³‚¹‚é‚É‚ÍA‰º‹L‚Ìƒ‰ƒCƒuƒ‰ƒŠ‚ÉˆË‘¶‚·‚éB‚»‚Ì‚½‚ßA‰º‹L‚Ìƒ‰ƒCƒuƒ‰ƒŠ‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ä‚¢‚È‚¢ó‘Ô‚Å‚ ‚ê‚Îƒ‰ƒCƒuƒ‰ƒŠ‚ğ“±“ü‚µA‰º‹L‚Ìƒ‰ƒCƒuƒ‰ƒŠ‚æ‚èÅV‚Ìƒ‰ƒCƒuƒ‰ƒŠ‚ğ“±“ü‚µ‚Ä‚¢‚éê‡‚ÍAŒİŠ·«‚ğ‘¹‚È‚í‚È‚¢‚æ‚¤‚ÈŠÂ‹«‚ÉƒZƒbƒgƒAƒbƒv‚·‚é‚±‚Æ‚Å“®ì‚·‚éB
+
+\begin{itemize}
+  \item Python: 3.11.4
+  \item pillow: 9.5.0
+  \item matplotlib: 3.7.1
+  \item pandas: 2.0.0
+  \item numpy: 1.23.5
+  \item seaborn: 0.12.2
+  \item japanize-matplotlib: 1.1.3
+  \item networkx: 3.1
+\end{itemize}
+
+
+
 \section{Œ¸ŠŠÖ”‚É‚Â‚¢‚Ä}\label{3 structure SAP-net}
 
 
@@ -779,16 +796,58 @@ Fig.~\ref{fig:flat_surface}‚É¦‚·‚æ‚¤‚Éƒƒ{ƒbƒg‚ÌˆÚ“®‚Í•½‚ç‚È…•½–Ê‚Ås‚í‚êCü‚
 \newpage
 
 \section{—\”õÀŒ±}\label{4 preliminary experiments}
-ÀÛ‚ÌÀŒ±‚É—p‚¢‚é‚Å‚ ‚ë‚¤‹Zp‚ÌŠÂ‹«‚ğ€”õ‚µƒeƒXƒg‚µ‚½
-
 \subsection{—\”õÀŒ±–Ú“I}\label{4 objectives preliminary experiments}
-
-
+–{Í‚Å‚ÍAÀÛ‚ÉÀŒ±‚Ég—p‚³‚ê‚éSAP-net‚Åg—p‚·‚é‹Zp‚ª‘g‚İ‡‚í‚¹‚Ä“K‡‚·‚é‚©‚ÌA“K‡ƒeƒXƒg‚ğ–Ú“I‚É‚µ‚½—\”õÀŒ±‚Å‚ ‚éB‚±‚Ì—\”õÀŒ±‚ğs‚¤‚±‚Æ‚ÅAg—p‚·‚é‹Zp‚ªˆË‘¶ŠÖŒWã–â‘è‚ª‚È‚­“®ì‚·‚é‚±‚Æ‚ğ•ÛØ‚µA’ZŠÔ‚ÅŠ®¬‚Ü‚Å‚Ég—p‚·‚é‹Zp—vŒ‚ª–‚½‚³‚ê‚é‚±‚Æ‚ğ’S•Û‚·‚é‚±‚Æ‚ª‚Å‚«‚éB
+‹ï‘Ì“I‚ÉA–{—\”õÀŒ±‚Å‚ÍPython‚Ìƒ‰ƒCƒuƒ‰ƒŠã‚ÌˆË‘¶ŠÖŒW‚âƒf[ƒ^ŠÖ˜AŒnA“®ì‘¬“x“™‚ğ’²¸‚·‚éB
 
 \subsection{—\”õÀŒ±ğŒ}\label{4 conditions preliminary experiments}
-ÀŒ±ğŒ‚ÆƒVƒ~ƒ…ƒŒ[ƒVƒ‡ƒ“ŠÂ‹«
+–{ÀŒ±‚Å‚ÍAPython‚ğ—p‚¢‚½ÀŒ±‚ğs‚¤B
+
+Python‚Å‰º‹L‚Ì—vŒ‚ğ–‚½‚·ƒvƒƒOƒ‰ƒ€‚ğì¬‚µ‚½B
+\begin{itemize}
+  \item SAPƒlƒbƒgŒo˜HÀ‘•
+    \begin{itemize}
+      \item •À—ñ‰»‚ğl‚¦‚¸AŠˆ«’l‚ğ‚½‚¹‚ÄÀ‘•
+      \item “®ìŒŸØ‚ğd‹‚µ‚ÄƒvƒƒOƒ‰ƒ~ƒ“ƒO\texttt{\texttt{?}}
+      \item d‚İ‚ğ‚à‚½‚¹‚½ó‘Ô‚ÅŠˆ«‰»
+      \item —×Ús—ñEÚ‘±s—ñ‚È‚Ç‚ğ—p‚¢‚ÄÀ‘•
+      \item Šˆ«’l‚ğƒ‰ƒ“ƒ_ƒ€Ad‚İ‚ğƒ‰ƒ“ƒ_ƒ€‚ÅÀ‘•
+      \item “®ì‚ÌƒŠƒAƒ‹ƒ^ƒCƒ€•\¦‚ğÀŒ»‚·‚é
+    \end{itemize}
+  \item SAP NetWorkÀ‘•
+    \begin{itemize}
+      \item Šô‰½Šw“I–µ‚‚Ì–³‚¢ƒtƒ‹ƒƒbƒVƒ…‚ÈSAPƒlƒbƒgƒ[ƒN‚Ì‰Â‹‰»‚É‚¨‚¯‚é
+      \item NetworkX‚É‚æ‚éƒlƒbƒgƒ[ƒN•ªÍ
+      \item Google‚ÌWord2Vec‚©‚çƒ‚ƒfƒ‹‚ğ¶¬
+      \item NetworkX‚ÆŒ¾Œêƒ‚ƒfƒ‹‚ğ˜AŒg‚³‚¹Œ¾Œêƒlƒbƒgƒ[ƒN‚ğ‰Â‹‰»
+      \item Œ¾Œêƒlƒbƒgƒ[ƒN‚ÆSQL‚ğg—p‚µ‚ÄSAPNet‚ÌŠî”Õ‚ğ\’z
+      \item Matplotlib‚ğ—p‚¢‚ÄGifc–_‚Å‰Â‹‰»
+      \item Matplotlib‚ğ—p‚¢‚Ä‰¡–_‚Å‰Â‹‰»
+      \item Matplotlib‚ğ—p‚¢‚ÄU•z}‚Å‰Â‹‰»
+      \item ƒvƒƒOƒ‰ƒ€‚ÌŒvZ—Ê‚ğ‹‚ß‚é
+      \item SQLite3‚ğ—p‚¢‚ÄAŒ¾Œêƒ‚ƒfƒ‹‚ğ‚»‚Ìê‚É•Û‘¶‚µAŒ¾Œêƒ‚ƒfƒ‹‚Ìó‘Ô•Û
+      \item Œ¾Œêƒ‚ƒfƒ‹‚Ìó‘Ô•Û‘¶‚ğ–ˆÀs‚²‚Æ‚És‚¦‚é‚æ‚¤‚É‚·‚é
+      \item ‚·‚×‚Ä‚Ìó‘Ô‚ğ•Û‚Å‚«‚é‚æ‚¤‚É‰ü‘P‚µAƒvƒƒOƒ‰ƒ€ŠÔ‚ğŒ×‚°‚éƒf[ƒ^‚ğì¬
+      \item –Y‹p‚ğÀ‘•‚µA•¡”‰ñ‚ÌÀs‚É‚à“K‚·‚é‚æ‚¤‚É‚·‚é¨–Y‹p’l0.1i‰¼j
+    \end{itemize}
+\end{itemize}
+
+
 
 \subsection{—\”õÀŒ±Œ‹‰Ê}\label{4 results preliminary experiments}
+Œ»’iŠK‚ÌSAP-net‚ÍŠgUA‰º‹L‚Ì‚æ‚¤‚È“®ì‚ğs‚¤‚±‚Æ‚ª‚í‚©‚Á‚½B
+\(N=3\)‚Ì‚Æ‚«A3, 9, 27‚Ì‚æ‚¤‚É \(3^{(n-1)}\) ‚Å‘‰Á‚·‚éŠgU‚ğs‚Á‚Ä‚¢‚½B
+\(N\)‚Í•ÏX‰Â”\‚¾‚ªAüŒ`“I‚ÉŒvZ—Ê‚ª‘‰Á‚·‚éB‚»‚µ‚ÄAŒvZ—Ê‚Í‰º‹L‚Ì®‚ÅŒvZ‚ª‚Å‚«‚éB
+
+\begin{equation}
+O(N^2)
+\end{equation}
+
+
+
+
+ã‹L‚ÌŒvZ®‚Å
+
 \clearpage
 \newpage
 
