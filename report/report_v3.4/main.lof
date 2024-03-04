@@ -21,10 +21,15 @@
 \addvspace {10\jsc@mpt }
 \contentsline {xchapter}{知識選択型転移強化学習を用いた移動ロボットによる動的障害物回避とハイパーパラメータ探査}{25}{}%
 \contentsline {figure}{\numberline {3.1}{\ignorespaces 活性化拡散モデルの例}}{29}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces 静的障害物配置例}}{34}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 強化学習の概念図}}{32}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 転移学習の概念図}}{34}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces 静的障害物配置例}}{36}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces 移動前動的障害物}}{37}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces 移動後動的障害物}}{37}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces SAP-netの概念図}}{39}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {xchapter}{シミュレータ実験}{43}{}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Single-armed and double-armed crawler robot}}{46}{}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Flat surface in Choreonoid 1.5}}{46}{}%
+\contentsline {xchapter}{シミュレータ実験}{45}{}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Single-armed and double-armed crawler robot}}{48}{}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Flat surface in Choreonoid 1.5}}{48}{}%
 \addvspace {10\jsc@mpt }
-\contentsline {xchapter}{結論}{53}{}%
+\contentsline {xchapter}{結論}{55}{}%
