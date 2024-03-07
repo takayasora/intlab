@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  7 MAR 2024 18:47
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.14)  8 MAR 2024 06:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1070,10 +1070,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6865 strings out of 474823
- 108623 string characters out of 5763802
+ 6865 strings out of 474824
+ 108623 string characters out of 5763823
  1932373 words of memory out of 5000000
- 28974 multiletter control sequences out of 15000+600000
+ 28973 multiletter control sequences out of 15000+600000
  608626 words of font info for 160 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  72i,13n,79p,2811b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
