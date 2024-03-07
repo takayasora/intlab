@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  4 MAR 2024 16:28
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.10)  7 MAR 2024 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -598,18 +598,18 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
  [1
 
 
-] [2])
+] [2] [3])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [3] [4
+ [4]
+(./main.lof [5
 
-]
-(./main.lof)
+])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [5] [6] (./main.lot)
+ [6] (./main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
@@ -620,41 +620,41 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 ]
 第1章
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 93.
+(Font)              scaled to size 19.9311pt on input line 103.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 93.
+(Font)              scaled to size 19.9311pt on input line 103.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 93.
+(Font)              scaled to size 19.9311pt on input line 103.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 93.
+(Font)              scaled to size 19.9311pt on input line 103.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 97.
+(Font)              scaled to size 8.64899pt on input line 107.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 97.
+(Font)              scaled to size 8.64899pt on input line 107.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 97.
+(Font)              scaled to size 5.76599pt on input line 107.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 97.
+(Font)              scaled to size 8.64899pt on input line 107.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 97.
+(Font)              scaled to size 5.76599pt on input line 107.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 97.
+(Font)              scaled to size 11.53198pt on input line 107.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 97.
+(Font)              scaled to size 11.53198pt on input line 107.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 97.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 107.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 97.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 107.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 97.
+(Font)              scaled to size 11.53198pt on input line 107.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 97.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 107.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 97.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 107.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 97.
+(Font)              scaled to size 11.53198pt on input line 107.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 97.
+(Font)              scaled to size 7.68799pt on input line 107.
 (./main.mtc1
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <9> not available
 (Font)              Font shape `JT1/mc/bx/n' tried instead on input line 1.
@@ -672,9 +672,9 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 99.
+(Font)              scaled to size 13.83836pt on input line 109.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 99.
+(Font)              scaled to size 13.83836pt on input line 109.
 File: ./chap1/chap1_fig/robot_classification.pdf Graphic file (type pdf)
 <./chap1/chap1_fig/robot_classification.pdf>
 
@@ -798,8 +798,132 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
 
 [26] [27]
+
+Package fancyhdr Warning: \headheight is too small (20.0pt): 
+(fancyhdr)                Make it at least 28.27264pt, for example:
+(fancyhdr)                \setlength{\headheight}{28.27264pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
+
+[28
+
+]
 File: ./chap3/chap3_fig/model_example.pdf Graphic file (type pdf)
 <./chap3/chap3_fig/model_example.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29
+
+]
+
+Package fancyhdr Warning: \headheight is too small (20.0pt): 
+(fancyhdr)                Make it at least 28.27264pt, for example:
+(fancyhdr)                \setlength{\headheight}{28.27264pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
+
+[30] [31
+
+]
+
+Package fancyhdr Warning: \headheight is too small (20.0pt): 
+(fancyhdr)                Make it at least 28.27264pt, for example:
+(fancyhdr)                \setlength{\headheight}{28.27264pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
+
+[32
+
+]
+File: ./chap3/chap3_fig/Reinforcement_Learning.pdf Graphic file (type pdf)
+<./chap3/chap3_fig/Reinforcement_Learning.pdf>
+ [33]
+
+Package fancyhdr Warning: \headheight is too small (20.0pt): 
+(fancyhdr)                Make it at least 28.27264pt, for example:
+(fancyhdr)                \setlength{\headheight}{28.27264pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
+
+[34
+
+]
+File: ./chap3/chap3_fig/transfer_learning.pdf Graphic file (type pdf)
+<./chap3/chap3_fig/transfer_learning.pdf>
+ [35]
+
+Package fancyhdr Warning: \headheight is too small (20.0pt): 
+(fancyhdr)                Make it at least 28.27264pt, for example:
+(fancyhdr)                \setlength{\headheight}{28.27264pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
+
+[36
+
+]
+File: ./chap3/chap3_fig/Static_obstacle_placement.pdf Graphic file (type pdf)
+<./chap3/chap3_fig/Static_obstacle_placement.pdf>
+ [37
+
+]
+File: ./chap3/chap3_fig/dynamic_obstaclesA.pdf Graphic file (type pdf)
+<./chap3/chap3_fig/dynamic_obstaclesA.pdf>
+File: ./chap3/chap3_fig/dynamic_obstaclesB.pdf Graphic file (type pdf)
+<./chap3/chap3_fig/dynamic_obstaclesB.pdf>
+
+
+Package fancyhdr Warning: \headheight is too small (20.0pt): 
+(fancyhdr)                Make it at least 28.27264pt, for example:
+(fancyhdr)                \setlength{\headheight}{28.27264pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
+
+[38
+
+] [39]
+File: ./chap3/chap3_fig/SAPmodel_example.pdf Graphic file (type pdf)
+<./chap3/chap3_fig/SAPmodel_example.pdf>
+
+
+Package fancyhdr Warning: \headheight is too small (20.0pt): 
+(fancyhdr)                Make it at least 28.27264pt, for example:
+(fancyhdr)                \setlength{\headheight}{28.27264pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
+
+[40
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
+45.
+ (c:/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [41]
+
+Package fancyhdr Warning: \headheight is too small (20.0pt): 
+(fancyhdr)                Make it at least 28.27264pt, for example:
+(fancyhdr)                \setlength{\headheight}{28.27264pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
+
+[42]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 68
+5.
+ (c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [43]
+File: ./chap3/chap3_fig/open_cmd.pdf Graphic file (type pdf)
+<./chap3/chap3_fig/open_cmd.pdf>
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -812,9 +936,7 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
 
-[28
-
-] [29]
+[44] [45]
 
 Package fancyhdr Warning: \headheight is too small (20.0pt): 
 (fancyhdr)                Make it at least 28.27264pt, for example:
@@ -823,14 +945,9 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
 
-[30
-
-] [31
+[46] [47
 
 ]
-File: ./chap3/chap3_fig/Reinforcement_Learning.pdf Graphic file (type pdf)
-<./chap3/chap3_fig/Reinforcement_Learning.pdf>
-
 
 Package fancyhdr Warning: \headheight is too small (20.0pt): 
 (fancyhdr)                Make it at least 28.27264pt, for example:
@@ -839,12 +956,11 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
 
-[32] [33
+[48
+
+] [49
 
 ]
-File: ./chap3/chap3_fig/transfer_learning.pdf Graphic file (type pdf)
-<./chap3/chap3_fig/transfer_learning.pdf>
-
 
 Package fancyhdr Warning: \headheight is too small (20.0pt): 
 (fancyhdr)                Make it at least 28.27264pt, for example:
@@ -853,144 +969,79 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
 
-[34] [35
+[50
 
 ]
-File: ./chap3/chap3_fig/Static_obstacle_placement.pdf Graphic file (type pdf)
-<./chap3/chap3_fig/Static_obstacle_placement.pdf>
+
+LaTeX Warning: Reference `3 simulator' on page 51 undefined on input line 855.
 
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
-(fancyhdr)                Make it at least 28.27264pt, for example:
-(fancyhdr)                \setlength{\headheight}{28.27264pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
-
-[36
-
-]
-File: ./chap3/chap3_fig/dynamic_obstaclesA.pdf Graphic file (type pdf)
-<./chap3/chap3_fig/dynamic_obstaclesA.pdf>
-File: ./chap3/chap3_fig/dynamic_obstaclesB.pdf Graphic file (type pdf)
-<./chap3/chap3_fig/dynamic_obstaclesB.pdf>
- [37
-
-]
-File: ./chap3/chap3_fig/SAPmodel_example.pdf Graphic file (type pdf)
-<./chap3/chap3_fig/SAPmodel_example.pdf>
+LaTeX Warning: Reference `3 RL system' on page 51 undefined on input line 857.
 
 
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
-(fancyhdr)                Make it at least 28.27264pt, for example:
-(fancyhdr)                \setlength{\headheight}{28.27264pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+LaTeX Warning: Reference `3 reward function' on page 51 undefined on input line
+ 860.
 
-(fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
+[51
 
-[38]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
-30.
- (c:/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [39]
-
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
-(fancyhdr)                Make it at least 28.27264pt, for example:
-(fancyhdr)                \setlength{\headheight}{28.27264pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
-
-[40]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 67
-0.
- (c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-) [41]
-
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
-(fancyhdr)                Make it at least 28.27264pt, for example:
-(fancyhdr)                \setlength{\headheight}{28.27264pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
-
-[42] [43]
-
-LaTeX Warning: Reference `3 simulator' on page 44 undefined on input line 734.
-
-
-LaTeX Warning: Reference `3 RL system' on page 44 undefined on input line 736.
-
-
-LaTeX Warning: Reference `3 reward function' on page 44 undefined on input line
- 739.
-
-
-Package fancyhdr Warning: \headheight is too small (20.0pt): 
-(fancyhdr)                Make it at least 28.27264pt, for example:
-(fancyhdr)                \setlength{\headheight}{28.27264pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
-
-[44
+] [52
 
 ]
 第4章
-(./main.mtc4) [45
+(./main.mtc4) [53] [54]
 
-] [46]
-
-LaTeX Warning: Reference `4 single arm' on page 47 undefined on input line 759.
+LaTeX Warning: Reference `4 single arm' on page 55 undefined on input line 881.
 
 
 
-LaTeX Warning: Reference `4 double arm' on page 47 undefined on input line 761.
+LaTeX Warning: Reference `4 double arm' on page 55 undefined on input line 883.
 
 
-[47]
+[55]
 File: ./chap4/chap4_fig/single_double_robot.pdf Graphic file (type pdf)
 <./chap4/chap4_fig/single_double_robot.pdf>
 File: ./chap4/chap4_fig/flat_surface.pdf Graphic file (type pdf)
 <./chap4/chap4_fig/flat_surface.pdf>
- [48
+ [56
 
-] [49
+] [57
 
-] [50] [51
+] [58] [59
 
-] [52
+] [60
 
-] [53
+] [61
 
-] [54
+] [62
+
+] [63
+
+] [64
 
 ]
 
-LaTeX Warning: Reference `4 single arm' on page 55 undefined on input line 932.
+LaTeX Warning: Reference `4 single arm' on page 65 undefined on input line 1060
+.
 
 
+LaTeX Warning: Reference `4 double arm' on page 65 undefined on input line 1064
+.
 
-LaTeX Warning: Reference `4 double arm' on page 55 undefined on input line 936.
+[65
 
-
-[55
-
-] [56
+] [66
 
 
 ]
 第5章
-(./main.mtc5) [57] [58] (./Backmatter/Thank.tex [59
+(./main.mtc5) [67] [68] (./Backmatter/Thank.tex [69
 
-] [60
+] [70
 
-] [61] [62])
-(./Reference/ref.tex [63] [64
+] [71] [72])
+(./Reference/ref.tex [73] [74
 
-] [65] [66] [67]
+] [75] [76] [77]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 117.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
@@ -999,12 +1050,12 @@ LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 117.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 117.
- [68
+ [78
 
 ]) (./Backmatter/Achieve.tex
-[69] [70
+[79] [80
 
-] [71]) [72] (./main.aux)
+] [81]) [82] (./main.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-11-01>
@@ -1019,12 +1070,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6855 strings out of 474823
- 108328 string characters out of 5763802
+ 6865 strings out of 474823
+ 108623 string characters out of 5763802
  1932373 words of memory out of 5000000
- 28965 multiletter control sequences out of 15000+600000
+ 28974 multiletter control sequences out of 15000+600000
  608626 words of font info for 160 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  72i,13n,79p,2811b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (82 pages, 249328 bytes).
+Output written on main.dvi (92 pages, 258220 bytes).
