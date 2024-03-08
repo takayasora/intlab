@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.14)  8 MAR 2024 06:30
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.sjis) (TeX Live 2023) (preloaded format=platex 2024.1.14)  8 MAR 2024 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -267,18 +267,27 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count283
 \@thisrulewidth=\dimen188
 )
-(c:/texlive/2023/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+(c:/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
 
 (c:/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: dvipdfmx.def on input line 149.
 
-(c:/texlive/2023/texmf-dist/tex/latex/graphics/dvipsnam.def
-File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+Package xcolor Warning: Package option `usenames' is obsolete and ignored on in
+put line 266.
+
+Package xcolor Info: Driver file: dvipdfmx.def on input line 274.
+(c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
 )
-(c:/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 (c:/texlive/2023/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
 
@@ -328,9 +337,34 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ) (./mediabb.sty
 Package: mediabb 2006/10/26 v1.9 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp>
 )
+(c:/texlive/2023/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count286
+\lst@gtempboxa=\box87
+\lst@token=\toks33
+\lst@length=\count287
+\lst@currlwidth=\dimen197
+\lst@column=\count288
+\lst@pos=\count289
+\lst@lostspace=\dimen198
+\lst@width=\dimen199
+\lst@newlines=\count290
+\lst@lineno=\count291
+\lst@maxwidth=\dimen256
+
+(c:/texlive/2023/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count292
+\lst@skipnumbers=\count293
+\lst@framebox=\box88
+)
+(c:/texlive/2023/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+
 (c:/texlive/2023/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box87
+\@tempboxb=\box89
 )
 (c:/texlive/2023/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
@@ -340,14 +374,14 @@ Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (c:/texlive/2023/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen197
-\captionmargin=\dimen198
-\caption@leftmargin=\dimen199
-\caption@rightmargin=\dimen256
-\caption@width=\dimen257
-\caption@indent=\dimen258
-\caption@parindent=\dimen259
-\caption@hangindent=\dimen260
+\caption@tempdima=\dimen257
+\captionmargin=\dimen258
+\caption@leftmargin=\dimen259
+\caption@rightmargin=\dimen260
+\caption@width=\dimen261
+\caption@indent=\dimen262
+\caption@parindent=\dimen263
+\caption@hangindent=\dimen264
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 Package caption Info: \@makecaption = \long macro:#1#2->{\small \advance \lefts
@@ -361,48 +395,52 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count286
-\c@continuedfloat=\count287
+\c@caption@flags=\count294
+\c@continuedfloat=\count295
+Package caption Info: listings package is loaded.
 Package caption Info: threeparttable package is loaded.
 )
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count288
+\c@subfigure=\count296
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count289
+\c@subtable=\count297
 ) (./algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
  (c:/texlive/2023/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count290
-\float@exts=\toks33
-\float@box=\box88
-\@float@everytoks=\toks34
-\@floatcapt=\box89
+\c@float@type=\count298
+\float@exts=\toks34
+\float@box=\box90
+\@float@everytoks=\toks35
+\@floatcapt=\box91
 )
 (c:/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-\@float@every@algorithm=\toks35
-\c@algorithm=\count291
+\@float@every@algorithm=\toks36
+\c@algorithm=\count299
 ) (./algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count292
-\c@ALC@line=\count293
-\c@ALC@rem=\count294
-\c@ALC@depth=\count295
+\c@ALC@unique=\count300
+\c@ALC@line=\count301
+\c@ALC@rem=\count302
+\c@ALC@depth=\count303
 \ALC@tlm=\skip68
 \algorithmicindent=\skip69
 )
+(c:/texlive/2023/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
 (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
 File: l3backend-dvips.def 2024-01-04 L3 backend support: dvips
-\l__pdf_internal_box=\box90
-\g__pdf_backend_object_int=\count296
-\l__pdf_backend_content_box=\box91
-\l__pdf_backend_model_box=\box92
-\g__pdf_backend_annotation_int=\count297
-\g__pdf_backend_link_int=\count298
-\g__pdf_backend_link_sf_int=\count299
+\l__pdf_internal_box=\box92
+\g__pdf_backend_object_int=\count304
+\l__pdf_backend_content_box=\box93
+\l__pdf_backend_model_box=\box94
+\g__pdf_backend_annotation_int=\count305
+\g__pdf_backend_link_int=\count306
+\g__pdf_backend_link_sf_int=\count307
 )
 (./main.aux
 
@@ -411,9 +449,6 @@ ply defined.
 
 
 LaTeX Warning: Label `3 Concept of SAP-net' multiply defined.
-
-
-LaTeX Warning: Label `3 structure SAP-net' multiply defined.
 
 
 LaTeX Warning: Label `3 structure SAP-net' multiply defined.
@@ -469,24 +504,25 @@ LaTeX Warning: Label `坂本2019' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+\c@lstlisting=\count308
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -529,53 +565,53 @@ Writing main.mtc8
 \openout4 = `main.bmt'.
 
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 41.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 41.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 41.
+(Font)              scaled to size 9.60999pt on input line 67.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 41.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 41.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 41.
+(Font)              scaled to size 9.60999pt on input line 67.
 File: tdulogo.eps Graphic file (type eps)
 <tdulogo.eps>
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <17.28> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 41.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 41.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 41.
+(Font)              scaled to size 16.60605pt on input line 67.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <17.28> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 41.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 41.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 67.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 41.
+(Font)              scaled to size 16.60605pt on input line 67.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 41.
+(Font)              scaled to size 13.83836pt on input line 67.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 41.
+(Font)              scaled to size 13.83836pt on input line 67.
 [1
 
 ] [2
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 48
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 74
 .
  (c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 48.
+(Font)              scaled to size 23.90964pt on input line 74.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 48.
+(Font)              scaled to size 23.90964pt on input line 74.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 48.
+(Font)              scaled to size 23.90964pt on input line 74.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 48.
+(Font)              scaled to size 23.90964pt on input line 74.
  (./main.toc
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 5.
@@ -620,41 +656,41 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 ]
 第1章
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 103.
+(Font)              scaled to size 19.9311pt on input line 129.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 103.
+(Font)              scaled to size 19.9311pt on input line 129.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 103.
+(Font)              scaled to size 19.9311pt on input line 129.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 19.9311pt on input line 103.
+(Font)              scaled to size 19.9311pt on input line 129.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 107.
+(Font)              scaled to size 8.64899pt on input line 133.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 107.
+(Font)              scaled to size 8.64899pt on input line 133.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 107.
+(Font)              scaled to size 5.76599pt on input line 133.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 107.
+(Font)              scaled to size 8.64899pt on input line 133.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 107.
+(Font)              scaled to size 5.76599pt on input line 133.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 107.
+(Font)              scaled to size 11.53198pt on input line 133.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 107.
+(Font)              scaled to size 11.53198pt on input line 133.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 107.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 133.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 107.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 133.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 107.
+(Font)              scaled to size 11.53198pt on input line 133.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 107.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 133.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 107.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 133.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 107.
+(Font)              scaled to size 11.53198pt on input line 133.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 107.
+(Font)              scaled to size 7.68799pt on input line 133.
 (./main.mtc1
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <9> not available
 (Font)              Font shape `JT1/mc/bx/n' tried instead on input line 1.
@@ -672,9 +708,9 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 109.
+(Font)              scaled to size 13.83836pt on input line 135.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 109.
+(Font)              scaled to size 13.83836pt on input line 135.
 File: ./chap1/chap1_fig/robot_classification.pdf Graphic file (type pdf)
 <./chap1/chap1_fig/robot_classification.pdf>
 
@@ -904,7 +940,7 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
-45.
+71.
  (c:/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [41]
@@ -917,8 +953,8 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
 
 [42]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 68
-5.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 71
+1.
  (c:/texlive/2023/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [43]
@@ -948,6 +984,9 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 [46] [47
 
 ]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 881.
+
 
 Package fancyhdr Warning: \headheight is too small (20.0pt): 
 (fancyhdr)                Make it at least 28.27264pt, for example:
@@ -956,9 +995,7 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
 
-[48
-
-] [49
+[48] [49
 
 ]
 
@@ -971,30 +1008,40 @@ Package fancyhdr Warning: \headheight is too small (20.0pt):
 
 [50
 
+] [51
+
 ]
 
-LaTeX Warning: Reference `3 simulator' on page 51 undefined on input line 855.
+LaTeX Warning: Reference `3 simulator' on page 52 undefined on input line 920.
 
 
-LaTeX Warning: Reference `3 RL system' on page 51 undefined on input line 857.
+LaTeX Warning: Reference `3 RL system' on page 52 undefined on input line 922.
 
 
-LaTeX Warning: Reference `3 reward function' on page 51 undefined on input line
- 860.
+LaTeX Warning: Reference `3 reward function' on page 52 undefined on input line
+ 925.
 
-[51
 
-] [52
+Package fancyhdr Warning: \headheight is too small (20.0pt): 
+(fancyhdr)                Make it at least 28.27264pt, for example:
+(fancyhdr)                \setlength{\headheight}{28.27264pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-8.27264pt}.
+
+[52
 
 ]
 第4章
-(./main.mtc4) [53] [54]
+(./main.mtc4) [53
 
-LaTeX Warning: Reference `4 single arm' on page 55 undefined on input line 881.
+] [54]
+
+LaTeX Warning: Reference `4 single arm' on page 55 undefined on input line 946.
 
 
 
-LaTeX Warning: Reference `4 double arm' on page 55 undefined on input line 883.
+LaTeX Warning: Reference `4 double arm' on page 55 undefined on input line 948.
 
 
 [55]
@@ -1020,11 +1067,11 @@ File: ./chap4/chap4_fig/flat_surface.pdf Graphic file (type pdf)
 
 ]
 
-LaTeX Warning: Reference `4 single arm' on page 65 undefined on input line 1060
+LaTeX Warning: Reference `4 single arm' on page 65 undefined on input line 1125
 .
 
 
-LaTeX Warning: Reference `4 double arm' on page 65 undefined on input line 1064
+LaTeX Warning: Reference `4 double arm' on page 65 undefined on input line 1129
 .
 
 [65
@@ -1070,12 +1117,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6865 strings out of 474824
- 108623 string characters out of 5763823
- 1932373 words of memory out of 5000000
- 28973 multiletter control sequences out of 15000+600000
- 608626 words of font info for 160 fonts, out of 8000000 for 9000
+ 8924 strings out of 474824
+ 135604 string characters out of 5763823
+ 1965373 words of memory out of 5000000
+ 31021 multiletter control sequences out of 15000+600000
+ 610781 words of font info for 163 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 72i,13n,79p,2811b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,13n,79p,2811b,1363s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.dvi (92 pages, 258220 bytes).
+Output written on main.dvi (92 pages, 267388 bytes).

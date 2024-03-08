@@ -6,16 +6,20 @@
 \usepackage{hhline}
 \usepackage{slashbox}
 \usepackage{booktabs}
-\usepackage[dvipdfmx, usenames]{color} %‹k‚’Ç‰Á [usenames] ¨ [dvipdfmx, usenames]i‘OÒ‚ÍŒÃ‚¢ƒhƒ‰ƒCƒo‚Ì‚½‚ßCgraphicxƒpƒbƒP[ƒW‚ÆŠ±Â‚µ‚ÄepsˆÈŠO‚Ì‰æ‘œŒ`®‚É‘Î‰‚Å‚«‚È‚­‚È‚éj
+\usepackage[dvipdfmx, usenames]{xcolor} % % ššš ‚–î’Ç‰Áicolor¨xcolor ‚É•ÏXj ššš
 \usepackage{colortbl}
 \usepackage{ascmac}
 \usepackage{lscape}
 \usepackage{url}
 %\renewcommand{\refname}{}
 \usepackage{mediabb}%ˆÉ“¡’Ç‰Ápdf‚Ì}‘}“ü
+\usepackage{listings} % ‚–î’Ç‰Á
+
+
 
 \renewcommand{\figurename}{Fig. }   % ššš “c’†’Ç‰Ái}¨Fig. ‚É•ÏXj ššš
-\renewcommand{\tablename}{Table }   % ššš “c’†’Ç‰Ái•\¨Table ‚É•ÏXj ššš
+\renewcommand{\tablename}{Table. }   % ššš “c’†’Ç‰Ái•\¨Table ‚É•ÏXj ššš
+\renewcommand{\lstlistingname}{Code. }   % ššš ‚–î’Ç‰ÁiƒR[ƒh¨code ‚É•ÏXj ššš
 \newcommand{\argmax}{\mathop{\rm arg~max}\limits}   % ššš “c’†’Ç‰Á ššš
 \newcommand{\argmin}{\mathop{\rm arg~min}\limits}  % ššš “c’†’Ç‰Á ššš
 \usepackage{threeparttable}   % ššš “c’†’Ç‰Á ššš
@@ -25,6 +29,28 @@
 %\usepackage{otf} %‹k‚’Ç‰Á
 \usepackage{algorithm}%ˆÉ“¡’Ç‰Á
 \usepackage{algorithmic}%ˆÉ“¡’Ç‰Á
+
+\lstset{
+  language=Python, % g—p‚·‚éƒvƒƒOƒ‰ƒ~ƒ“ƒOŒ¾Œê
+  basicstyle=\ttfamily\small, % Šî–{“I‚ÈƒXƒ^ƒCƒ‹
+  keywordstyle=\color{blue}, % ƒL[ƒ[ƒh‚ÌƒXƒ^ƒCƒ‹
+  stringstyle=\color{red}, % •¶š—ñ‚ÌƒXƒ^ƒCƒ‹
+  commentstyle=\color{green}, % ƒRƒƒ“ƒg‚ÌƒXƒ^ƒCƒ‹
+  morecomment=[s][\color{black}]{"""}{"""},
+  breaklines=true, % ’·‚¢s‚ğÜ‚è•Ô‚µ
+  numbers=left, % s”Ô†‚ğ¶‚É•\¦
+  numberstyle=\tiny, % s”Ô†‚ÌƒXƒ^ƒCƒ‹
+  frame=single, % ˜g‚ÅˆÍ‚Ş
+  backgroundcolor=\color{gray!10}, % ”wŒiF
+  showspaces=false, % ƒXƒy[ƒX‚ğ•\¦‚µ‚È‚¢
+  showstringspaces=false, % •¶š—ñ“à‚ÌƒXƒy[ƒX‚ğ•\¦‚µ‚È‚¢
+}
+
+
+% ™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™ %
+
+
+
 % ™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™ %
 %                                          ˜_•¶‚Ì•\†‚Ì€–Ú
 % ™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™ %
@@ -826,12 +852,51 @@ SAP-net‚ğ“®ì‚³‚¹‚é‚É‚ÍA‰º‹L‚Ìƒ‰ƒCƒuƒ‰ƒŠ‚ÉˆË‘¶‚·‚éB‚»‚Ì‚½‚ßA‰º‹L‚Ìƒ‰ƒCƒuƒ‰ƒŠ‚
 \clearpage
 \newpage
 
-\section{Œ¸ŠŠÖ”‚É‚Â‚¢‚Ä}\label{3 structure SAP-net}
+\section{Œ¸ŠŠÖ”‚É‚Â‚¢‚Ä}\label{sec:structure_SAP_net}
+
+Œ¸ŠŠÖ”‚ÍAƒf[ƒ^ƒtƒŒ[ƒ€“à‚ÌŠe’l‚É‘Î‚µ‚ÄAw’è‚³‚ê‚½Š„‡‚ÅŒ¸ŠiŒ¸­‚³‚¹‚éjˆ—‚ğs‚¤Ã“Iƒƒ\ƒbƒh‚Å‚ ‚éB‚±‚ÌŠÖ”‚ÍAå‚Éƒf[ƒ^‚Ì‘Oˆ—‚âAƒf[ƒ^‚Ìd‚İ•t‚¯’²®‚Ég—p‚³‚ê‚éB‹ï‘Ì“I‚Èˆ—“à—e‚ÍˆÈ‰º‚Ì’Ê‚è‚Å‚ ‚éB
+
+\begin{itemize}
+\item ŠÖ”‚Í‚Ü‚¸A“ü—Í‚Æ‚µ‚Äó‚¯æ‚Á‚½ƒf[ƒ^ƒtƒŒ[ƒ€i\texttt{df}j‚Ì’·‚³A‚Â‚Ü‚ès”‚ğæ“¾‚·‚éB‚±‚Ì’·‚³‚ÍAŒã‘±‚Ìˆ—‚Å—p‚¢‚ç‚ê‚éB
+\item ‘±‚¢‚ÄAƒf[ƒ^ƒtƒŒ[ƒ€‚ÌŠes‚É‘Î‚µ‚Äƒ‹[ƒvˆ—‚ğs‚¤B‚±‚Ìƒ‹[ƒv“à‚ÅAw’è‚³‚ê‚½Œ¸ŠŠ„‡i\texttt{attenuation\_percentage}j‚ÉŠî‚Ã‚«AŠe’l‚ğŒ¸Š‚³‚¹‚éˆ—‚ªs‚í‚ê‚éB
+\item ‹ï‘Ì“I‚É‚ÍAŠes‚Ì$i$”Ô–Ú‚Ì—v‘fi\texttt{df.iloc[$i$, $i+1$]}j‚É‘Î‚µ‚ÄA1‚©‚çŒ¸ŠŠ„‡‚ğˆø‚¢‚½’l‚ğæZ‚·‚éB‚±‚Ì‘€ì‚É‚æ‚èAŒ³‚Ì’l‚Íw’è‚³‚ê‚½Š„‡‚ÅŒ¸­‚³‚ê‚éB
+\item ÅI“I‚ÉAŒ¸Šˆ—‚ğ{‚µ‚½ƒf[ƒ^ƒtƒŒ[ƒ€‚ª–ß‚è’l‚Æ‚µ‚Ä•Ô‚³‚ê‚éB
+\end{itemize}
+
+‚±‚ÌŒ¸ŠŠÖ”‚Ìå‚È—p“r‚ÍAƒf[ƒ^ƒZƒbƒg‚Ì“Á’è‚Ì“Á«‚ğã‚ß‚é‚±‚Æ‚É‚ ‚éB—á‚¦‚ÎAŒn—ñƒf[ƒ^‚É‚¨‚¢‚ÄA‰ß‹‚Ìƒf[ƒ^‚Ì‰e‹¿‚ğŒ»İ‚æ‚è‚à¬‚³‚­‚µ‚½‚¢ê‡‚âA‚ ‚é“Á’¥—Ê‚Ì‰e‹¿‚ğˆÓ}“I‚ÉŒ¸­‚³‚¹‚½‚¢ê‡‚È‚Ç‚É—˜—p‚³‚ê‚éB‚Ü‚½A‹@ŠBŠwKƒ‚ƒfƒ‹‚ÌŠwK‰ß’ö‚ÅA“Á’è‚Ìƒf[ƒ^ƒ|ƒCƒ“ƒg‚Ìd‚İ‚ğ’²®‚·‚é–Ú“I‚Åg—p‚·‚é‚±‚Æ‚à‚Å‚«‚éB
+
+%‰üs‚ğ“ü‚ê‚½‚¢
+
+–{Œ¤‹†‚Å‚ÍASAP-net‚Åg—p‚·‚é’m¯Šˆ«‰»ƒf[ƒ^ƒtƒŒ[ƒ€‚ğŒ¸Š‚·‚éÛ‚ÉA‚±‚ÌŒ¸ŠŠÖ”‚ğ—p‚¢‚éB
+
+‚±‚ÌŠÖ”‚ÌÀ‘•‚É‚¨‚¢‚Ä‚ÍA‚¢‚­‚Â‚©‚Ìd—v‚È“_‚É’ˆÓ‚ª•K—v‚Å‚ ‚éB‚Ü‚¸AŒ¸Šˆ—‚ğs‚¤Û‚É‚ÍAŒ´ƒf[ƒ^‚ğ’¼Ú•ÏX‚·‚é‚±‚Æ‚É‚È‚é‚½‚ßAŒ³‚Ìƒf[ƒ^‚ª•K—v‚Èê‡‚Í—\‚ßƒRƒs[‚ğæ‚Á‚Ä‚¨‚­‚±‚Æ‚ª–]‚Ü‚µ‚¢B‚Ü‚½AŒ¸ŠŠ„‡‚Í0ˆÈã1ˆÈ‰º‚Ì’l‚Åw’è‚·‚é•K—v‚ª‚ ‚éB‚±‚ê‚É‚æ‚èA’l‚ğ0“i•ÏX‚È‚µj‚©‚ç100“iŠ®‘S‚ÉŒ¸­j‚Ì”ÍˆÍ‚Å’²®‚·‚é‚±‚Æ‚ª‰Â”\‚Æ‚È‚éB
+
+ˆÈã‚Ìà–¾‚©‚çAŒ¸ŠŠÖ”‚Íƒf[ƒ^‚Ì‘Oˆ—‚â•ªÍ‚É‚¨‚¢‚Ä_“î‚É‰—p‰Â”\‚Èƒc[ƒ‹‚Å‚ ‚é‚±‚Æ‚ª•ª‚©‚éB‚±‚ÌŠÖ”‚ğ“KØ‚É—˜—p‚·‚é‚±‚Æ‚ÅAƒf[ƒ^‚Ì“Á«‚ğŒø‰Ê“I‚É’²®‚µA‚æ‚è¸“x‚Ì‚‚¢•ªÍŒ‹‰Ê‚ğ“¾‚é‚±‚Æ‚ªŠú‘Ò‚Å‚«‚éB
+
+‰º‹L‚ÌƒR[ƒh~\ref{lst:attenuation-function}‚ÉAŒ¸ŠŠÖ”‚Ìƒ\[ƒXƒR[ƒh‚ğ¦‚·B
+
+\newpage
+
+\begin{lstlisting}[caption=Œ¸ŠŠÖ”, label=lst:attenuation-function]
+@staticmethod
+def attenuation(df, attenuation_percentage): # Œ¸ŠŠÖ”
+    # ­”‚Åw’è‚³‚ê‚½”’l•ªí‚éŠÖ”
+    # Œ³‚Ìƒf[ƒ^ƒtƒŒ[ƒ€‚Ì’·‚³‚ğæ“¾
+    length = len(df)
+    # 0‚Ì—ñ‚ğw’è‚³‚ê‚½”‚¾‚¯’Ç‰Á
+    for i in range(length):
+        df.iloc[i, i+1] *= (1-attenuation_percentage)
+    return df
+\end{lstlisting}
+
+
 
 \clearpage
 \newpage
 
 \section{”’l“I‚È•]‰¿w•W}\label{3 numerical evaluation metrics}
+–{Œ¤‹†‚Å‚ÍASAP-net‚ğ•]‰¿‚·‚éw•W‚ğ“¾‚é‚±‚Æ‚ÅASAP-net‚Ìó‘Ô‚ğ¦‚·‚±‚Æ‚ğ–Ú“I‚Æ‚µ‚Ä‚¢‚éB
+‹ï‘Ì“I‚É‚ÍA
 
 \clearpage
 \newpage
