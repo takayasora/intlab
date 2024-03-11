@@ -1,0 +1,76 @@
+\chapter{シミュレータ実験}
+\thispagestyle{empty}
+\label{chap4}
+\minitoc
+
+\newpage
+\section{はじめに}
+本章では，提案したアプローチの有用性を示すために行った，動力学シミュレータ実験について述べる．
+
+\ref{4 simulation environment}節では，本研究で用いるロボットとシミュレータ環境について述べる．
+
+\ref{4 single arm}節では，単腕クローラロボットによる直進と旋回のリカバリモーション獲得の実験について述べる．
+
+\ref{4 double arm}節では，手法が他のアーム搭載ロボットにも適用可能かを検証するために，双腕クローラロボットによるリカバリモーション獲得の実験について述べる．
+
+最後に\ref{4 last}節で本章のまとめを述べる．
+
+\clearpage
+\newpage
+
+\section{実験環境}\label{4 simulation environment}
+本研究で用いるロボットはFig.~\ref{fig:s_d_robot}(a)とFig.~\ref{fig:s_d_robot}(b)に示す単腕クローラロボットと双腕クローラロボットである．
+単腕クローラロボットはアーム1本を搭載したクローラ型ロボットである．
+双腕クローラロボットはアーム2本を搭載したクローラ型ロボットである．
+ロボットから見て左のクローラの故障を想定する．
+Fig.~\ref{fig:flat_surface}に示すようにロボットの移動は平らな水平面で行われ，周りに障害物はないものとする．
+単腕クローラロボットに関しては，直進，旋回のリカバリモーションを獲得する．
+双腕クローラロボットに関しては，直進のリカバリモーションを獲得する．
+
+\begin{figure}[b]
+	\begin{center}
+		\vspace{1zh}
+		\includegraphics[width=80mm]{./chap4/chap4_fig/single_double_robot} 
+	\end{center}
+	\caption{Single-armed and double-armed crawler robot}
+	\label{fig:s_d_robot}
+\end{figure}
+
+\begin{figure}[b]
+	\begin{center}
+		\vspace{1zh}
+		\includegraphics[width=70mm]{./chap4/chap4_fig/flat_surface} 
+	\end{center}
+	\caption{Flat surface in Choreonoid 1.5}
+	\label{fig:flat_surface}
+\end{figure}
+
+\clearpage
+\newpage
+
+\section{単腕クローラロボット}\label{4 single arm}
+\subsection{実験条件}
+単腕クローラロボットの制御対象をFig.~\ref{fig:singlerobot_ex}とTable~\ref{table:single_state_action}に示す．
+ロボットから見て左のクローラが故障により動かなくなった場合を想定する．ロボットの制御する機構はクローラ（Fig.~\ref{fig:singlerobot_ex}\textcircled{\scriptsize 1}），スイング（Fig.~\ref{fig:singlerobot_ex}\textcircled{\scriptsize 2}），ブーム（Fig.~\ref{fig:singlerobot_ex}\textcircled{\scriptsize 3}），アーム（Fig.~\ref{fig:singlerobot_ex}\textcircled{\scriptsize 4}）の4種類である．
+状態$s_t$として制御対象4種類と，ロボットのロールとピッチの値を加えた合計6種類の観測値を設定する．
+行動$a_t$として制御対象4種類を設定する．
+以上からRBFネットワーク近似の入力値としては合計10種類の入力値を扱う．
+
+
+
+\clearpage
+\newpage
+
+\section{おわりに}\label{4 last}
+本章では，強化学習を用いたリカバリモーションの獲得のアプローチについての有効性を検証するために行った動力学シミュレータ実験について述べた．
+
+本実験で用いたクローラロボットとシミュレータの環境について述べた．
+
+\ref{4 single arm}節では，本研究のアプローチを左クローラが故障している単腕クローラロボットの直進と旋回のリカバリモーションについて行い，直進，旋回のリカバリモーションの獲得が可能であることを示した．
+学習が進むことで無駄な動きが減り，目標の移動方向への移動が可能となった．
+また，得られた2つのリカバリモーションは安定性を保った移動方法であることを確認した．
+
+\ref{4 double arm}節では，双腕クローラロボットの直進のリカバリモーションについて行い，直進リカバリモーションの獲得が可能であり，単腕クローラロボット以外にも本手法が適用できることを示した．
+
+\clearpage
+\newpage

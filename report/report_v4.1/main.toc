@@ -1,0 +1,104 @@
+\chapterbegin 
+\chapterbegin 
+\chapterbegin 
+\contentsline {chapter}{\numberline {第1章}序論}{1}{}%
+\contentsline {section}{\numberline {1.1}背景}{2}{}%
+\contentsline {subsection}{\numberline {1.1.1}ロボットの普及と生活への浸透}{2}{}%
+\contentsline {subsection}{\numberline {1.1.2}自動運転技術の進展}{4}{}%
+\contentsline {subsection}{\numberline {1.1.3}自動運転技術の事故事例と課題}{6}{}%
+\contentsline {subsection}{\numberline {1.1.4}動的障害物回避の重要性}{9}{}%
+\contentsline {subsection}{\numberline {1.1.5}自律型ロボットの導入とその課題}{11}{}%
+\contentsline {subsection}{\numberline {1.1.6}課題解決後の自立型ロボットの有用性}{14}{}%
+\contentsline {section}{\numberline {1.2}本研究の目的}{15}{}%
+\contentsline {section}{\numberline {1.3}本論文における研究3要素}{16}{}%
+\contentsline {subsection}{\numberline {1.3.1}研究の学術性}{16}{}%
+\contentsline {subsection}{\numberline {1.3.2}研究の新規性}{16}{}%
+\contentsline {subsection}{\numberline {1.3.3}研究の有用性}{16}{}%
+\contentsline {section}{\numberline {1.4}本論文の構成}{17}{}%
+\contentsline {chapter}{\numberline {第2章}関連研究}{19}{}%
+\contentsline {section}{\numberline {2.1}はじめに}{20}{}%
+\contentsline {section}{\numberline {2.2}関連研究}{21}{}%
+\contentsline {subsection}{\numberline {2.2.1}確率分布を転移先タスクでの方策学習に利用する転移学習に関する既存研究}{21}{}%
+\contentsline {subsection}{\numberline {2.2.2}事前に設定した禁止ルールに基づく転移学習に関する既存研究}{21}{}%
+\contentsline {subsection}{\numberline {2.2.3}活性化拡散モデルを参考にした知識選択システムによる転移学習に関する既存研究}{21}{}%
+\contentsline {section}{\numberline {2.3}おわりに}{23}{}%
+\contentsline {chapter}{\numberline {第3章}知識選択型転移強化学習を用いた移動ロボットによる動的障害物回避とハイパーパラメータ探査}{25}{}%
+\contentsline {section}{\numberline {3.1}はじめに}{27}{}%
+\contentsline {section}{\numberline {3.2}本研究のアプローチ}{28}{}%
+\contentsline {section}{\numberline {3.3}提案手法に用いる概念}{29}{}%
+\contentsline {subsection}{\numberline {3.3.1}人間の想起に関わる心理モデル}{29}{}%
+\contentsline {subsection}{\numberline {3.3.2}方策を選択する方策ネットワーク}{29}{}%
+\contentsline {subsection}{\numberline {3.3.3}SAP-netの構成概念}{31}{}%
+\contentsline {subsection}{\numberline {3.3.4}SAP-netの学術的背景}{31}{}%
+\contentsline {section}{\numberline {3.4}提案手法に用いる技術}{32}{}%
+\contentsline {subsection}{\numberline {3.4.1}強化学習の概要とその応用}{32}{}%
+\contentsline {subsection}{\numberline {3.4.2}転移学習の概要とその応用}{34}{}%
+\contentsline {subsection}{\numberline {3.4.3}転移強化学習の概要}{36}{}%
+\contentsline {section}{\numberline {3.5}提案システムの構成}{37}{}%
+\contentsline {subsection}{\numberline {3.5.1}静的障害物回避の学習}{37}{}%
+\contentsline {subsection}{\numberline {3.5.2}動的障害物回避への適用}{38}{}%
+\contentsline {subsection}{\numberline {3.5.3}知識選択型転移強化学習の原理}{39}{}%
+\contentsline {section}{\numberline {3.6}SAP-netの構成}{40}{}%
+\contentsline {subsection}{\numberline {3.6.1}SAP-netの概要}{40}{}%
+\contentsline {subsection}{\numberline {3.6.2}SAP-netの基本構成}{40}{}%
+\contentsline {subsection}{\numberline {3.6.3}SAP-netの内部関数}{41}{}%
+\contentsline {subsection}{\numberline {3.6.4}SAP-netのプログラム要件}{42}{}%
+\contentsline {subsubsection}{プロジェクトの背景と目的の理解}{42}{}%
+\contentsline {subsubsection}{ステークホルダーの識別}{42}{}%
+\contentsline {subsubsection}{ユーザー要件の収集}{42}{}%
+\contentsline {subsubsection}{機能要件の定義}{43}{}%
+\contentsline {subsubsection}{非機能要件の定義}{43}{}%
+\contentsline {subsubsection}{データ要件の確定}{43}{}%
+\contentsline {subsubsection}{システムの制約と制約条件}{43}{}%
+\contentsline {subsubsection}{ユーザビリティとユーザインターフェースの要件}{43}{}%
+\contentsline {subsubsection}{テスト要件の定義}{43}{}%
+\contentsline {subsubsection}{プロジェクトスケジュールと進捗管理}{44}{}%
+\contentsline {subsection}{\numberline {3.6.5}SAP-netの速度上限}{44}{}%
+\contentsline {subsection}{\numberline {3.6.6}SAP-netの使用方法}{44}{}%
+\contentsline {subsubsection}{ライブラリのインストール}{44}{}%
+\contentsline {subsubsection}{Lineに通知する方法}{44}{}%
+\contentsline {subsection}{\numberline {3.6.7}Webページのアップデート方法}{45}{}%
+\contentsline {subsection}{\numberline {3.6.8}SAP-netの依存関係}{46}{}%
+\contentsline {section}{\numberline {3.7}減衰関数について}{47}{}%
+\contentsline {section}{\numberline {3.8}数値的な評価指標}{49}{}%
+\contentsline {section}{\numberline {3.9}最適化シミュレーション}{50}{}%
+\contentsline {section}{\numberline {3.10}提案システムの全体像}{51}{}%
+\contentsline {section}{\numberline {3.11}おわりに}{52}{}%
+\contentsline {chapter}{\numberline {第4章}シミュレータ実験}{53}{}%
+\contentsline {section}{\numberline {4.1}はじめに}{55}{}%
+\contentsline {section}{\numberline {4.2}実験環境について}{56}{}%
+\contentsline {section}{\numberline {4.3}予備実験}{57}{}%
+\contentsline {subsection}{\numberline {4.3.1}予備実験目的}{57}{}%
+\contentsline {subsection}{\numberline {4.3.2}予備実験条件}{57}{}%
+\contentsline {subsection}{\numberline {4.3.3}予備実験結果}{58}{}%
+\contentsline {section}{\numberline {4.4}静的障害物回避実験}{59}{}%
+\contentsline {subsection}{\numberline {4.4.1}静的障害物回避実験目的}{59}{}%
+\contentsline {subsection}{\numberline {4.4.2}静的障害物回避実験条件}{59}{}%
+\contentsline {subsection}{\numberline {4.4.3}静的障害物回避実験評価}{59}{}%
+\contentsline {subsection}{\numberline {4.4.4}静的障害物回避実験結果}{59}{}%
+\contentsline {section}{\numberline {4.5}動的障害物回避実験}{60}{}%
+\contentsline {subsection}{\numberline {4.5.1}動的障害物回避実験目的}{60}{}%
+\contentsline {subsection}{\numberline {4.5.2}動的障害物回避実験条件}{60}{}%
+\contentsline {subsection}{\numberline {4.5.3}動的障害物回避実験評価}{60}{}%
+\contentsline {subsection}{\numberline {4.5.4}動的障害物回避実験結果}{60}{}%
+\contentsline {section}{\numberline {4.6}知識選択実験}{61}{}%
+\contentsline {subsection}{\numberline {4.6.1}動的障害物回避実験目的}{61}{}%
+\contentsline {subsection}{\numberline {4.6.2}動的障害物回避実験条件}{61}{}%
+\contentsline {subsection}{\numberline {4.6.3}動的障害物回避実験評価}{61}{}%
+\contentsline {subsection}{\numberline {4.6.4}動的障害物回避実験結果}{61}{}%
+\contentsline {section}{\numberline {4.7}最適化実験}{62}{}%
+\contentsline {subsection}{\numberline {4.7.1}最適化実験目的}{62}{}%
+\contentsline {subsection}{\numberline {4.7.2}最適化実験条件}{62}{}%
+\contentsline {subsection}{\numberline {4.7.3}最適化実験結果}{62}{}%
+\contentsline {section}{\numberline {4.8}実験結果}{63}{}%
+\contentsline {section}{\numberline {4.9}手法比較}{64}{}%
+\contentsline {section}{\numberline {4.10}おわりに}{65}{}%
+\contentsline {chapter}{\numberline {第5章}結論}{67}{}%
+\contentsline {section}{\numberline {5.1}結論}{68}{}%
+\contentsline {section}{\numberline {5.2}今後の展望}{69}{}%
+\chapterbegin 
+\contentsline {chapter}{謝辞}{73}{}%
+\chapterbegin 
+\contentsline {chapter}{参考文献}{75}{}%
+\contentsline {chapter}{研究業績}{79}{}%
+\chapterbegin 
