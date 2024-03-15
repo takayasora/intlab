@@ -8,13 +8,13 @@
 \contentsline {subsection}{\numberline {1.1.3}自動運転技術の事故事例と課題}{6}{}%
 \contentsline {subsection}{\numberline {1.1.4}動的障害物回避の重要性}{9}{}%
 \contentsline {subsection}{\numberline {1.1.5}自律型ロボットの導入とその課題}{11}{}%
-\contentsline {subsection}{\numberline {1.1.6}課題解決後の自立型ロボットの有用性}{14}{}%
-\contentsline {section}{\numberline {1.2}本研究の目的}{15}{}%
-\contentsline {section}{\numberline {1.3}本論文における研究3要素}{16}{}%
-\contentsline {subsection}{\numberline {1.3.1}研究の学術性}{16}{}%
-\contentsline {subsection}{\numberline {1.3.2}研究の新規性}{16}{}%
-\contentsline {subsection}{\numberline {1.3.3}研究の有用性}{16}{}%
-\contentsline {section}{\numberline {1.4}本論文の構成}{17}{}%
+\contentsline {subsection}{\numberline {1.1.6}課題解決後の自律型ロボットの有用性}{15}{}%
+\contentsline {section}{\numberline {1.2}本研究の目的}{16}{}%
+\contentsline {section}{\numberline {1.3}本論文における研究3要素}{17}{}%
+\contentsline {subsection}{\numberline {1.3.1}研究の学術性}{17}{}%
+\contentsline {subsection}{\numberline {1.3.2}研究の新規性}{17}{}%
+\contentsline {subsection}{\numberline {1.3.3}研究の有用性}{17}{}%
+\contentsline {section}{\numberline {1.4}本論文の構成}{18}{}%
 \contentsline {chapter}{\numberline {第2章}関連研究}{19}{}%
 \contentsline {section}{\numberline {2.1}はじめに}{20}{}%
 \contentsline {section}{\numberline {2.2}関連研究}{21}{}%
@@ -33,7 +33,7 @@
 \contentsline {section}{\numberline {3.4}提案手法に用いる技術}{32}{}%
 \contentsline {subsection}{\numberline {3.4.1}強化学習の概要とその応用}{32}{}%
 \contentsline {subsection}{\numberline {3.4.2}転移学習の概要とその応用}{34}{}%
-\contentsline {subsection}{\numberline {3.4.3}転移強化学習の概要}{36}{}%
+\contentsline {subsection}{\numberline {3.4.3}転移強化学習}{36}{}%
 \contentsline {section}{\numberline {3.5}提案システムの構成}{37}{}%
 \contentsline {subsection}{\numberline {3.5.1}静的障害物回避の学習}{37}{}%
 \contentsline {subsection}{\numberline {3.5.2}動的障害物回避への適用}{38}{}%
@@ -101,5 +101,5 @@
 \contentsline {chapter}{謝辞}{73}{}%
 \chapterbegin 
 \contentsline {chapter}{参考文献}{75}{}%
-\contentsline {chapter}{研究業績}{79}{}%
+\contentsline {chapter}{研究業績}{81}{}%
 \chapterbegin 
